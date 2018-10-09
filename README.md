@@ -2,7 +2,7 @@
 ===============
 <hr>
 <p align="center">
-    <img alt="Atlantis" src="./Img/logo.jpg" height="190" width="455">
+    <img alt="Atlantis" src="./img/logo.jpg" height="190" width="455">
 </p>
 <hr>
 
