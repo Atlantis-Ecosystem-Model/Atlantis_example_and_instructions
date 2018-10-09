@@ -1,14 +1,20 @@
 # Atlantis-model
-===============
+
 <hr>
 <p align="center">
-    <img alt="Atlantis" src="./img/logo.jpg" height="190" width="455">
+    <img alt="Atlantis" src="./img/logo.jpg" height="200" width="200">
 </p>
 <hr>
 
+This page contains the basic instructions for running an Atlantis model on your
+computer. For more detailed explanation you should visit the [Wiki](https://confluence.csiro.au/display/Atlantis/Atlantis+Ecosystem+Model+Home+Page)
 
-
-
+----
+Warning
+----
+If you want a copy of the Atlantis main code (which you will need to start using the
+model) you will need to go first to this page [Licence](https://confluence.csiro.au/display/Atlantis/CSIRO+licence+and+repository+request) and send an email to the
+developers, who will give you access to the code.
 
 
 # Prepare your machine:
