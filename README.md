@@ -15,21 +15,32 @@ Warning
 If you want a copy of the Atlantis main code (which you will need to start using the
 model) you will need to go first to this page [Licence](https://confluence.csiro.au/display/Atlantis/CSIRO+licence+and+repository+request) and send an email to the
 developers, who will give you access to the code.
+<hr>
+
+<hr>
+
+Atlantis model instalation and running
+===============
+### Index
+* [Set Up](#setup)
+* [Check out the code](#Check-out-the-code)
+* [Create](#create)
+* [Local Changes](#local-changes)
+* [Search](#search)
+* [Commit History](#commit-history)
+* [Branches & Tags](#branches--tags)
+* [Update & Publish](#update--publish)
+* [Merge & Rebase](#merge--rebase)
+* [Undo](#undo)
+* [Git Flow](#git-flow)
 
 
-# Prepare your machine:
+<hr>
 
-1. [Arabic Git Cheat Sheet](https://github.com/arslanbilal/git-cheat-sheet/blob/master/other-sheets/git-cheat-sheet-ar.md)
-2. [Chinese Git Cheat Sheet](https://github.com/arslanbilal/git-cheat-sheet/blob/master/other-sheets/git-cheat-sheet-zh.md)
-3. [Hindi Git Cheat Sheet](https://github.com/arslanbilal/git-cheat-sheet/blob/master/other-sheets/git-cheat-sheet-hi.md)
-4. [Turkish Git Cheat Sheet](https://github.com/arslanbilal/git-cheat-sheet/blob/master/other-sheets/git-cheat-sheet-tr.md)
-5. [Spanish Git Cheat Sheet](https://github.com/arslanbilal/git-cheat-sheet/blob/master/other-sheets/git-cheat-sheet-es.md)
-6. [Greek Git Cheat Sheet](https://github.com/arslanbilal/git-cheat-sheet/blob/master/other-sheets/git-cheat-sheet-el.md)
-
-Git cheat sheet saves you from learning all the commands by heart.
-
-Be free to contribute, update the grammar mistakes. You are also free to add your language file.
-
+# Set Up
+---
+## Linux
+---
 <hr>
 
 Git Cheat Sheet English
