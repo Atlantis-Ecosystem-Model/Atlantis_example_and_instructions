@@ -89,10 +89,10 @@ This output file contains cumulative values of:
 (form biol.nc) and then * X_CN * mg_2_tonne where X_CN is the Redfield ratio
 specified in the biol.prm file (typically 5.7) and mg_2_tonne is 0.00000002
 *  **TOTCATCH.nc**
-This output files also contains cumulative values in tonnes. All values are zeroed after they are written out. Tracers include:
-  * Total catch per species
-  * Total recreational catch per species
-  * Total discards per species.
+This output files also contains cumulative values in tonnes. All values are zeroed after they are written out. Tracers include:
+   * Total catch per species
+   * Total recreational catch per species
+   * Total discards per species.
 *  **ANNAGEBIO.nc**
 This output provides abundance in each annual age class (Numbers at age per species)
 > so mapped from Atlantis "age class" which can contain multiple years to true annual
@@ -101,8 +101,8 @@ age classes).
 *  **ANNAGECATCH.nc**
 This output provides numbers at annual age class in the catch and discards (summed
 over all fleets). Tracers provided are:
-  * Numbers at age per species in the catch
-  * Numbers at age per species in the discards
+   * Numbers at age per species in the catch
+   * Numbers at age per species in the discards
 
 ## Plain text files
 these files can contains a simplified or aggregate version of the information
