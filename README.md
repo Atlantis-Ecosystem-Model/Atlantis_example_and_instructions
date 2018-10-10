@@ -61,6 +61,7 @@ $ sudo apt-get install gawk
 install proj.4 following the instruction from https://proj4.org/
 ```
 <hr>
+
 # Output files
 ## NetCDF output Files
 Atlantis generates a number of netCDF output files that contain spatial information
@@ -121,3 +122,5 @@ The catch of each species per fishery (in tonnes) across the entire model domain
 The total discards per species across the entire model domain (summed over fisheries)
 *  **DiscardsPerFishery.txt**
 The discards of each species per fishery across the entire model domain (summed over fisheries)
+
+<hr>
