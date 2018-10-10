@@ -5,7 +5,7 @@
     <img alt="Atlantis" src="./img/logo.jpg" height="200" width="200">
 </p>
 <hr>
-___________
+___
 This page contains the basic instructions for running an Atlantis model on your
 computer. For more detailed explanation you should visit the [Wiki](https://confluence.csiro.au/display/Atlantis/Atlantis+Ecosystem+Model+Home+Page)
 
@@ -13,8 +13,8 @@ computer. For more detailed explanation you should visit the [Wiki](https://conf
 >If you want a copy of the Atlantis main code (which you will need to start using the
 model) you will need to go first to this page [Licence](https://confluence.csiro.au/display/Atlantis/CSIRO+licence+and+repository+request) and send an email to the
 developers, who will give you access to the code.
-__________
-<hr>
+___
+
 
 Atlantis model installation and running
 ===============
@@ -33,13 +33,18 @@ Atlantis model installation and running
 * [Supporting software](#supporting-software)
 
 
-<hr>
-
 # Preparing your machine
----
 ## Linux
 
 ####  Checking libraries and packages
+Atlantis requires the following packages and libraries to be installed. Please read the instructions for your operating system for more details.
+* **gcc** - the complier
+* **subversion** - used to check out the code from the code repository.
+* **netcdf** development library
+* **libxml** development library
+* **proj** development library - used for GIS projections.
+* **pkg-config** can get by without this but it will be easier if you have it.
+
 
 ```
 $ dpkg -l | grep build-essential	# Essential packages to build Debian
@@ -56,6 +61,7 @@ $ dpkg -l | grep flip              	# convert text file line endings between Uni
 In the case that you do not have any of the libraries or packages of the previous
 point installed, this is the way to install them on your machine.
 
+**Ubuntu**
 ```
 $ sudo apt-get install build-essential
 $ sudo apt-get install autoconf
@@ -65,6 +71,20 @@ $ sudo apt-get install libnetcdf-dev
 $ sudo apt-get install gawk
 install proj.4 following the instruction from developers [webpage](https://proj4.org/)
 ```
+**Fedora**
+```
+$ yum install netcdf-devel  # Install the netcdf developer package:
+$ yum install subversion  # Install Subversion
+$ yum install proj-devel  # Install the proj4 projection package
+$ yum install libxml2-devel  # Install the libxml developer package
+$ yum install automake  # Install automake
+$ yum install pkgconfig  # Install pkgconfig
+```
+*Note*
+> Most computers with other versions of linux, follow similar instructions to install
+the necessary packages and libraries. If you have questions, visit
+[Wiki-Packages-Linux](https://confluence.csiro.au/display/Atlantis/Building+under+linux)
+
 <hr>
 
 
@@ -88,28 +108,42 @@ tutorial - [SVN](http://vegastrike.sourceforge.net/wiki/HowTo:Checkout_SVN)
 ```
 svn co https://svnserv.csiro.au/svn/ext/atlantis/Atlantis/trunk/atlantis
 ```
+*Note*
 > Remember that if you want a copy of the Atlantis main code you will need to go
 first to this page
 [Licence](https://confluence.csiro.au/display/Atlantis/CSIRO+licence+and+repository+request)
 and send an email to the developers, who will give you access to the code.
 
 # Building Atlantis
+___
 ## Linux
-To build Atlantis under LinuxI need t compile and run using aototools
+#### Linux Versions
+So far we have built Atlantis on the following platforms:
+* Ubuntu
+* Fedora
+* CentOS
+* Debian 7.2
+* Wheezy 64
 
+If you want a choice which flavor to use we recommend 64-bit Ubuntu.
+
+###### Instruction to build Atlantis under Ubuntu and Fedora.
 ```
 $ cd  /to/your/atlantis/trunk/folder/
 $ aclocal
 $ autoconf
-$ automake -a               # I have some problems with this section
-$ autoreconf  -fvi          # you can use this instead of the other ones
+$ automake -a               # If you have problems with this section
+$ autoreconf  -fvi          # you can use this command instead.
 $ sudo chmod +x configure   # Change the permissions to the configure script
 $ ./configure
 $ make
 $ sudo make install
 ```
-
+To build Atlantis in another versions of linux please visit the [Wiki-Building-Atlantis](https://confluence.csiro.au/display/Atlantis/Building+under+linux)
+___
 ## Windows
+
+___
 ## MacOs
 # Input files
 
