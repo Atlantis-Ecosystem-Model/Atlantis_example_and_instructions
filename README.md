@@ -5,13 +5,11 @@
     <img alt="Atlantis" src="./img/logo.jpg" height="200" width="200">
 </p>
 <hr>
-
+___________
 This page contains the basic instructions for running an Atlantis model on your
 computer. For more detailed explanation you should visit the [Wiki](https://confluence.csiro.au/display/Atlantis/Atlantis+Ecosystem+Model+Home+Page)
 
-___________
-Warning
-
+ **Attention!**
 >If you want a copy of the Atlantis main code (which you will need to start using the
 model) you will need to go first to this page [Licence](https://confluence.csiro.au/display/Atlantis/CSIRO+licence+and+repository+request) and send an email to the
 developers, who will give you access to the code.
@@ -26,6 +24,10 @@ Atlantis model installation and running
    * [Windows](#windows)
    * [MacOS](#macos)
 * [Check out the code](#Check-out-the-code)
+* [Building Atlantis](#Building Atlantis)
+   * [Linux](#linux)
+   * [Windows](#windows)
+   * [MacOS](#macos)
 * [Input files](#input-files)
 * [Output Files](#output-files)
 * [Supporting software](#Supporting-software)
@@ -76,6 +78,39 @@ install proj.4 following the instruction from developers [webpage](https://proj4
 
 # Checking out the Atlantis code.
 
+The source code can be accessed through the following URL's:
+ * CSIRO users: https://svnserv.csiro.au/svn/atlantis/Atlantis/trunk/atlantis
+ * External Partners: https://svnserv.csiro.au/svn/ext/atlantis/Atlantis/trunk/atlantis
+If you need information on how to check out the code from SVN have a look at this
+tutorial - http://vegastrike.sourceforge.net/wiki/HowTo:Checkout_SVN.
+
+*Example*
+```
+svn co https://svnserv.csiro.au/svn/ext/atlantis/Atlantis/trunk/atlantis
+```
+> Remember that if you want a copy of the Atlantis main code you will need to go
+first to this page
+[Licence](https://confluence.csiro.au/display/Atlantis/CSIRO+licence+and+repository+request)
+and send an email to the developers, who will give you access to the code.
+
+# Building Atlantis
+## Linux
+To build Atlantis under LinuxI need t compile and run using aototools
+
+```
+$ cd  /to/your/atlantis/trunk/folder/
+$ aclocal
+$ autoconf
+$ automake -a               # I have some problems with this section
+$ autoreconf  -fvi          # you can use this instead of the other ones
+$ sudo chmod +x configure   # Change the permissions to the configure script
+$ ./configure
+$ make
+$ sudo make install
+```
+
+## Windows
+## MacOs
 # Input files
 
 # Output files
