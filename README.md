@@ -30,7 +30,7 @@ Atlantis model installation and running
    * [MacOS](#macos)
 * [Input files](#input-files)
 * [Output Files](#output-files)
-* [Supporting software](#Supporting-software)
+* [Supporting software](#supporting-software)
 
 
 <hr>
@@ -79,10 +79,10 @@ install proj.4 following the instruction from developers [webpage](https://proj4
 # Checking out the Atlantis code.
 
 The source code can be accessed through the following URL's:
- * CSIRO users: https://svnserv.csiro.au/svn/atlantis/Atlantis/trunk/atlantis
- * External Partners: https://svnserv.csiro.au/svn/ext/atlantis/Atlantis/trunk/atlantis
+ * CSIRO users: [https://svnserv.csiro.au/svn/atlantis/Atlantis/trunk/atlantis]
+ * External Partners: [https://svnserv.csiro.au/svn/ext/atlantis/Atlantis/trunk/atlantis]
 If you need information on how to check out the code from SVN have a look at this
-tutorial - http://vegastrike.sourceforge.net/wiki/HowTo:Checkout_SVN.
+tutorial - [SVN](http://vegastrike.sourceforge.net/wiki/HowTo:Checkout_SVN)
 
 *Example*
 ```
@@ -115,13 +115,13 @@ $ sudo make install
 
 # Output files
 ## NetCDF output Files
-Atlantis generates a number of netCDF output files that contain spatial information
-such as the biomass of functional groups in boxes and layers.  The netCDF files do
-not follow the normal gridded netCDF structure that people are used to as the
+Atlantis generates a number of NetCDF output files that contain spatial information
+such as the biomass of functional groups in boxes and layers.  The NetCDF files do
+not follow the normal gridded NetCDF structure that people are used to as the
 Atlantis model is a box model, not a grid model. The normal packages such as
 [ncview](http://meteora.ucsd.edu/~pierce/ncview_home_page.html) will not work with
-Atlantis output netCDF files. To read these outputs you can use your own code or one
-of the tools developed for these type of outputs [Tools](Supporting-software).
+Atlantis output NetCDF files. To read these outputs you can use your own code or one
+of the tools developed for these type of outputs [Tools](#supporting-software).
 *  **biol.nc**
 This 3D (time, box, layer) contains snapshots of the tracers in the model at given time frequencies in each box and layer.
 *  **biolTOT.nc**
@@ -134,6 +134,7 @@ This output file contains cumulative values of:
    * Discards per species per age class (cohort) in numbers
    * Catch per species per fishery (in tonnes) - that is the total tonnes taken from that box
    * Discards per species per fishery (in tonnes) - that is the total tonnes taken from that box
+*Note*
 > To convert the numbers to biomass you have to multiple by individual size-at-age
 (form biol.nc) and then * X_CN * mg_2_tonne where X_CN is the Redfield ratio
 specified in the biol.prm file (typically 5.7) and mg_2_tonne is 0.00000002
@@ -144,6 +145,7 @@ This output files also contains cumulative values in tonnes. All values are zero
    * Total discards per species.
 *  **ANNAGEBIO.nc**
 This output provides abundance in each annual age class (Numbers at age per species)
+*Note*
 > so mapped from Atlantis "age class" which can contain multiple years to true annual
 age classes).
 
