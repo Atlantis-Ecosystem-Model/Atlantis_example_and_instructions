@@ -1,4 +1,4 @@
-# Atlantis-model
+# Atlantis model configuration
 
 <hr>
 <p align="center">
@@ -30,7 +30,7 @@ Atlantis model instalation and running
 
 <hr>
 
-# Set Up
+# Preparing your machine
 ---
 ## Linux
 
@@ -58,7 +58,7 @@ $ sudo apt-get install subversion
 $ sudo apt-get install libxml2-dev
 $ sudo apt-get install libnetcdf-dev
 $ sudo apt-get install gawk
-install proj.4 following the instruction from https://proj4.org/
+install proj.4 following the instruction from developers [webpage](https://proj4.org/)
 ```
 <hr>
 
@@ -78,12 +78,14 @@ This 2D (time, box) output file contains a sum of the tracer values in each box.
 *  **biolPROD.nc**
 This output file is useful during the model tuning process and contains 2D data (time, box) for each box. It contains the tracers for production and grazing for invertebrate groups, growth and consumption for each age class for each vertebrate group, and a number of indices such as the diversity index.
 *  **CATCH.nc**
- This output files contains cumulative values. All values are zeroed after they are written out. Tracers include:
-Catch per species per age class (cohort) in numbers
-Discards per species per age class (cohort) in numbers
-Catch per species per fishery (in tonnes) - that is the total tonnes taken from that box
-Discards per species per fishery (in tonnes) - that is the total tonnes taken from that box
-To convert the numbers to biomass you have to multiple by individual size-at-age (form biol.nc) and then * X_CN * mg_2_tonne where X_CN is the Redfield ratio specified in the biol.prm file (typically 5.7) and mg_2_tonne is 0.00000002
+This output file contains cumulative values of:
+   * Catch per species per age class (cohort) in numbers
+   * Discards per species per age class (cohort) in numbers
+   * Catch per species per fishery (in tonnes) - that is the total tonnes taken from that box
+   * Discards per species per fishery (in tonnes) - that is the total tonnes taken from that box
+> To convert the numbers to biomass you have to multiple by individual size-at-age
+(form biol.nc) and then * X_CN * mg_2_tonne where X_CN is the Redfield ratio
+specified in the biol.prm file (typically 5.7) and mg_2_tonne is 0.00000002
 *  **TOTCATCH.nc**
 This output files also contains cumulative values in tonnes. All values are zeroed after they are written out. Tracers include:
 Total catch per species
