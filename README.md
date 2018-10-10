@@ -19,11 +19,12 @@ developers, who will give you access to the code.
 
 <hr>
 
-Atlantis model instalation and running
+Atlantis model installation and running
 ===============
 ### Index
 * [Preparing your machine](#preparing-your-machine)
 * [Check out the code](#Check-out-the-code)
+* [Input files](#input-files)
 * [Output Files](#output-files)
 * [Supporting software](#Supporting-software)
 
@@ -42,7 +43,7 @@ $ dpkg -l | grep autoconf      	    # Automatic configure script builder
 $ dpkg -l | grep subversion      	# Version Control System (like GITHUB)
 $ dpkg -l | grep gawk          	    # GNU version de Awk
 $ dpkg -l | grep proj           	# Program Proj.4 Cartographic projection
-$ dpkg -l | grep libxml2-dev 	    # Library for XML lenguaje
+$ dpkg -l | grep libxml2-dev 	    # Library for XML language
 $ dpkg -l | grep libnetcdf-dev	    # Library of development kit for NetCDF
 $ dpkg -l | grep flip              	# convert text file line endings between Unix and DOS
 ```
@@ -61,6 +62,7 @@ $ sudo apt-get install gawk
 install proj.4 following the instruction from developers [webpage](https://proj4.org/)
 ```
 <hr>
+# Input files
 
 # Output files
 ## NetCDF output Files
@@ -70,7 +72,7 @@ not follow the normal gridded netCDF structure that people are used to as the
 Atlantis model is a box model, not a grid model. The normal packages such as
 [ncview](http://meteora.ucsd.edu/~pierce/ncview_home_page.html) will not work with
 Atlantis output netCDF files. To read these outputs you can use your own code or one
-of the tools developend for these type of outputs [Tools](Supporting-software).
+of the tools developed for these type of outputs [Tools](Supporting-software).
 *  **biol.nc**
 This 3D (time, box, layer) contains snapshots of the tracers in the model at given time frequencies in each box and layer.
 *  **biolTOT.nc**
@@ -88,18 +90,19 @@ This output file contains cumulative values of:
 specified in the biol.prm file (typically 5.7) and mg_2_tonne is 0.00000002
 *  **TOTCATCH.nc**
 This output files also contains cumulative values in tonnes. All values are zeroed after they are written out. Tracers include:
-Total catch per species
-Total recreational catch per species
-Total discards per species.
+  * Total catch per species
+  * Total recreational catch per species
+  * Total discards per species.
 *  **ANNAGEBIO.nc**
-  This output provides numbers in each annual age class (so mapped from Atlantis "age class" which can contain multiple years to true annual age classes). Set flag_age_output to 1 to get this output. Tracers provided are:
+This output provides abundance in each annual age class (Numbers at age per species)
+> so mapped from Atlantis "age class" which can contain multiple years to true annual
+age classes).
 
-Numbers at age per species
 *  **ANNAGECATCH.nc**
-This output provides numbers at annual age class (so mapped from Atlantis "age class" which can contain multiple years to true annual age classes) in the catch and discards (summed over all fleets). Set flag_age_output to 1 to get this output. Tracers provided are:
-
-Numbers at age per species in the catch
-Numbers at age per species in the discards
+This output provides numbers at annual age class in the catch and discards (summed
+over all fleets). Tracers provided are:
+  * Numbers at age per species in the catch
+  * Numbers at age per species in the discards
 
 ## Plain text files
 these files can contains a simplified or aggregate version of the information
@@ -112,7 +115,7 @@ Indication of diet pressure
 *  **DetailedDietCheck.txt**
 This file is only produced if flagdietcheck is set to 1. The file produced provides the total biomass consumed of each prey species per age class of each predator species per box and layer. 
 *  **YOY.txt**
-This is the biomass in tonnes per spawning event summed over the total model domain. In most models for most groups this means that only one value a year is meaningful (for those with multiple spawnings per year you may see different values depending on when the model writes to the YOY.txt file versus the time of the spawning). This file used to have a bug (fixed as of Nov/Dec 2015) where it switched from storing biomass for the first value to numbers for subsequent years (yes another Beth wasn't paying attention to diagnostic output moment). If you have legacy runs from old model code either ignore the first entry or multiple subsequent entries by (KWRR_sp + KWSR_sp), but DO NOT multiply with the bm->X_CN * mg_2_tonne step to get to tonnes as the old code already does that (like I said, my apologies for not paying attention!)
+This is the biomass in tonnes per spawning event summed over the total model domain.
 #### Catch and fisheries relevant output
 *  **BrokenStick.txt**
 The output file that has been created to debug the broken stick management strategy.
