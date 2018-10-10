@@ -9,20 +9,22 @@
 This page contains the basic instructions for running an Atlantis model on your
 computer. For more detailed explanation you should visit the [Wiki](https://confluence.csiro.au/display/Atlantis/Atlantis+Ecosystem+Model+Home+Page)
 
-----
+___________
 Warning
-----
-If you want a copy of the Atlantis main code (which you will need to start using the
+
+>If you want a copy of the Atlantis main code (which you will need to start using the
 model) you will need to go first to this page [Licence](https://confluence.csiro.au/display/Atlantis/CSIRO+licence+and+repository+request) and send an email to the
 developers, who will give you access to the code.
-<hr>
-
+__________
 <hr>
 
 Atlantis model installation and running
 ===============
 ### Index
 * [Preparing your machine](#preparing-your-machine)
+   * [Linux](#linux)
+   * [Windows](#windows)
+   * [MacOS](#macos)
 * [Check out the code](#Check-out-the-code)
 * [Input files](#input-files)
 * [Output Files](#output-files)
@@ -62,6 +64,18 @@ $ sudo apt-get install gawk
 install proj.4 following the instruction from developers [webpage](https://proj4.org/)
 ```
 <hr>
+
+
+---
+## Windows
+
+
+
+---
+## MacOS
+
+# Checking out the Atlantis code.
+
 # Input files
 
 # Output files
