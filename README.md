@@ -7,12 +7,17 @@
 <hr>
 ___
 This page contains the basic instructions for running an Atlantis model on your
-computer. For more detailed explanation you should visit the [Wiki](https://confluence.csiro.au/display/Atlantis/Atlantis+Ecosystem+Model+Home+Page)
+computer. For more detailed explanation about the code,  the parameters and many more
+you should visit the [Wiki](https://confluence.csiro.au/display/Atlantis/Atlantis+Ecosystem+Model+Home+Page)
 
  **Attention!**
 >If you want a copy of the Atlantis main code (which you will need to start using the
-model) you will need to go first to this page [Licence](https://confluence.csiro.au/display/Atlantis/CSIRO+licence+and+repository+request) and send an email to the
-developers, who will give you access to the code.
+model) you will need to go first to this page
+[Atlantis-Wiki](https://confluence.csiro.au/display/Atlantis/CSIRO+licence+and+repository+request)
+and sing the
+[licence](https://confluence.csiro.au/display/Atlantis/CSIRO+licence+and+repository+request)
+agreement and then send an email to the developers, who will give you access to the
+code.
 ___
 
 
@@ -38,7 +43,7 @@ Atlantis model installation and running
 
 ####  Checking libraries and packages
 Atlantis requires the following packages and libraries to be installed. Please read the instructions for your operating system for more details.
-* **gcc** - the complier
+* **gcc** - GNU Compiler Collection
 * **subversion** - used to check out the code from the code repository.
 * **netcdf** development library
 * **libxml** development library
@@ -111,8 +116,11 @@ svn co https://svnserv.csiro.au/svn/ext/atlantis/Atlantis/trunk/atlantis
 *Note*
 > Remember that if you want a copy of the Atlantis main code you will need to go
 first to this page
-[Licence](https://confluence.csiro.au/display/Atlantis/CSIRO+licence+and+repository+request)
-and send an email to the developers, who will give you access to the code.
+[Atlantis-Page](https://confluence.csiro.au/display/Atlantis/CSIRO+licence+and+repository+request)
+and sing the
+[licence](https://confluence.csiro.au/display/Atlantis/CSIRO+licence+and+repository+request)
+agreement and then send an email to the developers, who will give you access to the
+code.
 
 # Building Atlantis
 ___
@@ -144,7 +152,7 @@ ___
 ## Windows
 
 ___
-## MacOs
+## MacOS
 # Input files
 
 # Output files
