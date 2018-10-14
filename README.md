@@ -138,15 +138,16 @@ The source code can be accessed through the following URL's:
 If you need information on how to check out the code from SVN have a look at this
 tutorial - [SVN](http://vegastrike.sourceforge.net/wiki/HowTo:Checkout_SVN)
 
-*Example*
+#### Linux
 ```
-## Linux
 $ svn co https://svnserv.csiro.au/svn/ext/atlantis/Atlantis/trunk/atlantis
-## Windows and MacOS
-Use tortoise to download and update the code from the svn repositores on
-your machine (see above).
-
 ```
+#### Windows and MacOS
+To locally compile the code, create a new folder or checkout directory for your
+source code (e.g. c:\Code\atlantis). Right click in this new folder and select the
+new menu option  **"SVN checkout"**  and enter the appropriate URL into the *"URL"* of the
+repository field’.
+
 
 Note
 > Remember that if you want a copy of the Atlantis main code you will need to go
@@ -207,9 +208,13 @@ code and
 site, which has the latest updates about code modifications, code repository and examples of input and
 output files with expected types and values for model parameters.
 
-To locally compile the code, create a new folder or checkout directory for your source code (e.g. c:\Code\atlantis). Right click in this new folder and select the new menu option "SVN checkout" and enter the appropriate URL into the ‘URL of the repository field’.
+To locally compile the code, create a new folder or checkout directory for your
+source code (e.g. c:\Code\atlantis). Right click in this new folder and select the
+new menu option "SVN checkout" and enter the appropriate URL into the ‘URL of the
+repository field’.
 
-You will then be asked to authenticate using your domain username and password provided after registering to be a user.
+You will then be asked to authenticate using your domain username and password
+provided after registering to be a user.
 
 SVN can be used to update your code, by selecting ‘SVN update’ from the context menu.
 
