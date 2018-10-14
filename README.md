@@ -6,6 +6,7 @@
 </p>
 <hr>
 ___
+
 This page contains the basic instructions for running an Atlantis model on your
 computer. For more detailed explanation about the code,  the parameters and many more
 you should visit the [Wiki](https://confluence.csiro.au/display/Atlantis/Atlantis+Ecosystem+Model+Home+Page)
