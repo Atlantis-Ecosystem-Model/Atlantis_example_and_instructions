@@ -95,9 +95,41 @@ the necessary packages and libraries. If you have questions, visit
 
 ---
 ## Windows
+* Compiler (Visual studio)
+* NetCDF Library
+* vnc
 
+#### Compiler:
+To build Atlantis you will need to have installed on your machine any of the
+following versions of Visual studio:
 
+* Visual Studio C++ 2008
+* Visual Studio C++ 2010
+* Visual Studio C++ 2012
+* Visual Studio C++ Express Edition
 
+You can download all these versions [here](https://visualstudio.microsoft.com/vs/older-downloads/)
+
+Note. Atlantis will not compile using Visual Studio 2015
+#### NetCDF library
+Atlantis use the NetCDF file system. To be able to run Atlantis you will need to
+have the NetCDF 4 libraries installed on your computer. Please follow the instructions from the
+[developers](https://www.unidata.ucar.edu/software/netcdf/docs/winbin.html) or the
+guide provided here
+[Atlantis-Wiki](https://confluence.csiro.au/display/Atlantis/NetCDF+4+in+Windows)
+
+#### VNC
+To check out the code you will need a vnc platform. We support the use TortoiseSVN as
+a GUI to check out the code from the code repository. To install the software follow
+the instructions from the developer [toitoise](http://tortoisesvn.tigris.org/)
+**Note**
+>If you want a copy of the Atlantis main code (which you will need to start using the
+model) you will need to go first to this page
+[Atlantis-Wiki](https://confluence.csiro.au/display/Atlantis/CSIRO+licence+and+repository+request)
+and sing the
+[licence](https://confluence.csiro.au/display/Atlantis/CSIRO+licence+and+repository+request)
+agreement and then send an email to the developers, who will give you access to the
+code.
 ---
 ## MacOS
 
@@ -111,8 +143,14 @@ tutorial - [SVN](http://vegastrike.sourceforge.net/wiki/HowTo:Checkout_SVN)
 
 *Example*
 ```
+Linux
 svn co https://svnserv.csiro.au/svn/ext/atlantis/Atlantis/trunk/atlantis
+Windows and MacOS
+Use tortoise to download and update the code from the svn repositores (see above) on
+your machine.
+
 ```
+
 *Note*
 > Remember that if you want a copy of the Atlantis main code you will need to go
 first to this page
@@ -150,6 +188,33 @@ $ sudo make install
 To build Atlantis in another versions of linux please visit the [Wiki-Building-Atlantis](https://confluence.csiro.au/display/Atlantis/Building+under+linux)
 ___
 ## Windows
+
+Building in Visual Studio requires opening the appropriate visual studio solution in
+the root Atlantis SVN repository folder.
+* Visual Studio 2008 uses atlantis_VS2008.sln
+* Visual Studio 2010 uses atlantis_VS2010.sln
+* Visual Studio 2012 uses atlantis_VS2012.sln
+
+
+
+Note
+>If you have questions, visit Wiki-Packages-Windows
+
+
+
+
+Code:
+Due to licensing requirements, new users must register to access the code. Registration gives access to the code and Atlantis wiki site, which has the latest updates about code modifications, code repository and examples of input and output files with expected types and values for model parameters. The code must be downloaded from the SVN repository and compiled locally. Local compilation also ensures that all required associated libraries are installed properly.
+The source code can be accessed through the following URL’s:
+CSIRO users: https://svnserv.csiro.au/svn/atlantis/Atlantis/trunk/atlantis
+External Partners: https://svnserv.csiro.au/svn/ext/atlantis/Atlantis/trunk/atlantis
+
+To locally compile the code, create a new folder or checkout directory for your source code (e.g. c:\Code\atlantis). Right click in this new folder and select the new menu option "SVN checkout" and enter the appropriate URL into the ‘URL of the repository field’.
+
+You will then be asked to authenticate using your domain username and password provided after registering to be a user.
+
+SVN can be used to update your code, by selecting ‘SVN update’ from the context menu.
+
 
 ___
 ## MacOS
