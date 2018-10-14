@@ -90,9 +90,6 @@ $ yum install pkgconfig  # Install pkgconfig
 the necessary packages and libraries. If you have questions, visit
 [Wiki-Packages-Linux](https://confluence.csiro.au/display/Atlantis/Building+under+linux)
 
-<hr>
-
-
 ---
 ## Windows
 * Compiler (Visual studio)
