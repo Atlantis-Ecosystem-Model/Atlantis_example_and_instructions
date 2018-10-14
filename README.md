@@ -5,7 +5,6 @@
     <img alt="Atlantis" src="./img/logo.jpg" height="200" width="200">
 </p>
 <hr>
-___
 
 This page contains the basic instructions for running an Atlantis model on your
 computer. For more detailed explanation about the code,  the parameters and many more
