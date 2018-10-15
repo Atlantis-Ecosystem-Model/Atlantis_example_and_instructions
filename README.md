@@ -208,20 +208,28 @@ code and
 site, which has the latest updates about code modifications, code repository and examples of input and
 output files with expected types and values for model parameters.
 
-To locally compile the code, create a new folder or checkout directory for your
-source code (e.g. c:\Code\atlantis). Right click in this new folder and select the
-new menu option "SVN checkout" and enter the appropriate URL into the ‘URL of the
-repository field’.
-
-You will then be asked to authenticate using your domain username and password
-provided after registering to be a user.
-
-SVN can be used to update your code, by selecting ‘SVN update’ from the context menu.
-
-
 ___
 ## MacOS
 # Input files
+Brief description of all the input files required to run an Atlantis model. See the
+Atlantis manual
+[pt1](https://confluence.csiro.au/display/Atlantis/Atlantis+Documentation?preview=/43155557/397385419/AtlantisUserGuide_PartI.pdf)
+[pt2](https://confluence.csiro.au/display/Atlantis/Atlantis+Documentation?preview=/43155557/397385421/AtlantisUserGuide_PartII.pdf)
+or [Atlantis-wiki](https://confluence.csiro.au/display/Atlantis/Atlantis+Ecosystem+Model+Home+Page) for more details.
+### Basic files
+* **Group.csv** A file containing information about the functional groups in the model.
+* **XXX.bgm** The file defines the geography used in the Atlantis model to define the bathymetry of the model system.
+* **run.prm** A file storing all the parameters defining the run setup (timestep, run and stop times, etc.)
+* **physics.prm** Physics parameters (coefficients) - apart from setting some flags (e.g. turning resuspension on/off), point-source scaling and quarterly eddy strength distribution these parameters are not typically changed.
+* **force.prm** A file that lays out the forcing file pathways for hydrodynamics, point sources, climate time series (precipitation, irradiance, temperature and salinity), historical catch, fuel prices, GDP and complex spatial zonation.
+* **biol.prm** File detailing all the ecological parameters, submodel selection, network connection definitions and quarterly distributions.
+* **in.nc** A netcdf file where the initial conditions of the model are given, such as the initial biomass and size values for each functional group and age structure.
+### Aditional files
+* **assess.prm** File detailing the sample design, sampling error structures and basic assessment model parameters.
+* **harvest.prm** File storing all the fisheries and management parameters and submodel definitions.
+* **econ.prm** A file storing all the socio-economics parameters (for the market model, trading model, and black-book based effort allocation model).
+* **XXX.ts** Time-series files used to force the model with N data columns and a reference year of 1951
+
 
 # Output files
 ## NetCDF output Files
