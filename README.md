@@ -43,11 +43,11 @@ Atlantis model installation and running
 ####  Checking libraries and packages
 Atlantis requires the following packages and libraries to be installed. Please read the instructions for your operating system for more details.
 * **gcc** - GNU Compiler Collection
-* **subversion** - used to check out the code from the code repository.
-* **netcdf** development library
-* **libxml** development library
-* **proj** development library - used for GIS projections.
-* **pkg-config** can get by without this but it will be easier if you have it.
+* **subversion** - Used to check out the code from the code repository.
+* **netcdf** Development library
+* **libxml** Development library
+* **proj** Development library - used for GIS projections.
+* **pkg-config** Can get by without this but it will be easier if you have it.
 
 
 ```
@@ -129,6 +129,53 @@ agreement and then send an email to the developers, who will give you access to 
 code.
 ---
 ## MacOS
+##### Important
+> We would not recommend using Mac if you have a choice. It generally takes a couple
+of hours and as much as a day per machine to set up and Mac is constantly changing
+things. Its not as simple as running on windows or linux and you will need to be
+comfortable installing libraries from source.
+
+###### Compiler:
+**Xcode** [site](https://developer.apple.com/xcode/): Compiler (GCC and others). To install xcode you might download
+a dgm file. Once this is downloaded open Finder and drag the xcode folder into your
+applications to install it. Once its finished installing you need to eject it before
+you delete it from your downloads folder. Then you might need to type something like
+the following:
+```
+$ sudo xcode-select -switch /Applications/Xcode.app/Contents/Developer
+```
+
+* **GCC** : You should use gcc-7, prior to high sierra it was gcc-4.6. You can install this
+using [macports](http://www.macports.org/) or [homebrew](http://brew.sh/).
+
+##### Required libraries
+Atlantis needs the following libraries to be installed. For each library download the most recent stable versions.
+
+* **autoconf**  Automatic configure script builder. Download using macports.
+* **automake** Automatic make script builder. Download using macports.
+* **Netcdf** Development library. Install from [source](http://www.unidata.ucar.edu/downloads/netcdf/index.jsp)
+* **proj4** Development library, used for GIS projections. Install from [source](http://trac.osgeo.org/proj/). Make sure you get version 4.7.0.
+* **pkgconfig** Helper tool used when compiling applications and libraries. Download using macports or from [source](http://www.freedesktop.org/wiki/Software/pkg-config)
+* **libxml** - Library to deal with xml files format. Download and installed from [source](http://www.xmlsoft.org/).
+
+All of the following libraries should be downloaded to a folder such as /home/Downloads
+To installl the library "libname" you should do :
+Unpacked using :
+```
+gzip -dv libname.tar.gz
+tar -xvf libname.tar
+```
+Then cd into the libname dir
+```
+cd libname
+```
+Then configure the library and install
+```
+./configure
+make
+sudo make install
+```
+
 
 # Checking out the Atlantis code.
 
