@@ -133,8 +133,9 @@ code.
 # Checking out the Atlantis code.
 
 The source code can be accessed through the following URL's:
- * CSIRO users: [https://svnserv.csiro.au/svn/atlantis/Atlantis/trunk/atlantis]
- * External Partners: [https://svnserv.csiro.au/svn/ext/atlantis/Atlantis/trunk/atlantis]
+ * CSIRO users: https://svnserv.csiro.au/svn/atlantis/Atlantis/trunk/atlantis
+ * External Partners: https://svnserv.csiro.au/svn/ext/atlantis/Atlantis/trunk/atlantis
+
 If you need information on how to check out the code from SVN have a look at this
 tutorial - [SVN](http://vegastrike.sourceforge.net/wiki/HowTo:Checkout_SVN)
 
