@@ -160,16 +160,16 @@ Atlantis needs the following libraries to be installed. For each library downloa
 
 All of the following libraries should be downloaded to a folder such as /home/Downloads
 To installl the library "libname" you should do :
-Unpacked using :
+* Unpacked using :
 ```
 gzip -dv libname.tar.gz
 tar -xvf libname.tar
 ```
-Then cd into the libname dir
+* Then cd into the libname dir
 ```
 cd libname
 ```
-Then configure the library and install
+* Then configure the library and install
 ```
 ./configure
 make
@@ -258,6 +258,37 @@ output files with expected types and values for model parameters.
 
 ___
 ## MacOS
+Initially,  to include all the source code (or the new addes) you will need to build
+the code via command line rather than using other developer software (e.g. eclipse ).
+In the Atlantis code there is a file called *configure_mac*,  you will probably need
+to edit this file to point to each of the locations of the libraries you have
+installed. In the following instructions substitute  *configure_N* with the name of
+the custom *configure_mac* file you have created.
+
+#### Building from the source code
+Open a terminal and go to where your source code is and type:
+```
+$ aclocal
+$ autoheader
+$ autoconf
+$ automake -a
+$ ./configure_N
+make
+```
+This will hopefully build an executable called atlantisNew in the atlantismain
+folder. If it doesn't work you will probably need to edit the configure_N script you
+have created to point to the correct folders or check the libraries are correctly
+installed.
+
+```
+sudo make install
+```
+This will install the atlantis header files and the executable in /usr/local/include/Atlantis-1.0/Atlantis and /usr/local/bin
+
+more detailed information bout how to buil Atlatnis can be found in the (Atlantis-Wiki)[https://confluence.csiro.au/display/Atlantis/Building+under+mac]
+
+
+
 # Input files
 Brief description of all the input files required to run an Atlantis model. See the
 Atlantis manual
