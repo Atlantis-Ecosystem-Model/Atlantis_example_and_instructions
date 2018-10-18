@@ -216,6 +216,7 @@ code.
 # Building Atlantis
 ___
 <a name="linux2">
+
 ## Linux
 #### Linux Versions
 So far we have built Atlantis on the following platforms:
@@ -243,6 +244,7 @@ To build Atlantis in another versions of Linux please visit the
 [Wiki-Building-Atlantis](https://confluence.csiro.au/display/Atlantis/Building+under+linux).
 ___
 <a name="win2">
+
 ## Windows
 
 Building in Visual Studio requires opening the appropriate visual studio solution in
@@ -268,6 +270,7 @@ output files with expected types and values for model parameters.
 
 ___
 <a name="macos2">
+
 ## MacOS
 Initially,  to include all the source code (or the new added) you will need to build
 the code via command line rather than using other developer software (e.g. eclipse ).
