@@ -292,9 +292,15 @@ more detailed information bout how to build Atlantis can be found in the [Atlant
 # Running Atlantis
 ## Linux
 
-
-Running Atlantis and example files
-Use the command prompt to run a bat file with the following file name structure:
+## Windows
+Running Atlantis on Windows is relatively easy, you just need to follow these three steps:
+ 1. [Compile Atlantis](#windows)
+ 2. Create the batch file (**.bat**)
+ - Open your plain text editor, such as a Notepad or WordPad document.
+ - Add the commands to run Atlantis, which should have the following fortat:
+ ``` txt
+ atlantis -i in.nc 0 -o output.nc -r run.prm -f force.prm -p physics.prm -b biol.prm -h harvest.prm -a assess.prm -e economics.prm -s functionalGroups.csv -d outputFolder
+ ```
 
 Open the Command Prompt (or Terminal) window, navigate to your model run directory that has the BAT files in it (and the EXE if you have not formally installed Atlantis to the command line paths), type the name of your BAT file and press ENTER.
 
@@ -338,7 +344,6 @@ or [Atlantis-wiki](https://confluence.csiro.au/display/Atlantis/Atlantis+Ecosyst
 * **econ.prm** A file storing all the socio-economics parameters (for the market model, trading model, and black-book based effort allocation model).
 * **XXX.ts** Time-series files used to force the model with N data columns and a reference year of 1951
 
-
 ## Output files
 ### NetCDF output Files
 Atlantis generates a number of NetCDF output files that contain spatial information
@@ -360,6 +365,7 @@ This output file contains cumulative values of:
    * Discards per species per age class (cohort) in numbers
    * Catch per species per fishery (in tonnes) - that is the total tonnes taken from that box
    * Discards per species per fishery (in tonnes) - that is the total tonnes taken from that box
+
 *Note*
 > To convert the numbers to biomass you have to multiple by individual size-at-age
 (form biol.nc) and then * X_CN * mg_2_tonne where X_CN is the Redfield ratio
