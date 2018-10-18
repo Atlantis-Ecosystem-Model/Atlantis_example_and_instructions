@@ -294,14 +294,14 @@ more detailed information bout how to build Atlantis can be found in the [Atlant
 
 ## Windows
 Running Atlantis on Windows is relatively easy, you just need to follow these three steps:
- 1. [Compile Atlantis](#windows)
+ 1. [Compile Atlantis](##windows)
  2. Create the batch file (**.bat**)
- - Open your plain text editor, such as a Notepad or WordPad document.
+ - Open your plain text editor, such as a Notepad or WordPad document. (e.g. *runAtlantis.bat*)
  - Add the commands to run Atlantis, which should have the following fortat:
  ``` txt
  atlantis -i in.nc 0 -o output.nc -r run.prm -f force.prm -p physics.prm -b biol.prm -h harvest.prm -a assess.prm -e economics.prm -s functionalGroups.csv -d outputFolder
  ```
-
+ 3.
 Open the Command Prompt (or Terminal) window, navigate to your model run directory that has the BAT files in it (and the EXE if you have not formally installed Atlantis to the command line paths), type the name of your BAT file and press ENTER.
 
 The BAT file should have the following format:
