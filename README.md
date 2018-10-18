@@ -33,9 +33,9 @@ Atlantis model installation and running
    * [Windows](#win2)
    * [MacOS](#macos2)
 * [Running Atlantis](#running-atlantis)
-   * [Linux](#linux)
-   * [Windows](#windows)
-   * [MacOS](#macos)
+   * [Linux](#linux3)
+   * [Windows](#win3)
+   * [MacOS](#macos3)
 * [Input files](#input-files)
 * [Output Files](#output-files)
 * [Supporting software](#supporting-software)
@@ -302,6 +302,8 @@ This will install the Atlantis header files and the executable in /usr/local/inc
 more detailed information bout how to build Atlantis can be found in the [Atlantis-Wiki](https://confluence.csiro.au/display/Atlantis/Building+under+mac)
 
 # Running Atlantis
+<a name="linux3">
+
 ## Linux
 Running Atlantis on a Linux machine is relatively easy, you just need to follow these three steps:
  1. [Compile Atlantis](#linux)
@@ -321,6 +323,7 @@ Running Atlantis on a Linux machine is relatively easy, you just need to follow 
    user@pc:~/Atlantis/run>  ./runAtlantis.sh
    ```
 
+<a name="win3">
 
 ## Windows
 Running Atlantis on Windows is relatively easy, you just need to follow these three steps:
