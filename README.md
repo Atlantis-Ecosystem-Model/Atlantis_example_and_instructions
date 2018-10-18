@@ -36,7 +36,9 @@ Atlantis model installation and running
 * [Input files](#input-files)
 * [Output Files](#output-files)
 * [Supporting software](#supporting-software)
-
+* [Files](#atlantis-files)
+   * [Input](#input-files)
+   * [Output](#output-files)
 
 # Preparing your machine
 ## Linux
@@ -49,12 +51,11 @@ Atlantis requires the following packages and libraries to be installed. Please r
 * **proj** Development library - used for GIS projections.
 * **pkg-config** Can get by without this but it will be easier if you have it.
 
-
 ```
 $ dpkg -l | grep build-essential	# Essential packages to build Debian
 $ dpkg -l | grep autoconf      	    # Automatic configure script builder
 $ dpkg -l | grep subversion      	# Version Control System (like GITHUB)
-$ dpkg -l | grep gawk          	    # GNU version de Awk
+$ dpkg -l | grep gawk          	    # GNU version of Awk
 $ dpkg -l | grep proj           	# Program Proj.4 Cartographic projection
 $ dpkg -l | grep libxml2-dev 	    # Library for XML language
 $ dpkg -l | grep libnetcdf-dev	    # Library of development kit for NetCDF
@@ -85,7 +86,7 @@ $ yum install automake  # Install automake
 $ yum install pkgconfig  # Install pkgconfig
 ```
 *Note*
-> Most computers with other versions of linux, follow similar instructions to install
+> Most computers with other versions of Linux, follow similar instructions to install
 the necessary packages and libraries. If you have questions, visit
 [Wiki-Packages-Linux](https://confluence.csiro.au/display/Atlantis/Building+under+linux)
 
@@ -93,7 +94,7 @@ the necessary packages and libraries. If you have questions, visit
 ## Windows
 * Compiler (Visual studio)
 * NetCDF Library
-* VNC
+* SVN
 
 #### Compiler:
 To build Atlantis you will need to have installed on your machine any of the
@@ -115,8 +116,8 @@ have the NetCDF 4 libraries installed on your computer. Please follow the instru
 guide provided here
 [Atlantis-Wiki](https://confluence.csiro.au/display/Atlantis/NetCDF+4+in+Windows)
 
-#### VNC
-To check out the code you will need a vnc platform. We support the use TortoiseSVN as
+#### SVN
+To check out the code you will need a svn platform. We support the use TortoiseSVN as
 a GUI to check out the code from the code repository. To install the software follow
 the instructions from the developer [tortoise](http://tortoisesvn.tigris.org/)
 **Note**
@@ -127,17 +128,18 @@ and sing the
 [licence](https://confluence.csiro.au/display/Atlantis/CSIRO+licence+and+repository+request)
 agreement and then send an email to the developers, who will give you access to the
 code.
+
 ---
 ## MacOS
 ##### Important
 > We would not recommend using Mac if you have a choice. It generally takes a couple
 of hours and as much as a day per machine to set up and Mac is constantly changing
-things. Its not as simple as running on windows or linux and you will need to be
+things. Its not as simple as running on windows or Linux and you will need to be
 comfortable installing libraries from source.
 
-###### Compiler:
-**Xcode** [site](https://developer.apple.com/xcode/): Compiler (GCC and others). To install xcode you might download
-a dgm file. Once this is downloaded open Finder and drag the xcode folder into your
+#### Compiler:
+* **Xcode** [site](https://developer.apple.com/xcode/): Compiler (GCC and others). To install Xcode you might download
+a dgm file. Once this is downloaded open Finder and drag the Xcode folder into your
 applications to install it. Once its finished installing you need to eject it before
 you delete it from your downloads folder. Then you might need to type something like
 the following:
@@ -148,7 +150,7 @@ $ sudo xcode-select -switch /Applications/Xcode.app/Contents/Developer
 * **GCC** : You should use gcc-7, prior to high sierra it was gcc-4.6. You can install this
 using [macports](http://www.macports.org/) or [homebrew](http://brew.sh/).
 
-##### Required libraries
+#### Required libraries
 Atlantis needs the following libraries to be installed. For each library download the most recent stable versions.
 
 * **autoconf**  Automatic configure script builder. Download using macports.
@@ -159,21 +161,21 @@ Atlantis needs the following libraries to be installed. For each library downloa
 * **libxml** - Library to deal with xml files format. Download and installed from [source](http://www.xmlsoft.org/).
 
 All of the following libraries should be downloaded to a folder such as /home/Downloads
-To installl the library "libname" you should do :
+To install the library "libname" you should do :
 * Unpacked using :
 ```
-gzip -dv libname.tar.gz
-tar -xvf libname.tar
+$ gzip -dv libname.tar.gz
+$ tar -xvf libname.tar
 ```
 * Then cd into the libname dir
 ```
-cd libname
+$ cd libname
 ```
 * Then configure the library and install
 ```
-./configure
-make
-sudo make install
+$ ./configure
+$ make
+$ sudo make install
 ```
 
 
@@ -231,7 +233,7 @@ $ ./configure
 $ make
 $ sudo make install
 ```
-To build Atlantis in another versions of linux please visit the [Wiki-Building-Atlantis](https://confluence.csiro.au/display/Atlantis/Building+under+linux)
+To build Atlantis in another versions of Linux please visit the [Wiki-Building-Atlantis](https://confluence.csiro.au/display/Atlantis/Building+under+linux)
 ___
 ## Windows
 
@@ -258,7 +260,7 @@ output files with expected types and values for model parameters.
 
 ___
 ## MacOS
-Initially,  to include all the source code (or the new addes) you will need to build
+Initially,  to include all the source code (or the new added) you will need to build
 the code via command line rather than using other developer software (e.g. eclipse ).
 In the Atlantis code there is a file called *configure_mac*,  you will probably need
 to edit this file to point to each of the locations of the libraries you have
@@ -281,15 +283,42 @@ have created to point to the correct folders or check the libraries are correctl
 installed.
 
 ```
-sudo make install
+$ sudo make install
 ```
-This will install the atlantis header files and the executable in /usr/local/include/Atlantis-1.0/Atlantis and /usr/local/bin
+This will install the Atlantis header files and the executable in /usr/local/include/Atlantis-1.0/Atlantis and /usr/local/bin
 
-more detailed information bout how to buil Atlatnis can be found in the (Atlantis-Wiki)[https://confluence.csiro.au/display/Atlantis/Building+under+mac]
+more detailed information bout how to build Atlantis can be found in the [Atlantis-Wiki](https://confluence.csiro.au/display/Atlantis/Building+under+mac)
+
+# Running Atlantis
+## Linux
+
+
+Running Atlantis and example files
+Use the command prompt to run a bat file with the following file name structure:
+
+Open the Command Prompt (or Terminal) window, navigate to your model run directory that has the BAT files in it (and the EXE if you have not formally installed Atlantis to the command line paths), type the name of your BAT file and press ENTER.
+
+The BAT file should have the following format:
+
+atlantis -i in.nc 0 -o output.nc -r run.prm -f force.prm -p physics.prm -b biol.prm -h harvest.prm -a assess.prm -e economics.prm -s functionalGroups.csv -d outputFolder
+
+Descriptions of these parameter, including the run.prm file where changes to the run time can be made can be found below.
+
+Example:
+cd C:\Atlantis\run\SETas
+runSETas.bat
+
+The best way to learn is to play with an existing operational model. Sample input files for the SETas training model uses the. This is a small model that is quick to run but covers most of the functionality in Atlantis.
+
+MAP of example operational model
+Plots of inputs for the SETas model
+Plots of outputs for the SETas model
 
 
 
-# Input files
+
+# Atlantis files
+## Input files
 Brief description of all the input files required to run an Atlantis model. See the
 Atlantis manual
 [pt1](https://confluence.csiro.au/display/Atlantis/Atlantis+Documentation?preview=/43155557/397385419/AtlantisUserGuide_PartI.pdf)
@@ -303,15 +332,15 @@ or [Atlantis-wiki](https://confluence.csiro.au/display/Atlantis/Atlantis+Ecosyst
 * **force.prm** A file that lays out the forcing file pathways for hydrodynamics, point sources, climate time series (precipitation, irradiance, temperature and salinity), historical catch, fuel prices, GDP and complex spatial zonation.
 * **biol.prm** File detailing all the ecological parameters, submodel selection, network connection definitions and quarterly distributions.
 * **in.nc** A netcdf file where the initial conditions of the model are given, such as the initial biomass and size values for each functional group and age structure.
-### Aditional files
+### Additional files
 * **assess.prm** File detailing the sample design, sampling error structures and basic assessment model parameters.
 * **harvest.prm** File storing all the fisheries and management parameters and submodel definitions.
 * **econ.prm** A file storing all the socio-economics parameters (for the market model, trading model, and black-book based effort allocation model).
 * **XXX.ts** Time-series files used to force the model with N data columns and a reference year of 1951
 
 
-# Output files
-## NetCDF output Files
+## Output files
+### NetCDF output Files
 Atlantis generates a number of NetCDF output files that contain spatial information
 such as the biomass of functional groups in boxes and layers.  The NetCDF files do
 not follow the normal gridded NetCDF structure that people are used to as the
@@ -342,8 +371,9 @@ This output files also contains cumulative values in tonnes. All values are zero
    * Total discards per species.
 *  **ANNAGEBIO.nc**
 This output provides abundance in each annual age class (Numbers at age per species)
+
 *Note*
-> so mapped from Atlantis "age class" which can contain multiple years to true annual
+> So mapped from Atlantis "age class" which can contain multiple years to true annual
 age classes).
 
 *  **ANNAGECATCH.nc**
@@ -352,10 +382,10 @@ over all fleets). Tracers provided are:
    * Numbers at age per species in the catch
    * Numbers at age per species in the discards
 
-## Plain text files
+### Plain text files
 these files can contains a simplified or aggregate version of the information
 contained in the NetCDF Files or and specific output.
-#### Biologically relevant output:
+##### Biologically relevant output:
 *  **BiomIndx.txt**
 Biomass in tonnes of each species across the entire model domain
 *  **DietCheck.txt**
@@ -364,7 +394,7 @@ Indication of diet pressure
 This file is only produced if flagdietcheck is set to 1. The file produced provides the total biomass consumed of each prey species per age class of each predator species per box and layer. 
 *  **YOY.txt**
 This is the biomass in tonnes per spawning event summed over the total model domain.
-#### Catch and fisheries relevant output
+##### Catch and fisheries relevant output
 *  **BrokenStick.txt**
 The output file that has been created to debug the broken stick management strategy.
 *  **Catch.txt**
