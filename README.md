@@ -20,8 +20,6 @@ agreement and then send an email to the developers, who will give you access to 
 code.
 ___
 
-[link text](#abcde)
-
 Atlantis model installation and running
 ===============
 ### Index
@@ -31,9 +29,9 @@ Atlantis model installation and running
    * [MacOS](#macos)
 * [Check out the code](#check-out-the-code)
 * [Building Atlantis](#building-atlantis)
-   * [Linux](#linux)
-   * [Windows](#windows)
-   * [MacOS](#macos)
+   * [Linux](#linux2)
+   * [Windows](#win2)
+   * [MacOS](#macos2)
 * [Running Atlantis](#running-atlantis)
    * [Linux](#linux)
    * [Windows](#windows)
@@ -217,6 +215,7 @@ code.
 
 # Building Atlantis
 ___
+<a name="linux2">
 ## Linux
 #### Linux Versions
 So far we have built Atlantis on the following platforms:
@@ -243,6 +242,7 @@ $ sudo make install
 To build Atlantis in another versions of Linux please visit the
 [Wiki-Building-Atlantis](https://confluence.csiro.au/display/Atlantis/Building+under+linux).
 ___
+<a name="win2">
 ## Windows
 
 Building in Visual Studio requires opening the appropriate visual studio solution in
@@ -267,6 +267,7 @@ site, which has the latest updates about code modifications, code repository and
 output files with expected types and values for model parameters.
 
 ___
+<a name="macos2">
 ## MacOS
 Initially,  to include all the source code (or the new added) you will need to build
 the code via command line rather than using other developer software (e.g. eclipse ).
