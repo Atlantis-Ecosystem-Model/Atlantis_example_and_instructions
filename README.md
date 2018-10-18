@@ -33,6 +33,10 @@ Atlantis model installation and running
    * [Linux](#linux)
    * [Windows](#windows)
    * [MacOS](#macos)
+* [Running Atlantis](#running-atlantis)
+   * [Linux](#linux)
+   * [Windows](#windows)
+   * [MacOS](#macos)
 * [Input files](#input-files)
 * [Output Files](#output-files)
 * [Supporting software](#supporting-software)
@@ -293,7 +297,7 @@ more detailed information bout how to build Atlantis can be found in the [Atlant
 # Running Atlantis
 ## Linux
 Running Atlantis on a Linux machine is relatively easy, you just need to follow these three steps:
- 1. [Compile Atlantis](##linux)
+ 1. [Compile Atlantis](#linux)
  2. Create the bash application program file (**.sh**)
  - Open your plain text editor, such as gedit, emacs or nano. (e.g. *runAtlantis.sh*)
  - Add the commands to run Atlantis, which should have the following fortat:
@@ -313,7 +317,7 @@ Running Atlantis on a Linux machine is relatively easy, you just need to follow 
 
 ## Windows
 Running Atlantis on Windows is relatively easy, you just need to follow these three steps:
- 1. [Compile Atlantis](##windows)
+ 1. [Compile Atlantis](#windows)
  2. Create the batch file (**.bat**)
  - Open your plain text editor, such as a Notepad or WordPad document. (e.g. *runAtlantis.bat*)
  - Add the commands to run Atlantis, which should have the following fortat:
@@ -326,7 +330,7 @@ Running Atlantis on Windows is relatively easy, you just need to follow these th
  file and press ENTER.
  ```
  C:\> cd Atlantis\run
- C:\Atlantis\run>  runAtlantis.bat
+ C:\Atlantis\run$  runAtlantis.bat
  ```
 # Example Operational Model
  The best way to learn is to play with an existing operational model. Sample input
