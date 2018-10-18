@@ -304,15 +304,21 @@ more detailed information bout how to build Atlantis can be found in the [Atlant
 # Running Atlantis
 <a name="linux3">
 
-## Linux
+## Linux or MacOS
 Running Atlantis on a Linux machine is relatively easy, you just need to follow these three steps:
  1. [Compile Atlantis](#linux)
  2. Create the bash application program file (**.sh**)
  - Open your plain text editor, such as gedit, emacs or nano. (e.g. *runAtlantis.sh*)
  - Add the commands to run Atlantis, which should have the following fortat:
+   If Your are using Ubuntu
    ```
    #!/bin/bash
    atlantisMerged -i in.nc 0 -o output.nc -r run.prm -f force.prm -p physics.prm -b biol.prm -h harvest.prm -a assess.prm -e economics.prm -s functionalGroups.csv -d outputFolder
+   ```
+   If Your are using MacOS
+   ```
+   #!/bin/bash
+   atlantis -i in.nc 0 -o output.nc -r run.prm -f force.prm -p physics.prm -b biol.prm -h harvest.prm -a assess.prm -e economics.prm -s functionalGroups.csv -d outputFolder
    ```
  3. Open the terminal window, navigate to your model run
  directory that has the  **.sh**  file in it (and your atlantis model), type the name of your
