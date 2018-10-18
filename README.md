@@ -233,7 +233,8 @@ $ ./configure
 $ make
 $ sudo make install
 ```
-To build Atlantis in another versions of Linux please visit the [Wiki-Building-Atlantis](https://confluence.csiro.au/display/Atlantis/Building+under+linux)
+To build Atlantis in another versions of Linux please visit the
+[Wiki-Building-Atlantis](https://confluence.csiro.au/display/Atlantis/Building+under+linux).
 ___
 ## Windows
 
@@ -291,6 +292,24 @@ more detailed information bout how to build Atlantis can be found in the [Atlant
 
 # Running Atlantis
 ## Linux
+Running Atlantis on a Linux machine is relatively easy, you just need to follow these three steps:
+ 1. [Compile Atlantis](##linux)
+ 2. Create the bash application program file (**.sh**)
+ - Open your plain text editor, such as gedit, emacs or nano. (e.g. *runAtlantis.sh*)
+ - Add the commands to run Atlantis, which should have the following fortat:
+   ```
+   #!/bin/bash
+   atlantisMerged -i in.nc 0 -o output.nc -r run.prm -f force.prm -p physics.prm -b biol.prm -h harvest.prm -a assess.prm -e economics.prm -s functionalGroups.csv -d outputFolder
+   ```
+ 3. Open the terminal window, navigate to your model run
+ directory that has the  **.sh**  file in it (and your atlantis model), type the name of your
+ **.sh** file and press ENTER.
+   ```
+   user@pc:~$
+   user@pc:~$ cd Atlantis/run
+   user@pc:~/Atlantis/run>  ./runAtlantis.sh
+   ```
+
 
 ## Windows
 Running Atlantis on Windows is relatively easy, you just need to follow these three steps:
@@ -298,23 +317,21 @@ Running Atlantis on Windows is relatively easy, you just need to follow these th
  2. Create the batch file (**.bat**)
  - Open your plain text editor, such as a Notepad or WordPad document. (e.g. *runAtlantis.bat*)
  - Add the commands to run Atlantis, which should have the following fortat:
- ``` txt
- atlantis -i in.nc 0 -o output.nc -r run.prm -f force.prm -p physics.prm -b biol.prm -h harvest.prm -a assess.prm -e economics.prm -s functionalGroups.csv -d outputFolder
+   ```
+   atlantis -i in.nc 0 -o output.nc -r run.prm -f force.prm -p physics.prm -b biol.prm -h harvest.prm -a assess.prm -e economics.prm -s functionalGroups.csv -d outputFolder
+   ```
+ 3. Open the dos command prompt window, navigate to your model run
+ directory that has the BAT files in it (and the  *.exe*  file if you have not
+ formally installed Atlantis to the command line paths), type the name of your BAT
+ file and press ENTER.
  ```
- 3.
-Open the Command Prompt (or Terminal) window, navigate to your model run directory that has the BAT files in it (and the EXE if you have not formally installed Atlantis to the command line paths), type the name of your BAT file and press ENTER.
-
-The BAT file should have the following format:
-
-atlantis -i in.nc 0 -o output.nc -r run.prm -f force.prm -p physics.prm -b biol.prm -h harvest.prm -a assess.prm -e economics.prm -s functionalGroups.csv -d outputFolder
-
-Descriptions of these parameter, including the run.prm file where changes to the run time can be made can be found below.
-
-Example:
-cd C:\Atlantis\run\SETas
-runSETas.bat
-
-The best way to learn is to play with an existing operational model. Sample input files for the SETas training model uses the. This is a small model that is quick to run but covers most of the functionality in Atlantis.
+ C:\> cd Atlantis\run
+ C:\Atlantis\run>  runAtlantis.bat
+ ```
+# Example Operational Model
+ The best way to learn is to play with an existing operational model. Sample input
+ files for the SETas training model uses the. This is a small model that is quick to
+ run but covers most of the functionality in Atlantis.
 
 MAP of example operational model
 Plots of inputs for the SETas model
