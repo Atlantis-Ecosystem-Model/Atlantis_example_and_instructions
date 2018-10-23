@@ -350,28 +350,18 @@ Running Atlantis on Windows is relatively easy, you just need to follow these th
  C:\Atlantis\run$  runAtlantis.bat
  ```
 # Example Operational Model
- The best way to learn is to play with an existing operational model. Sample input
- files for the SETas training model uses the. This is a small model that is quick to
- run but covers most of the functionality in Atlantis.
+The best way to learn is to play with an existing operational model.
+The most used model example is the South East Tasmania (SETas) Atlantis model. This
+ model is divided into 8 polygons and has 5 water layers and one sediment layer. It
+ has 35 functional groups of which 9 are groups structured by size, 23 are pool
+ biomass and three are detritus. This model also includes a hydrodynamic model that
+ represent the flows between boxes, also includes forcing of salinity, temperature,
+ fish catches, and arsenic concentration.
 
-<hr>
 <p align="center">
     <img alt="SETas" src="./img/SETas_bound.jpg" height="400" width="400">
 </p>
-<hr>
 
-
-
- ![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 1")
-
-MAP of example operational model
-Plots of inputs for the SETas model
-Plots of outputs for the SETas model
-
-
-
-
-# Atlantis files
 ## Input files
 Brief description of all the input files required to run an Atlantis model. See the
 Atlantis manual
@@ -379,7 +369,7 @@ Atlantis manual
 [pt2](https://confluence.csiro.au/display/Atlantis/Atlantis+Documentation?preview=/43155557/397385421/AtlantisUserGuide_PartII.pdf)
 or [Atlantis-wiki](https://confluence.csiro.au/display/Atlantis/Atlantis+Ecosystem+Model+Home+Page) for more details.
 ### Basic files
-* **Group.csv** A file containing information about the functional groups in the model.
+* [**Group.csv**](https://github.com/jporobicg/SETas_Exc/blob/master/SETasGroupsDem.csv) A file containing information about the functional groups in the model.
 * **XXX.bgm** The file defines the geography used in the Atlantis model to define the bathymetry of the model system.
 * **run.prm** A file storing all the parameters defining the run setup (timestep, run and stop times, etc.)
 * **physics.prm** Physics parameters (coefficients) - apart from setting some flags (e.g. turning resuspension on/off), point-source scaling and quarterly eddy strength distribution these parameters are not typically changed.
