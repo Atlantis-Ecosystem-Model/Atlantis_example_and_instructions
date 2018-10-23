@@ -39,6 +39,7 @@ Atlantis model installation and running
 * [Example Operational Model](#example-operational-model)
    * [Input](#input-files)
    * [Output](#output-files)
+   * [Example outputs](#outputs-for-the-setas-model)
 * [Supporting software](#supporting-software)
 
 # Preparing your machine
@@ -458,3 +459,19 @@ The discards of each species per fishery across the entire model domain (summed
 ### Predation by Age class
 ![test](./img/pred2.png)
 <hr>
+
+# Supporting software
+
+[Atlantistools](https://github.com/alketh/atlantistools) is a data processing and visualisation tool for R, which helps to
+process output from Atlantis models within R. Using atlantistools makes sure that
+Atlantis users use the same input/output file structure which facilitates intra and
+inter model comparisons.
+[Shiny R Atlantis](https://github.com/Atlantis-Ecosystem-Model/shinyrAtlantis) :  A
+package to help users of Atlantis investigate the parameters that are spread across
+multiple files (.csv, .nc) when constructing their ecosystem model.
+[Reactive Atlatnis](https://github.com/Atlantis-Ecosystem-Model/ReactiveAtlantis) :
+Reactive Atlantis has several tools that were created to help in the tuning,
+parameterization and analysis of the processes and parameters most often modified
+during the calibration of Atlantis.
+[rbgm](https://github.com/AustralianAntarcticDivision/rbgm) Allows reading of geometry from BGM files, either in raw coordinate form or as Spatial objects.
+[angstroms](https://github.com/AustralianAntarcticDivision/angstroms) The goal of angstroms is to provide easy access to Regional Ocean Modeling System (ROMS) output for R.
