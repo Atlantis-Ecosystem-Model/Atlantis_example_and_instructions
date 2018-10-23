@@ -356,7 +356,7 @@ Running Atlantis on Windows is relatively easy, you just need to follow these th
 
 <hr>
 <p align="center">
-    <img alt="SETas" src="./img/SETas_bound.jpg" height="200" width="200">
+    <img alt="SETas" src="./img/SETas_bound.jpg" height="400" width="400">
 </p>
 <hr>
 
