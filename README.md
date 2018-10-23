@@ -449,5 +449,5 @@ The total discards per species across the entire model domain (summed over fishe
 *  **DiscardsPerFishery.txt**
 The discards of each species per fishery across the entire model domain (summed over fisheries)
 ## example of outputs for the SETas model
-![test](./img/pred2.png)
+![test](./img/pred2.png = 250x250)
 <hr>
