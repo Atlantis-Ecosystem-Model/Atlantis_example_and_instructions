@@ -321,7 +321,7 @@ Running Atlantis on a Linux machine is relatively easy, you just need to follow 
    atlantis -i in.nc 0 -o output.nc -r run.prm -f force.prm -p physics.prm -b biol.prm -h harvest.prm -a assess.prm -e economics.prm -s functionalGroups.csv -d outputFolder
    ```
  3. Open the terminal window, navigate to your model run
- directory that has the  **.sh**  file in it (and your atlantis model), type the name of your
+ directory that has the  **.sh**  file in it (and your Atlantis model), type the name of your
  **.sh** file and press ENTER.
    ```
    user@pc:~$
@@ -336,7 +336,7 @@ Running Atlantis on Windows is relatively easy, you just need to follow these th
  1. [Compile Atlantis](#win2)
  2. Create the batch file (**.bat**)
  - Open your plain text editor, such as a Notepad or WordPad document. (e.g. *runAtlantis.bat*)
- - Add the commands to run Atlantis, which should have the following fortat:
+ - Add the commands to run Atlantis, which should have the following format:
    ```
    atlantis -i in.nc 0 -o output.nc -r run.prm -f force.prm -p physics.prm -b biol.prm -h harvest.prm -a assess.prm -e economics.prm -s functionalGroups.csv -d outputFolder
    ```
@@ -375,7 +375,7 @@ or [Atlantis-wiki](https://confluence.csiro.au/display/Atlantis/Atlantis+Ecosyst
 * [**physics.prm**](https://github.com/jporobicg/SETas_Exc/blob/master/VMPA_setas_physics.prm) Physics parameters (coefficients) - apart from setting some flags (e.g. turning resuspension on/off), point-source scaling and quarterly eddy strength distribution these parameters are not typically changed.
 * [**force.prm**](https://github.com/jporobicg/SETas_Exc/blob/master/VMPA_setas_force_fish_Trunk.prm) A file that lays out the forcing file pathways for hydrodynamics, point sources, climate time series (precipitation, irradiance, temperature and salinity), historical catch, fuel prices, GDP and complex spatial zonation.
 * [**biol.prm**](https://github.com/jporobicg/SETas_Exc/blob/master/VMPA_setas_biol_fishing_Trunk.prm) File detailing all the ecological parameters, submodel selection, network connection definitions and quarterly distributions.
-* **in.nc** A netcdf file where the initial conditions of the model are given, such as the initial biomass and size values for each functional group and age structure.
+* **in.nc** A NetCDF file where the initial conditions of the model are given, such as the initial biomass and size values for each functional group and age structure.
 ### Additional files
 * **assess.prm** File detailing the sample design, sampling error structures and basic assessment model parameters.
 * [**harvest.prm**](https://github.com/jporobicg/SETas_Exc/blob/master/harvest_stripped.prm) File storing all the fisheries and management parameters and submodel definitions.
@@ -462,8 +462,7 @@ The discards of each species per fishery across the entire model domain (summed
 
 # Supporting software
 
-
-* [Atlantistools](https://github.com/alketh/atlantistools) is a data processing and visualisation tool for R, which helps to
+* [Atlantistools](https://github.com/alketh/atlantistools) is a data processing and visualization tool for R, which helps to
 process output from Atlantis models within R. Using atlantistools makes sure that
 Atlantis users use the same input/output file structure which facilitates intra and
 inter model comparisons.
@@ -472,9 +471,9 @@ inter model comparisons.
 package to help users of Atlantis investigate the parameters that are spread across
 multiple files (.csv, .nc) when constructing their ecosystem model.
 
-* [Reactive Atlatnis](https://github.com/Atlantis-Ecosystem-Model/ReactiveAtlantis) :
+* [Reactive Atlantis](https://github.com/Atlantis-Ecosystem-Model/ReactiveAtlantis) :
 Reactive Atlantis has several tools that were created to help in the tuning,
-parameterization and analysis of the processes and parameters most often modified
+parametrization and analysis of the processes and parameters most often modified
 during the calibration of Atlantis.
 
 * [rbgm](https://github.com/AustralianAntarcticDivision/rbgm) Allows reading of
