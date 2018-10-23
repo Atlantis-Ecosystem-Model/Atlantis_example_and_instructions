@@ -306,10 +306,11 @@ more detailed information bout how to build Atlantis can be found in the [Atlant
 
 ## Linux or MacOS
 Running Atlantis on a Linux machine is relatively easy, you just need to follow these three steps:
- 1. [Compile Atlantis](#linux)
+ 1. [Compile Atlantis](#linux2)
  2. Create the bash application program file (**.sh**)
  - Open your plain text editor, such as gedit, emacs or nano. (e.g. *runAtlantis.sh*)
  - Add the commands to run Atlantis, which should have the following fortat:
+
    If Your are using Ubuntu
    ```
    #!/bin/bash
@@ -333,7 +334,7 @@ Running Atlantis on a Linux machine is relatively easy, you just need to follow 
 
 ## Windows
 Running Atlantis on Windows is relatively easy, you just need to follow these three steps:
- 1. [Compile Atlantis](#windows)
+ 1. [Compile Atlantis](#win2)
  2. Create the batch file (**.bat**)
  - Open your plain text editor, such as a Notepad or WordPad document. (e.g. *runAtlantis.bat*)
  - Add the commands to run Atlantis, which should have the following fortat:
@@ -352,6 +353,16 @@ Running Atlantis on Windows is relatively easy, you just need to follow these th
  The best way to learn is to play with an existing operational model. Sample input
  files for the SETas training model uses the. This is a small model that is quick to
  run but covers most of the functionality in Atlantis.
+
+<hr>
+<p align="center">
+    <img alt="Atlantis" src="./img/SETas_bound.jpg" height="200" width="200">
+</p>
+<hr>
+
+
+
+ ![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 1")
 
 MAP of example operational model
 Plots of inputs for the SETas model
