@@ -448,6 +448,13 @@ The catch of each species per fishery (in tonnes) across the entire model domain
 The total discards per species across the entire model domain (summed over fisheries)
 *  **DiscardsPerFishery.txt**
 The discards of each species per fishery across the entire model domain (summed over fisheries)
-## example of outputs for the SETas model
-![test](./img/pred2.png = 250x250)
+## Outputs for the SETas model
+### Trophic relationship between functional groups
+![fw](./img/foodweb.png)
+### Biomass dynamics by age class for a specific functional group (Small demersal fish)
+![biom](./img/out1.png)
+### Dynamics of total functional group's predation
+![test](./img/pred1.png)
+### Predation by Age class
+![test](./img/pred2.png)
 <hr>
