@@ -36,12 +36,10 @@ Atlantis model installation and running
    * [Linux](#linux3)
    * [Windows](#win3)
    * [MacOS](#macos3)
-* [Input files](#input-files)
-* [Output Files](#output-files)
-* [Supporting software](#supporting-software)
-* [Files](#atlantis-files)
+* [Example Operational Model](#example-operational-model)
    * [Input](#input-files)
    * [Output](#output-files)
+* [Supporting software](#supporting-software)
 
 # Preparing your machine
 ## Linux
@@ -365,22 +363,23 @@ The most used model example is the South East Tasmania (SETas) Atlantis model. T
 ## Input files
 Brief description of all the input files required to run an Atlantis model. See the
 Atlantis manual
-[pt1](https://confluence.csiro.au/display/Atlantis/Atlantis+Documentation?preview=/43155557/397385419/AtlantisUserGuide_PartI.pdf)
-[pt2](https://confluence.csiro.au/display/Atlantis/Atlantis+Documentation?preview=/43155557/397385421/AtlantisUserGuide_PartII.pdf)
+([part 1](https://confluence.csiro.au/display/Atlantis/Atlantis+Documentation?preview=/43155557/397385419/AtlantisUserGuide_PartI.pdf)
+and
+[part 2](https://confluence.csiro.au/display/Atlantis/Atlantis+Documentation?preview=/43155557/397385421/AtlantisUserGuide_PartII.pdf))
 or [Atlantis-wiki](https://confluence.csiro.au/display/Atlantis/Atlantis+Ecosystem+Model+Home+Page) for more details.
 ### Basic files
 * [**Group.csv**](https://github.com/jporobicg/SETas_Exc/blob/master/SETasGroupsDem.csv) A file containing information about the functional groups in the model.
-* **XXX.bgm** The file defines the geography used in the Atlantis model to define the bathymetry of the model system.
-* **run.prm** A file storing all the parameters defining the run setup (timestep, run and stop times, etc.)
-* **physics.prm** Physics parameters (coefficients) - apart from setting some flags (e.g. turning resuspension on/off), point-source scaling and quarterly eddy strength distribution these parameters are not typically changed.
-* **force.prm** A file that lays out the forcing file pathways for hydrodynamics, point sources, climate time series (precipitation, irradiance, temperature and salinity), historical catch, fuel prices, GDP and complex spatial zonation.
-* **biol.prm** File detailing all the ecological parameters, submodel selection, network connection definitions and quarterly distributions.
+* [**XXX.bgm**](https://github.com/jporobicg/SETas_Exc/blob/master/VMPA_setas.bgm) The file defines the geography used in the Atlantis model to define the bathymetry of the model system.
+* [**run.prm**](https://github.com/jporobicg/SETas_Exc/blob/master/VMPA_setas_run_fishing_F_Trunk.prm) A file storing all the parameters defining the run setup (timestep, run and stop times, etc.)
+* [**physics.prm**](https://github.com/jporobicg/SETas_Exc/blob/master/VMPA_setas_physics.prm) Physics parameters (coefficients) - apart from setting some flags (e.g. turning resuspension on/off), point-source scaling and quarterly eddy strength distribution these parameters are not typically changed.
+* [**force.prm**](https://github.com/jporobicg/SETas_Exc/blob/master/VMPA_setas_force_fish_Trunk.prm) A file that lays out the forcing file pathways for hydrodynamics, point sources, climate time series (precipitation, irradiance, temperature and salinity), historical catch, fuel prices, GDP and complex spatial zonation.
+* [**biol.prm**](https://github.com/jporobicg/SETas_Exc/blob/master/VMPA_setas_biol_fishing_Trunk.prm) File detailing all the ecological parameters, submodel selection, network connection definitions and quarterly distributions.
 * **in.nc** A netcdf file where the initial conditions of the model are given, such as the initial biomass and size values for each functional group and age structure.
 ### Additional files
 * **assess.prm** File detailing the sample design, sampling error structures and basic assessment model parameters.
-* **harvest.prm** File storing all the fisheries and management parameters and submodel definitions.
+* [**harvest.prm**](https://github.com/jporobicg/SETas_Exc/blob/master/harvest_stripped.prm) File storing all the fisheries and management parameters and submodel definitions.
 * **econ.prm** A file storing all the socio-economics parameters (for the market model, trading model, and black-book based effort allocation model).
-* **XXX.ts** Time-series files used to force the model with N data columns and a reference year of 1951
+* **XXX.ts** Time-series files used to force the model with N data columns and a reference year.
 
 ## Output files
 ### NetCDF output Files
@@ -449,5 +448,6 @@ The catch of each species per fishery (in tonnes) across the entire model domain
 The total discards per species across the entire model domain (summed over fisheries)
 *  **DiscardsPerFishery.txt**
 The discards of each species per fishery across the entire model domain (summed over fisheries)
-
+## example of outputs for the SETas model
+![test](./img/pred2.png)
 <hr>
