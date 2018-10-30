@@ -54,7 +54,7 @@ Atlantis requires the following packages and libraries to be installed. Please r
 * **pkg-config** Can get by without this but it will be easier if you have it.
 
 ```
-$ dpkg -l | grep build-essential	# Essential packages to build Debian
+$ dpkg -l | grep build-essential    # Essential packages to build Debian
 $ dpkg -l | grep autoconf      	    # Automatic configure script builder
 $ dpkg -l | grep subversion         # Version Control System (like GITHUB)
 $ dpkg -l | grep gawk          	    # GNU version of Awk
