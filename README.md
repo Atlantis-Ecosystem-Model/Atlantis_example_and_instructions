@@ -56,7 +56,7 @@ operating system for more details.
 
 ## Linux
 ####  Checking libraries and packages
-Atlantis requires the following packages and libraries to be installed. Please read the instructions for your operating system for more details.
+
 * **gcc** - GNU Compiler Collection
 * **subversion** - Used to check out the code from the code repository.
 * **netcdf** Development library
