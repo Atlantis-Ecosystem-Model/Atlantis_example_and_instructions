@@ -1,11 +1,13 @@
-# Atlantis model configuration
-
+# Atlantis ecosystem model
+Software for modelling marine ecosystem including spatial and temporal dynamics
+([Asta et al. 201?](https://www.journals.elsevier.com/ecological-modelling)).
 <hr>
 <p align="center">
     <img alt="Atlantis" src="./img/logo.jpg" height="200" width="200">
 </p>
 <hr>
 
+# Atlantis model configuration
 This page contains the basic instructions for running an Atlantis model on your
 computer. For more detailed explanation about the code,  the parameters and many more
 you should visit the [Wiki](https://confluence.csiro.au/display/Atlantis/Atlantis+Ecosystem+Model+Home+Page)
@@ -43,6 +45,15 @@ Atlantis model installation and running
 * [Supporting software](#supporting-software)
 
 # Preparing your machine
+Atlantis requires the following packages and libraries to be installed. This includes
+software that operates as: (i) a compiler, (ii) to check out the code (an SVN
+platform), and (iii) to a NetCDF file system. Please read the instructions for your
+operating system for more details.
+
+**Note**
+> If you have questions, visit
+[Atlantis-Wiki](https://confluence.csiro.au/pages/viewpage.action?pageId=43155693)
+
 ## Linux
 ####  Checking libraries and packages
 Atlantis requires the following packages and libraries to be installed. Please read the instructions for your operating system for more details.
@@ -95,10 +106,6 @@ the necessary packages and libraries. If you have questions, visit
 
 ---
 ## Windows
-* Compiler (Visual studio)
-* NetCDF Library
-* SVN
-
 #### Compiler:
 To build Atlantis you will need to have installed on your machine any of the
 following versions of Visual studio:
@@ -115,7 +122,7 @@ You can download all these versions [here](https://visualstudio.microsoft.com/vs
 Note
 >Atlantis will not compile using Visual Studio 2015
 #### NetCDF library
-Atlantis use the NetCDF file system. To be able to run Atlantis you will need to
+Atlantis uses the NetCDF file system. To be able to run Atlantis you will need to
 have the NetCDF 4 libraries installed on your computer. Please follow the instructions from the
 [developers](https://www.unidata.ucar.edu/software/netcdf/docs/winbin.html) or the
 guide provided here
@@ -305,7 +312,6 @@ more detailed information bout how to build Atlantis can be found in the [Atlant
 <a name="linux3">
 
 ## Linux or MacOS
-Running Atlantis on a Linux machine is relatively easy, you just need to follow these three steps:
  1. [Compile Atlantis](#linux2)
  2. Create the bash application program file (**.sh**)
  - Open your plain text editor, such as gedit, emacs or nano. (e.g. *runAtlantis.sh*)
@@ -333,7 +339,6 @@ Running Atlantis on a Linux machine is relatively easy, you just need to follow 
 <a name="win3">
 
 ## Windows
-Running Atlantis on Windows is relatively easy, you just need to follow these three steps:
  1. [Compile Atlantis](#win2)
  2. Create the batch file (**.bat**)
  - Open your plain text editor, such as a Notepad or WordPad document. (e.g. *runAtlantis.bat*)
@@ -464,23 +469,23 @@ The discards of each species per fishery across the entire model domain (summed
 
 # Supporting software
 
-* [Atlantistools](https://github.com/alketh/atlantistools) is a data processing and visualization tool for R, which helps to
+* [Atlantistools](https://github.com/alketh/atlantistools): Is a data processing and visualization tool for R, which helps to
 process output from Atlantis models within R. Using atlantistools makes sure that
 Atlantis users use the same input/output file structure which facilitates intra and
 inter model comparisons.
 
-* [Shiny R Atlantis](https://github.com/Atlantis-Ecosystem-Model/shinyrAtlantis) :  A
-package to help users of Atlantis investigate the parameters that are spread across
-multiple files (.csv, .nc) when constructing their ecosystem model.
+* [Shiny R Atlantis](https://github.com/Atlantis-Ecosystem-Model/shinyrAtlantis): An
+r-based shiny package that can be used to visually assess parameter values and
+initial conditions of an Atlantis model.
 
-* [Reactive Atlantis](https://github.com/Atlantis-Ecosystem-Model/ReactiveAtlantis) :
+* [Reactive Atlantis](https://github.com/Atlantis-Ecosystem-Model/ReactiveAtlantis):
 Reactive Atlantis has several tools that were created to help in the tuning,
 parametrization and analysis of the processes and parameters most often modified
 during the calibration of Atlantis.
 
-* [rbgm](https://github.com/AustralianAntarcticDivision/rbgm) Allows reading of
+* [rbgm](https://github.com/AustralianAntarcticDivision/rbgm): Allows reading of
   geometry from BGM files, either in raw coordinate form or as Spatial objects.
 
-* [angstroms](https://github.com/AustralianAntarcticDivision/angstroms) The goal of
+* [angstroms](https://github.com/AustralianAntarcticDivision/angstroms): The goal of
   angstroms is to provide easy access to Regional Ocean Modeling System (ROMS) output
   for R.
