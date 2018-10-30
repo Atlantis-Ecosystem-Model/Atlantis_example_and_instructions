@@ -1,6 +1,6 @@
 # Atlantis ecosystem model
 Software for modelling marine ecosystem including spatial and temporal dynamics
-([Asta et al. 201?](https://www.journals.elsevier.com/ecological-modelling)).
+([Asta et al. 201?](https://besjournals.onlinelibrary.wiley.com/journal/2041210x)).
 <hr>
 <p align="center">
     <img alt="Atlantis" src="./img/logo.jpg" height="200" width="200">
