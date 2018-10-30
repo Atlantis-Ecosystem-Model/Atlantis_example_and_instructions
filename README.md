@@ -56,11 +56,11 @@ Atlantis requires the following packages and libraries to be installed. Please r
 ```
 $ dpkg -l | grep build-essential	# Essential packages to build Debian
 $ dpkg -l | grep autoconf      	    # Automatic configure script builder
-$ dpkg -l | grep subversion      	# Version Control System (like GITHUB)
+$ dpkg -l | grep subversion         # Version Control System (like GITHUB)
 $ dpkg -l | grep gawk          	    # GNU version of Awk
-$ dpkg -l | grep proj           	# Program Proj.4 Cartographic projection
-$ dpkg -l | grep libxml2-dev 	    # Library for XML language
-$ dpkg -l | grep libnetcdf-dev	    # Library of development kit for NetCDF
+$ dpkg -l | grep proj               # Program Proj.4 Cartographic projection
+$ dpkg -l | grep libxml2-dev        # Library for XML language
+$ dpkg -l | grep libnetcdf-dev      # Library of development kit for NetCDF
 $ dpkg -l | grep flip              	# convert text file line endings between Unix and DOS
 ```
 
