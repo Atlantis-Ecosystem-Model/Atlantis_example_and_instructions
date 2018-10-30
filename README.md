@@ -13,13 +13,17 @@ computer. For more detailed explanation about the code,  the parameters and many
 you should visit the [Wiki](https://confluence.csiro.au/display/Atlantis/Atlantis+Ecosystem+Model+Home+Page)
 
  **Attention!**
->If you want a copy of the Atlantis main code (which you will need to start using the
+>Due to licensing requirements, new users must register to access the
+code. If you want a copy of the Atlantis main code (which you will need to start using the
 model) you will need to go first to this page
-[Atlantis-Wiki](https://confluence.csiro.au/display/Atlantis/CSIRO+licence+and+repository+request)
+[Atlantis-Wiki](https://confluence.csiro.au/display/Atlantis/Atlantis+Ecosystem+Model+Home+Page)
 and sign the
 [licence](https://confluence.csiro.au/display/Atlantis/CSIRO+licence+and+repository+request)
-agreement and then send an email to the developers, who will give you access to the
-code.
+agreement and then send an email to the developers. Registration gives access to the
+code and
+[Atlantis-Wiki](https://confluence.csiro.au/display/Atlantis/Atlantis+Ecosystem+Model+Home+Page)
+site, which has the latest updates about code modifications, code repository and examples of input and
+output files with expected types and values for model parameters.
 ___
 
 Atlantis model installation and running
@@ -122,24 +126,11 @@ You can download all these versions [here](https://visualstudio.microsoft.com/vs
 Note
 >Atlantis will not compile using Visual Studio 2015
 #### NetCDF library
-Atlantis uses the NetCDF file system. To be able to run Atlantis you will need to
-have the NetCDF 4 libraries installed on your computer. Please follow the instructions from the
-[developers](https://www.unidata.ucar.edu/software/netcdf/docs/winbin.html) or the
-guide provided here
+Follow instructions to download [NetCDF](https://www.unidata.ucar.edu/software/netcdf/docs/winbin.html). For further information see the
 [Atlantis-Wiki](https://confluence.csiro.au/display/Atlantis/NetCDF+4+in+Windows)
 
 #### SVN
-To check out the code you will need a svn platform. We support the use TortoiseSVN as
-a GUI to check out the code from the code repository. To install the software follow
-the instructions from the developer [tortoise](http://tortoisesvn.tigris.org/)
-**Note**
->If you want a copy of the Atlantis main code (which you will need to start using the
-model) you will need to go first to this page
-[Atlantis-Wiki](https://confluence.csiro.au/display/Atlantis/CSIRO+licence+and+repository+request)
-and sign the
-[licence](https://confluence.csiro.au/display/Atlantis/CSIRO+licence+and+repository+request)
-agreement and then send an email to the developers, who will give you access to the
-code.
+We support the use [tortoiseSVN](http://tortoisesvn.tigris.org/) as a GUI to check out the code.
 
 ---
 ## MacOS
@@ -200,6 +191,15 @@ The source code can be accessed through the following URL's:
 If you need information on how to check out the code from SVN have a look at this
 tutorial - [SVN](http://vegastrike.sourceforge.net/wiki/HowTo:Checkout_SVN)
 
+**Note**
+> Remember that if you want a copy of the Atlantis main code you will need to go
+first to this page
+[Atlantis-Page](https://confluence.csiro.au/display/Atlantis/CSIRO+licence+and+repository+request)
+and sign the
+[licence](https://confluence.csiro.au/display/Atlantis/CSIRO+licence+and+repository+request)
+agreement and then send an email to the developers, who will give you access to the
+code.
+
 #### Linux
 ```
 $ svn co https://svnserv.csiro.au/svn/ext/atlantis/Atlantis/trunk/atlantis
@@ -211,16 +211,9 @@ new menu option  **"SVN checkout"**  and enter the appropriate URL into the *"UR
 repository field’.
 
 
-Note
-> Remember that if you want a copy of the Atlantis main code you will need to go
-first to this page
-[Atlantis-Page](https://confluence.csiro.au/display/Atlantis/CSIRO+licence+and+repository+request)
-and sign the
-[licence](https://confluence.csiro.au/display/Atlantis/CSIRO+licence+and+repository+request)
-agreement and then send an email to the developers, who will give you access to the
-code.
-
 # Building Atlantis
+Once all the required software and source code has been installed on your machine, you will need to connect them.
+
 ___
 <a name="linux2">
 
@@ -248,7 +241,7 @@ $ make
 $ sudo make install
 ```
 To build Atlantis in another versions of Linux please visit the
-[Wiki-Building-Atlantis](https://confluence.csiro.au/display/Atlantis/Building+under+linux).
+[Wiki-Building-Linux](https://confluence.csiro.au/display/Atlantis/Building+under+linux).
 ___
 <a name="win2">
 
@@ -260,26 +253,14 @@ the root Atlantis SVN repository folder.
 * Visual Studio 2010 uses atlantis_VS2010.sln
 * Visual Studio 2012 uses atlantis_VS2012.sln
 
-If you have questions related visit [Wiki-Packages-Windows](https://confluence.csiro.au/display/Atlantis/Building+under+windows)
+If you have questions related visit [Wiki-Building-Windows](https://confluence.csiro.au/display/Atlantis/Building+under+windows)
 
-Code:
->Due to licensing requirements, new users must register to access the
-code. If you want a copy of the Atlantis main code (which you will need to start using the
-model) you will need to go first to this page
-[Atlantis-Wiki](https://confluence.csiro.au/display/Atlantis/Atlantis+Ecosystem+Model+Home+Page)
-and sign the
-[licence](https://confluence.csiro.au/display/Atlantis/CSIRO+licence+and+repository+request)
-agreement and then send an email to the developers. Registration gives access to the
-code and
-[Atlantis-Wiki](https://confluence.csiro.au/display/Atlantis/Atlantis+Ecosystem+Model+Home+Page)
-site, which has the latest updates about code modifications, code repository and examples of input and
-output files with expected types and values for model parameters.
 
 ___
 <a name="macos2">
 
 ## MacOS
-Initially,  to include all the source code (or the new added) you will need to build
+Initially,  to include all the source code you will need to build
 the code via command line rather than using other developer software (e.g. eclipse ).
 In the Atlantis code there is a file called *configure_mac*,  you will probably need
 to edit this file to point to each of the locations of the libraries you have
@@ -306,9 +287,11 @@ $ sudo make install
 ```
 This will install the Atlantis header files and the executable in /usr/local/include/Atlantis-1.0/Atlantis and /usr/local/bin
 
-more detailed information bout how to build Atlantis can be found in the [Atlantis-Wiki](https://confluence.csiro.au/display/Atlantis/Building+under+mac)
+more detailed information bout how to build Atlantis can be found in the [Wiki-building-macOS](https://confluence.csiro.au/display/Atlantis/Building+under+mac)
 
 # Running Atlantis
+At this stage you should be able to run an operational Atlantis model. An example is provided [below](example-operational-model)
+
 <a name="linux3">
 
 ## Linux or MacOS
@@ -456,7 +439,8 @@ The catch of each species per fishery (in tonnes) across the entire model domain
 The total discards per species across the entire model domain (summed over fisheries)
 *  **DiscardsPerFishery.txt**
 The discards of each species per fishery across the entire model domain (summed over fisheries)
-## Outputs for the SETas model
+## Example outputs for the SETas model
+
 ### Trophic relationship between functional groups
 ![fw](./img/foodweb.png)
 ### Biomass dynamics by age class for a specific functional group (Small demersal fish)
@@ -467,21 +451,25 @@ The discards of each species per fishery across the entire model domain (summed
 ![test](./img/pred2.png)
 <hr>
 
-# Supporting software
+# Additional useful software
+A number of
+[software](https://confluence.csiro.au/display/Atlantis/Atlantis+Helper+Tools) exist
+to process and visualize inputs and output files of an Atlantis model. Below some
+widely used examples.
 
 * [Atlantistools](https://github.com/alketh/atlantistools): Is a data processing and visualization tool for R, which helps to
 process output from Atlantis models within R. Using atlantistools makes sure that
 Atlantis users use the same input/output file structure which facilitates intra and
 inter model comparisons.
 
-* [Shiny R Atlantis](https://github.com/Atlantis-Ecosystem-Model/shinyrAtlantis): An
+* [ShinyRAtlantis](https://github.com/Atlantis-Ecosystem-Model/shinyrAtlantis): An
 r-based shiny package that can be used to visually assess parameter values and
 initial conditions of an Atlantis model.
 
-* [Reactive Atlantis](https://github.com/Atlantis-Ecosystem-Model/ReactiveAtlantis):
+* [ReactiveAtlantis](https://github.com/Atlantis-Ecosystem-Model/ReactiveAtlantis):
 Reactive Atlantis has several tools that were created to help in the tuning,
 parametrization and analysis of the processes and parameters most often modified
-during the calibration of Atlantis.
+during the calibration of Atlantis. This tool was used to produce the figures above.
 
 * [rbgm](https://github.com/AustralianAntarcticDivision/rbgm): Allows reading of
   geometry from BGM files, either in raw coordinate form or as Spatial objects.
