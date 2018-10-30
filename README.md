@@ -14,7 +14,7 @@ you should visit the [Wiki](https://confluence.csiro.au/display/Atlantis/Atlanti
 >If you want a copy of the Atlantis main code (which you will need to start using the
 model) you will need to go first to this page
 [Atlantis-Wiki](https://confluence.csiro.au/display/Atlantis/CSIRO+licence+and+repository+request)
-and sing the
+and sign the
 [licence](https://confluence.csiro.au/display/Atlantis/CSIRO+licence+and+repository+request)
 agreement and then send an email to the developers, who will give you access to the
 code.
@@ -27,7 +27,7 @@ Atlantis model installation and running
    * [Linux](#linux)
    * [Windows](#windows)
    * [MacOS](#macos)
-* [Check out the code](#check-out-the-code)
+* [Check out the code](#checking-out-the-atlantis-code)
 * [Building Atlantis](#building-atlantis)
    * [Linux](#linux2)
    * [Windows](#win2)
@@ -76,16 +76,17 @@ $ sudo apt-get install subversion
 $ sudo apt-get install libxml2-dev
 $ sudo apt-get install libnetcdf-dev
 $ sudo apt-get install gawk
-install proj.4 following the instruction from developers [webpage](https://proj4.org/)
 ```
+**proj4**  install proj.4 following the instruction from developers [webpage](https://proj4.org/)
+
 **Fedora**
 ```
 $ yum install netcdf-devel  # Install the netcdf developer package:
-$ yum install subversion  # Install Subversion
-$ yum install proj-devel  # Install the proj4 projection package
-$ yum install libxml2-devel  # Install the libxml developer package
-$ yum install automake  # Install automake
-$ yum install pkgconfig  # Install pkgconfig
+$ yum install subversion    # Install Subversion
+$ yum install proj-devel    # Install the proj4 projection package
+$ yum install libxml2-devel # Install the libxml developer package
+$ yum install automake      # Install automake
+$ yum install pkgconfig     # Install pkgconfig
 ```
 *Note*
 > Most computers with other versions of Linux, follow similar instructions to install
@@ -128,7 +129,7 @@ the instructions from the developer [tortoise](http://tortoisesvn.tigris.org/)
 >If you want a copy of the Atlantis main code (which you will need to start using the
 model) you will need to go first to this page
 [Atlantis-Wiki](https://confluence.csiro.au/display/Atlantis/CSIRO+licence+and+repository+request)
-and sing the
+and sign the
 [licence](https://confluence.csiro.au/display/Atlantis/CSIRO+licence+and+repository+request)
 agreement and then send an email to the developers, who will give you access to the
 code.
@@ -207,7 +208,7 @@ Note
 > Remember that if you want a copy of the Atlantis main code you will need to go
 first to this page
 [Atlantis-Page](https://confluence.csiro.au/display/Atlantis/CSIRO+licence+and+repository+request)
-and sing the
+and sign the
 [licence](https://confluence.csiro.au/display/Atlantis/CSIRO+licence+and+repository+request)
 agreement and then send an email to the developers, who will give you access to the
 code.
@@ -259,7 +260,7 @@ Code:
 code. If you want a copy of the Atlantis main code (which you will need to start using the
 model) you will need to go first to this page
 [Atlantis-Wiki](https://confluence.csiro.au/display/Atlantis/Atlantis+Ecosystem+Model+Home+Page)
-and sing the
+and sign the
 [licence](https://confluence.csiro.au/display/Atlantis/CSIRO+licence+and+repository+request)
 agreement and then send an email to the developers. Registration gives access to the
 code and
@@ -368,6 +369,7 @@ Atlantis manual
 and
 [part 2](https://confluence.csiro.au/display/Atlantis/Atlantis+Documentation?preview=/43155557/397385421/AtlantisUserGuide_PartII.pdf))
 or [Atlantis-wiki](https://confluence.csiro.au/display/Atlantis/Atlantis+Ecosystem+Model+Home+Page) for more details.
+> All the files can be downloaded [here](https://github.com/jporobicg/SETas_Exc/archive/master.zip)
 ### Basic files
 * [**Group.csv**](https://github.com/jporobicg/SETas_Exc/blob/master/SETasGroupsDem.csv) A file containing information about the functional groups in the model.
 * [**XXX.bgm**](https://github.com/jporobicg/SETas_Exc/blob/master/VMPA_setas.bgm) The file defines the geography used in the Atlantis model to define the bathymetry of the model system.
