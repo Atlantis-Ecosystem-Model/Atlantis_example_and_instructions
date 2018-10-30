@@ -46,7 +46,7 @@ Atlantis model installation and running
    * [Input](#input-files)
    * [Output](#output-files)
    * [Example outputs](#outputs-for-the-setas-model)
-* [Supporting software](#supporting-software)
+* [Supporting software](#additional-useful-software)
 
 # Preparing your machine
 Atlantis requires the following packages and libraries to be installed. This includes
@@ -454,7 +454,7 @@ The discards of each species per fishery across the entire model domain (summed
 # Additional useful software
 A number of
 [software](https://confluence.csiro.au/display/Atlantis/Atlantis+Helper+Tools) exist
-to process and visualize inputs and output files of an Atlantis model. Below some
+to process and visualize inputs and output files of an Atlantis model. Below are some
 widely used examples.
 
 * [Atlantistools](https://github.com/alketh/atlantistools): Is a data processing and visualization tool for R, which helps to
