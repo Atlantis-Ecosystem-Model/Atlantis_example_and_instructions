@@ -352,7 +352,7 @@ Follow instructions to download [NetCDF](https://www.unidata.ucar.edu/software/n
 * TortoiseSVN - SVN platform to check out the source code from the code repository
 [TortoiseSVN](http://tortoisesvn.tigris.org/) is the referred GUI to check out the code from the code repository.
 
-## Build 
+#### Build 
 Building in Visual Studio requires opening the appropriate visual studio solution in
 the root Atlantis SVN repository folder.
 * Visual Studio 2008 uses atlantis_VS2008.sln
