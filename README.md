@@ -183,7 +183,7 @@ Links to other software used can be accessed via the [Wiki](https://confluence.c
 Atlantis can be run on Linux, windows, and MacOS operating systems. Depending on your operating system
 Atlantis requires the a number of packages and libraries to be installed. This includes
 software that operates as: 
-  1. a compiler (e.g. Visal Studio for windows or gcc for Linux)
+  1. A compiler (e.g. Visal Studio for windows or gcc for Linux)
   2. An SVN platform to check out the code (e.g. Tortoise SVN for windows or subversion for Linux)
   3. A NetCDF file system or development library
   
@@ -237,7 +237,6 @@ In the case that you do not have any of the libraries or packages of the previou
 point installed, this is the way to install them on your machine.
 
 **Ubuntu**
-```
 $ sudo apt-get install build-essential
 $ sudo apt-get install autoconf
 $ sudo apt-get install subversion
@@ -248,7 +247,6 @@ $ sudo apt-get install gawk
 **proj4**  install proj.4 following the instruction from developers [webpage](https://proj4.org/)
 
 **Fedora**
-```
 $ yum install netcdf-devel  # Install the netcdf developer package:
 $ yum install subversion    # Install Subversion
 $ yum install proj-devel    # Install the proj4 projection package
@@ -267,14 +265,10 @@ $ svn co https://svnserv.csiro.au/svn/ext/atlantis/Atlantis/trunk/atlantis
 ```
 
 #### Build
-So far we have built Atlantis, for Linux, on the following platforms:
-* Ubuntu
-* Fedora
-* CentOS
-* Debian 7.2
-* Wheezy 64
+So far we have built Atlantis, for Linux, on the following platforms: Ubuntu, Fedora, 
+CentOS, Debian 7.2, and Wheezy 64
 
-If you want a choice which flavor to use we recommend 64-bit Ubuntu.
+We recommend 64-bit Ubuntu.
 
 ###### Instruction to build Atlantis under Ubuntu and Fedora.
 ```
@@ -296,9 +290,8 @@ To build Atlantis in another versions of Linux please visit the
  - Open your plain text editor, such as gedit, emacs or nano. (e.g. *runAtlantis.sh*)
  - Add the commands to run Atlantis, which should have the following fortat:
 
-   If Your are using Ubuntu
-   ```
-   #!/bin/bash
+   If you're using Ubuntu:
+      #!/bin/bash
    atlantisMerged -i in.nc 0 -o output.nc -r run.prm -f force.prm -p physics.prm -b biol.prm -h harvest.prm -a assess.prm -e economics.prm -s functionalGroups.csv -d outputFolder
    ```   
  3. Open the terminal window, navigate to your model run
@@ -316,7 +309,7 @@ To build Atlantis in another versions of Linux please visit the
 
 ## Windows
 #### Required software 
-* Visual Sudio C++ - the compiler
+* The compiler - any of the following versions of Visual Sudio C++ 
 	** Visual Studio C++ 2008
 	** Visual Studio C++ 2010
 	** Visual Studio C++ 2012
@@ -329,12 +322,12 @@ You can download all these versions [here](https://visualstudio.microsoft.com/vs
 Note
 >Atlantis will not compile using Visual Studio 2015
 
-* NetCDF 4 -  development library
-Follow instructions to download [NetCDF](https://www.unidata.ucar.edu/software/netcdf/docs/winbin.html). For further information see the
+* A NetCDF development library    
+Follow instructions to download [NetCDF 4](https://www.unidata.ucar.edu/software/netcdf/docs/winbin.html). For further information see the
 [Atlantis-Wiki](https://confluence.csiro.au/display/Atlantis/NetCDF+4+in+Windows)
 
-* TortoiseSVN - SVN platform to check out the source code from the code repository
-[TortoiseSVN](http://tortoisesvn.tigris.org/) is the referred GUI to check out the code from the code repository.
+* An SVN platform to check out the source code from the code repository
+Dowload [TortoiseSVN](http://tortoisesvn.tigris.org/) as the preferred GUI.
 
 #### Build 
 Building in Visual Studio requires opening the appropriate visual studio solution in
@@ -346,7 +339,7 @@ the root Atlantis SVN repository folder.
 * Step 1: In Visual Studio, right click on the atlantis solution and select ‘Rebuild all’. The
 build process should show all projects succeeding with 0 failings.
 
-* The executable file *atlantismain.exe* should then be copy from the
+* Step 2: The executable file *atlantismain.exe* should then be copy from the
 atlantismain/Debug folder to the folder where your model run files are kept.
 
 For more details on the building process, including how to fix common errors,
@@ -363,14 +356,14 @@ provided after registering to be a user.
 
 #### Run
  Create the batch file (**.bat**)
- - Open your plain text editor, such as a Notepad or WordPad document. (e.g. *runAtlantis.bat*)
+ - Open your plain text editor (e.g. Textpad, Notepad or WordPad) and save (e.g. *runAtlantis.bat*)
  - Add the commands to run Atlantis, which should have the following format:
    ```
    atlantis -i in.nc 0 -o output.nc -r run.prm -f force.prm -p physics.prm -b biol.prm -h harvest.prm -a assess.prm -e economics.prm -s functionalGroups.csv -d outputFolder
    ```
  3. Open the dos command prompt window, navigate to your model run
- directory that has the BAT files in it (and the *.exe*  file if you have not
- formally installed Atlantis to the command line paths), type the name of your BAT
+ directory that has the *.bat* files in it (and the *.exe*  file if you have not
+ formally installed Atlantis to the command line paths), type the name of your *.bat*
  file and press ENTER.
  ```
  C:\> cd Atlantis\run
