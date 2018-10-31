@@ -316,8 +316,6 @@ To build Atlantis in another versions of Linux please visit the
   
   You can download all these versions [here](https://visualstudio.microsoft.com/vs/older-downloads/)
 
-<a name="abcde">
-
 > *Note: Atlantis will not compile using Visual Studio 2015*
 
 2. A NetCDF development library
@@ -327,7 +325,7 @@ To build Atlantis in another versions of Linux please visit the
 
 3. An SVN platform to check out the source code from the code repository
   
-  Dowload [TortoiseSVN](http://tortoisesvn.tigris.org/) as the preferred GUI.
+    Dowload [TortoiseSVN](http://tortoisesvn.tigris.org/) as the preferred GUI.
 
 #### Build 
 Building in Visual Studio requires opening the appropriate visual studio solution in
