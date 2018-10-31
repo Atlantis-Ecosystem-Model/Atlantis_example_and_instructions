@@ -277,12 +277,12 @@ $ yum install pkgconfig     # Install pkgconfig
 the necessary packages and libraries. If you have questions, visit
 [Wiki-Packages-Linux](https://confluence.csiro.au/display/Atlantis/Building+under+linux)
 
-## Code
+#### Code
 ```
 $ svn co https://svnserv.csiro.au/svn/ext/atlantis/Atlantis/trunk/atlantis
 ```
 
-## Build
+#### Build
 So far we have built Atlantis, for Linux, on the following platforms:
 * Ubuntu
 * Fedora
@@ -307,7 +307,7 @@ $ sudo make install
 To build Atlantis in another versions of Linux please visit the
 [Wiki-Building-Linux](https://confluence.csiro.au/display/Atlantis/Building+under+linux).
 
-## Run Atlantis
+#### Run
  Create the bash application program file (**.sh**)
  - Open your plain text editor, such as gedit, emacs or nano. (e.g. *runAtlantis.sh*)
  - Add the commands to run Atlantis, which should have the following fortat:
@@ -371,7 +371,7 @@ visit [Wiki-Building-Windows](https://confluence.csiro.au/display/Atlantis/Build
 ___
 <a name="macos2">
 
-## Code
+#### Code
 To locally compile the code, create a new folder or checkout directory for your
 source code (e.g. c:\Code\atlantis). Right click in this new folder and select the
 new menu option  **"SVN checkout"** and enter the appropriate URL into the *"URL"* of the
@@ -380,7 +380,7 @@ You will then be asked to authenticate using your domain username and password
 provided after registering to be a user.
 
 
-## Run
+#### Run
  Create the batch file (**.bat**)
  - Open your plain text editor, such as a Notepad or WordPad document. (e.g. *runAtlantis.bat*)
  - Add the commands to run Atlantis, which should have the following format:
@@ -445,7 +445,7 @@ $ make
 $ sudo make install
 ```
 
-## Build from the source code
+#### Build 
 Initially,  to include all the source code you will need to build
 the code via command line rather than using other developer software (e.g. eclipse ).
 In the Atlantis code there is a file called *configure_mac*,  you will probably need
@@ -475,7 +475,7 @@ This will install the Atlantis header files and the executable in /usr/local/inc
 more detailed information bout how to build Atlantis can be found in the [Wiki-building-macOS](https://confluence.csiro.au/display/Atlantis/Building+under+mac)
 
 
-## Run Atlantis
+#### Run
  Create the bash application program file (**.sh**)
  - Open your plain text editor, such as gedit, emacs or nano. (e.g. *runAtlantis.sh*)
  - Add the commands to run Atlantis, which should have the following fortat:
