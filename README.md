@@ -16,7 +16,6 @@ and [part 2](https://confluence.csiro.au/display/Atlantis/Atlantis+Documentation
 </p>
 <hr>
 
-=======
 
  **Attention!**
 >Due to licensing requirements, new users must register to access the
@@ -31,14 +30,14 @@ code and
 site, which has the latest updates about code modifications, code repository and examples of input and
 output files with expected types and values for model parameters.
 ___
-===============
+
 ### Index
 * [Example Operational Model](#example-operational-model)
    * [Inputs](#input-files)
    * [Outputs](#output-files)
    * [Example visual outputs](#outputs-for-the-setas-model)
    * [Software to assess inputs and outputs](#Software-to-assess-input-and-output-files)
-* [Model Instualation and running](#Atlantis-model-installation-and-running)
+* [Model Instualation and Running](#Atlantis-model-installation-and-running)
    * [Preparing your machine](#preparing-your-machine)
    * [Additional useful software](#additional-useful-software)
    * [Check out the code](#checking-out-the-atlantis-code)
