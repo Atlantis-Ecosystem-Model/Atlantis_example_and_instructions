@@ -323,7 +323,9 @@ To build Atlantis in another versions of Linux please visit the
 >Atlantis will not compile using Visual Studio 2015
 
 2. A NetCDF development library
-  Follow instructions to download [NetCDF 4](https://www.unidata.ucar.edu/software/netcdf/docs/winbin.html). For further information see the
+
+2. A NetCDF development library
+    Follow instructions to download [NetCDF 4](https://www.unidata.ucar.edu/software/netcdf/docs/winbin.html). For further information see the
 [Atlantis-Wiki](https://confluence.csiro.au/display/Atlantis/NetCDF+4+in+Windows)
 
 3. An SVN platform to check out the source code from the code repository
@@ -333,9 +335,9 @@ To build Atlantis in another versions of Linux please visit the
 #### Build 
 Building in Visual Studio requires opening the appropriate visual studio solution in
 the root Atlantis SVN repository folder.
-* Visual Studio 2008 uses atlantis_VS2008.sln
-* Visual Studio 2010 uses atlantis_VS2010.sln
-* Visual Studio 2012 uses atlantis_VS2012.sln
+    * Visual Studio 2008 uses atlantis_VS2008.sln
+    * Visual Studio 2010 uses atlantis_VS2010.sln
+    * Visual Studio 2012 uses atlantis_VS2012.sln
 
 Step 1: In Visual Studio, right click on the atlantis solution and select ‘Rebuild all’. The
 build process should show all projects succeeding with 0 failings.
