@@ -3,9 +3,9 @@ Software for modelling marine ecosystem including spatial and temporal dynamics.
 
 [Download manuscript](https://besjournals.onlinelibrary.wiley.com/journal/2041210x)
 
-This page contains (i) an operational example of an Atlatis model, including details of the parameters (input) files and model output files, and 
-(ii) a summary of how Atlantis model instructions for running an Atlantis model on your computer. 
-For more detailed explanation about the code, the parameters and how to run Atlantis visit Atlantis manual
+This page contains an example of an operational Atlatis model with details of the parameter (input) files and model output files given. 
+It also gives brief details and instructions on how to compile and run an Atlantis model on your computer. 
+For more detailed explanation about the code, the parameters and how to run Atlantis you will need to download the Atlantis manual
 ([part 1](https://research.csiro.au/atlantis/?ddownload=111)
 and [part 2](https://confluence.csiro.au/display/Atlantis/Atlantis+Documentation?preview=/43155557/397385421/AtlantisUserGuide_PartII.pdf)).
 
@@ -50,7 +50,9 @@ ___
 
 
 # Example Operational Model
-The best way to learn is to play with an existing operational model.
+
+The best way to learn about a model, including it's input (parameter) files and outputs, 
+is through the illustration of an existing operational model.
 The most used model example is the South East Tasmania (SETas) Atlantis model. This
  model is divided into 8 polygons and has 5 water layers and one sediment layer. It
  has 35 functional groups of which 9 are groups structured by size, 23 are pool
@@ -63,13 +65,13 @@ The most used model example is the South East Tasmania (SETas) Atlantis model. T
 </p>
 
 ## Input files
-Brief description of all the input files required to run an Atlantis model. See the
+Here we provide a brief description of all the input files required to run an Atlantis model. For more details see the
 Atlantis manual
 ([part 1](https://confluence.csiro.au/display/Atlantis/Atlantis+Documentation?preview=/43155557/397385419/AtlantisUserGuide_PartI.pdf)
 and
 [part 2](https://confluence.csiro.au/display/Atlantis/Atlantis+Documentation?preview=/43155557/397385421/AtlantisUserGuide_PartII.pdf))
-or [Atlantis-wiki](https://confluence.csiro.au/display/Atlantis/Atlantis+Ecosystem+Model+Home+Page) for more details.
-> All the files can be downloaded [here](https://github.com/jporobicg/SETas_Exc/archive/master.zip)
+or [Atlantis-wiki](https://confluence.csiro.au/display/Atlantis/Atlantis+Ecosystem+Model+Home+Page).
+> All the input files needed to run the SETas model can be downloaded [here](https://github.com/jporobicg/SETas_Exc/archive/master.zip)
 ### Basic files
 * [**Group.csv**](https://github.com/jporobicg/SETas_Exc/blob/master/SETasGroupsDem.csv) A file containing information about the functional groups in the model.
 * [**Geography.bgm**](https://github.com/jporobicg/SETas_Exc/blob/master/VMPA_setas.bgm) The file defines the geography used in the Atlantis model to define the bathymetry of the model system.
@@ -130,7 +132,7 @@ over all fleets). Tracers provided are:
 
 ### Plain text files
 These files can contains a simplified or aggregate version of the information
-contained in the NetCDF Files or and specific output.
+contained in the NetCDF files or and specific output.
 ##### Biologically relevant output:
 *  **BiomIndx.txt**
 Biomass in tonnes of each species across the entire model domain
@@ -164,9 +166,8 @@ The discards of each species per fishery across the entire model domain (summed
 
 
 ## Software to assess input and output files
-A number of
-[software](https://confluence.csiro.au/display/Atlantis/Atlantis+Helper+Tools) exist
-to process and visualize inputs and output files of an Atlantis model. Below are some
+To process and visualize inputs and output files of an Atlantis model, there exists a number of
+[software](https://confluence.csiro.au/display/Atlantis/Atlantis+Helper+Tools). Below we describe some
 widely used examples.
 
 * [Atlantistools](https://github.com/alketh/atlantistools): Is a data processing and visualization tool for R, which helps to
@@ -191,7 +192,7 @@ during the calibration of Atlantis. This tool was used to produce the figures ab
   for R.
 <hr>
 
-# Atlantis model installation and running
+# Model installation and running
 
 ## Preparing your machine
 Atlantis can be run on Linux, windows, and MacOS operating systems. Depending on your [operating system](#Specific-instructions-for-Operating-Systems)
@@ -222,19 +223,16 @@ code.
 ## Building Atlantis
 Once you have your compiler, NetCDF reader and source code, it is time to build
 (upload and connect) your model files.
-___
-<a name="linux2">
 
 ## Running Atlantis
 At this stage you should be able to run an operational model (such as that provided [below](example-operational-model).)
 
+<hr>
 <a name="linux3">
 
 
 
-
-
-# Specific-instructions-for-Operating-Systems
+# Specific instructions for your Operating Systems
 
 ## Linux
 ####  Checking libraries and packages
