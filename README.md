@@ -167,8 +167,7 @@ The discards of each species per fishery across the entire model domain (summed
 
 ## Software to analyze input and output files
 To process and visualize inputs and output files of an Atlantis model, there exists a number of
-[software](https://confluence.csiro.au/display/Atlantis/Atlantis+Helper+Tools). Below we describe some
-widely used examples.
+software. Below we describe some widely used examples.
 
 * [Atlantistools](https://github.com/alketh/atlantistools): Is a data processing and visualization tool for R, which helps to
 process output from Atlantis models within R. Using atlantistools makes sure that
@@ -190,6 +189,9 @@ during the calibration of Atlantis. This tool was used to produce the figures ab
 * [angstroms](https://github.com/AustralianAntarcticDivision/angstroms): The goal of
   angstroms is to provide easy access to Regional Ocean Modeling System (ROMS) output
   for R.
+
+Links to other software used can be accessed via the [Wiki](https://confluence.csiro.au/display/Atlantis/Atlantis+Helper+Tools). 
+
 <hr>
 
 # Model installation and running
