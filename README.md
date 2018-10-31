@@ -12,13 +12,9 @@ This page contains the summary instructions for running an Atlantis model on you
 computer. For more detailed explanation about the code,  the parameters and how to run Atlantis visit Atlantis manual
 ([part 1](https://research.csiro.au/atlantis/?ddownload=111)
 and
-<<<<<<< HEAD
 [part 2](https://research.csiro.au/atlantis/?ddownload=112))
 
 =======
-[part 2](https://confluence.csiro.au/display/Atlantis/Atlantis+Documentation?preview=/43155557/397385421/AtlantisUserGuide_PartII.pdf))
-TEST 2
->>>>>>> 463ea7eee3f90efdd841f5e8e686f2ac1bbe3e80
  **Attention!**
 >Due to licensing requirements, new users must register to access the
 code. If you want a copy of the Atlantis main code (which you will need to start using the
