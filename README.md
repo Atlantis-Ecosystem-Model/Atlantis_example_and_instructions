@@ -310,20 +310,19 @@ To build Atlantis in another versions of Linux please visit the
 ## Windows
 #### Required software 
 1. The compiler - any of the following versions of Visual Sudio C++ 
-  * Visual Studio C++ 2008
-  * Visual Studio C++ 2010
-  * Visual Studio C++ 2012
-  * Visual Studio C++ Express Edition
+    * Visual Studio C++ 2008
+    * Visual Studio C++ 2010
+    * Visual Studio C++ 2012
+    * Visual Studio C++ Express Edition
   
   You can download all these versions [here](https://visualstudio.microsoft.com/vs/older-downloads/)
 
 <a name="abcde">
 
-Note
+*Note*
 >Atlantis will not compile using Visual Studio 2015
 
-
-2. A NetCDF development library    
+2. A NetCDF development library
   Follow instructions to download [NetCDF 4](https://www.unidata.ucar.edu/software/netcdf/docs/winbin.html). For further information see the
 [Atlantis-Wiki](https://confluence.csiro.au/display/Atlantis/NetCDF+4+in+Windows)
 
