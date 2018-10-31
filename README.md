@@ -1,7 +1,14 @@
 # Atlantis ecosystem model
 Software for modelling marine ecosystem including spatial and temporal dynamics.
 
-This page is to be used as a supplementary to ([Asta et al. 201?](https://besjournals.onlinelibrary.wiley.com/journal/2041210x) and the [Atlantis manual]((https://research.csiro.au/atlantis/?ddownload=111)).
+[Download manuscript](https://besjournals.onlinelibrary.wiley.com/journal/2041210x)
+
+This page contains (i) an operational example of an Atlatis model, including details of the parameters (input) files and model output files, and 
+(ii) a summary of how Atlantis model instructions for running an Atlantis model on your computer. 
+For more detailed explanation about the code, the parameters and how to run Atlantis visit Atlantis manual
+([part 1](https://research.csiro.au/atlantis/?ddownload=111)
+and [part 2](https://confluence.csiro.au/display/Atlantis/Atlantis+Documentation?preview=/43155557/397385421/AtlantisUserGuide_PartII.pdf)).
+
 <hr>
 
 <p align="center">
@@ -9,14 +16,7 @@ This page is to be used as a supplementary to ([Asta et al. 201?](https://besjou
 </p>
 <hr>
 
-# Page setup 
-This page contains (i) an operational example of an Atlatis model, including details of the parameters (input) files and model output files, and (ii) a summary of how Atlantis model instructions for running an Atlantis model on your
-computer. For more detailed explanation about the code, the parameters and how to run Atlantis visit Atlantis manual
-([part 1](https://research.csiro.au/atlantis/?ddownload=111)
-and [part 2](https://confluence.csiro.au/display/Atlantis/Atlantis+Documentation?preview=/43155557/397385421/AtlantisUserGuide_PartII.pdf))
-
 =======
-
  **Attention!**
 >Due to licensing requirements, new users must register to access the
 code. If you want a copy of the Atlantis main code (which you will need to start using the
@@ -30,7 +30,6 @@ code and
 site, which has the latest updates about code modifications, code repository and examples of input and
 output files with expected types and values for model parameters.
 ___
-
 ===============
 ### Index
 * [Example Operational Model](#example-operational-model)
