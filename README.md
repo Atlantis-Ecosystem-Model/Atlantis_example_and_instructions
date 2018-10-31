@@ -8,9 +8,11 @@ Software for modelling marine ecosystem including spatial and temporal dynamics
 <hr>
 
 # Atlantis model configuration
-This page contains the basic instructions for running an Atlantis model on your
-computer. For more detailed explanation about the code,  the parameters and many more
-you should visit the [Wiki](https://confluence.csiro.au/display/Atlantis/Atlantis+Ecosystem+Model+Home+Page)
+This page contains the summary instructions for running an Atlantis model on your
+computer. For more detailed explanation about the code,  the parameters and how to run Atlantis visit Atlantis manual
+([part 1](https://confluence.csiro.au/display/Atlantis/Atlantis+Documentation?preview=/43155557/397385419/AtlantisUserGuide_PartI.pdf)
+and
+[part 2](https://confluence.csiro.au/display/Atlantis/Atlantis+Documentation?preview=/43155557/397385421/AtlantisUserGuide_PartII.pdf))
 
  **Attention!**
 >Due to licensing requirements, new users must register to access the
