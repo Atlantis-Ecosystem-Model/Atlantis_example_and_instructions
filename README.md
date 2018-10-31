@@ -1,26 +1,24 @@
 # Atlantis ecosystem model
 Software for modelling marine ecosystem including spatial and temporal dynamics.
 
-This page is to be used as a supplementary to ([Asta et al. 201?](https://besjournals.onlinelibrary.wiley.com/journal/2041210x)).
+This page is to be used as a supplementary to ([Asta et al. 201?](https://besjournals.onlinelibrary.wiley.com/journal/2041210x) and the [Atlantis manual]((https://research.csiro.au/atlantis/?ddownload=111)).
 <hr>
+
 <p align="center">
     <img alt="Atlantis" src="./img/logo.jpg" height="200" width="200">
 </p>
 <hr>
 
-# Atlantis model configuration
+# Page setup 
 This page contains the summary instructions for running an Atlantis model on your
-computer. For more detailed explanation about the code,  the parameters and how to run Atlantis visit Atlantis manual
+computer. For more detailed explanation about the code, the parameters and how to run Atlantis visit Atlantis manual
 ([part 1](https://research.csiro.au/atlantis/?ddownload=111)
-and
+and [part 2](https://confluence.csiro.au/display/Atlantis/Atlantis+Documentation?preview=/43155557/397385421/AtlantisUserGuide_PartII.pdf))
+
 <<<<<<< HEAD
-[part 2](https://confluence.csiro.au/display/Atlantis/Atlantis+Documentation?preview=/43155557/397385421/AtlantisUserGuide_PartII.pdf))
 
 =======
-[part 2](https://research.csiro.au/atlantis/?ddownload=112))
 
-=======
->>>>>>> baf635767b9a35f3f70454bf00d34ca0e445617c
  **Attention!**
 >Due to licensing requirements, new users must register to access the
 code. If you want a copy of the Atlantis main code (which you will need to start using the
