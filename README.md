@@ -203,7 +203,7 @@ operating system for more details [below](Specific-instructions-for-Operating-Sy
 
 ## Checking out the Atlantis code.
 
-The source code can be accessed through a SVN platform to get access to the code repository. 
+The source code can be accessed through a SVN platform. 
 
 **Note**
 > Remember that if you want a copy of the Atlantis main code you will need to go
@@ -306,8 +306,6 @@ $ sudo make install
 ```
 To build Atlantis in another versions of Linux please visit the
 [Wiki-Building-Linux](https://confluence.csiro.au/display/Atlantis/Building+under+linux).
-___
-<a name="win2">
 
 ## Run Atlantis
  Create the bash application program file (**.sh**)
@@ -333,9 +331,7 @@ ___
 ---
 
 ## Windows
-#### Compiler:
-To build Atlantis you will need to have installed on your machine any of the
-following versions of Visual studio:
+#### To build Atlantis you will need to have installed any of the following versions of Visual studio:
 
 * Visual Studio C++ 2008
 * Visual Studio C++ 2010
