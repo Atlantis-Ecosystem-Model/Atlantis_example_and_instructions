@@ -10,12 +10,10 @@ This page is to be used as a supplementary to ([Asta et al. 201?](https://besjou
 <hr>
 
 # Page setup 
-This page contains the summary instructions for running an Atlantis model on your
+This page contains (i) an operational example of an Atlatis model, including details of the parameters (input) files and model output files, and (ii) a summary of how Atlantis model instructions for running an Atlantis model on your
 computer. For more detailed explanation about the code, the parameters and how to run Atlantis visit Atlantis manual
 ([part 1](https://research.csiro.au/atlantis/?ddownload=111)
 and [part 2](https://confluence.csiro.au/display/Atlantis/Atlantis+Documentation?preview=/43155557/397385421/AtlantisUserGuide_PartII.pdf))
-
-<<<<<<< HEAD
 
 =======
 
