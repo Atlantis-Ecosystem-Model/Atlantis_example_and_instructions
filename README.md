@@ -96,28 +96,22 @@ Atlantis model is a box model, not a grid model. The normal packages such as
 Atlantis output NetCDF files. To read these outputs you can use your own code or one
 of the tools provided [below](#supporting-software).
 *  **biol.nc**
-This 3D (time, box, layer) contains snapshots of the tracers in the model at given time frequencies in each box and layer.
+Contains snapshots of the tracers in the model at given time frequencies in each box and layer.
 *  **biolTOT.nc**
-This 2D (time, box) output file contains a sum of the tracer values in each box.
+Contains a sum of the tracer values in each box and time-step.
 *  **biolPROD.nc**
-This output file is useful during the model tuning process and contains 2D data (time, box) for each box. It contains the tracers for production and grazing for invertebrate groups, growth and consumption for each age class for each vertebrate group, and a number of indices such as the diversity index.
+Useful during the model tuning process and contains 2D data (time, box) for each box. 
+It also contains the tracers for production and grazing for invertebrate groups, growth and consumption for each age class for each vertebrate group, and a number of indices such as the diversity index.
 *  **CATCH.nc**
-This output file contains cumulative values of catch and discard per species and age class (cohort) in numbers. 
+Contains cumulative values of catch and discard per species and age class (cohort) in numbers. 
 It also details catch and discards per species per fishery (in tonnes per box) 
-
 *  **TOTCATCH.nc**
-This output files also contains cumulative values in tonnes. All values are zeroed after they are written out. Tracers include:
-   * Total catch per species
-   * Total recreational catch per species
-   * Total discards per species.
+This output files also contains cumulative total catch and discards per species in tonnes. All values are zeroed after they are written out. Tracers include:
 *  **ANNAGEBIO.nc**
 This output provides abundance in each annual age class (Numbers at age per species)
 
 *  **ANNAGECATCH.nc**
-This output provides numbers at annual age class in the catch and discards (summed
-over all fleets). Tracers provided are:
-   * Numbers at age per species in the catch
-   * Numbers at age per species in the discards
+Provides numbers at age per species in the catch and discards (summed over all fleets). 
 
 ### Plain text files
 These files can contains a simplified or aggregate version of the information
