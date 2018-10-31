@@ -320,7 +320,7 @@ To build Atlantis in another versions of Linux please visit the
 <a name="abcde">
 
 *Note*
->Atlantis will not compile using Visual Studio 2015
+> *Note* Atlantis will not compile using Visual Studio 2015
 
 2. A NetCDF development library
 
