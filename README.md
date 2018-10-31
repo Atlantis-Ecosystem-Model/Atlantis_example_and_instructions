@@ -37,7 +37,7 @@ ___
    * [Inputs](#input-files)
    * [Outputs](#output-files)
    * [Example visual outputs](#outputs-for-the-setas-model)
-   * [Additional useful software](#additional-useful-software)
+   * [Software to assess inputs and outputs](#Software-to-assess-input-and-output-files)
 * [Model Instualation and running](#Atlantis-model-installation-and-running)
    * [Preparing your machine](#preparing-your-machine)
    * [Additional useful software](#additional-useful-software)
@@ -164,7 +164,7 @@ The discards of each species per fishery across the entire model domain (summed
 ![test](./img/pred2.png)
 
 
-## Useful software to process and visualize Atlantis files
+## Software to assess input and output files
 A number of
 [software](https://confluence.csiro.au/display/Atlantis/Atlantis+Helper+Tools) exist
 to process and visualize inputs and output files of an Atlantis model. Below are some
