@@ -183,9 +183,9 @@ Links to other software used can be accessed via the [Wiki](https://confluence.c
 Atlantis can be run on Linux, windows, and MacOS operating systems. Depending on your operating system
 Atlantis requires the a number of packages and libraries to be installed. This includes
 software that operates as: 
-  1. a compiler, 
-  2. An SVN platform to check out the code, and 
-  3. A NetCDF file system. 
+  1. a compiler (e.g. Visal Studio for windows or gcc for Linux)
+  2. An SVN platform to check out the code (e.g. Tortoise SVN for windows or subversion for Linux)
+  3. A NetCDF file system or development library
   
   Please read the instructions for your operating system for more details [below](Specific-instructions-for-Operating-Systems).
 
