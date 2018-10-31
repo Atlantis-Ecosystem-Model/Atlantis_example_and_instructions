@@ -71,7 +71,7 @@ Atlantis manual
 and
 [part 2](https://confluence.csiro.au/display/Atlantis/Atlantis+Documentation?preview=/43155557/397385421/AtlantisUserGuide_PartII.pdf))
 or [Atlantis-wiki](https://confluence.csiro.au/display/Atlantis/Atlantis+Ecosystem+Model+Home+Page).
-> All the input files needed to run the SETas model can be downloaded [here](https://github.com/jporobicg/SETas_Exc/archive/master.zip)
+> All the input files needed to run the SETas model can be downloaded [here](https://github.com/jporobicg/SETas_Exc/archive/master.zip).
 ### Basic files
 * [**Group.csv**](https://github.com/jporobicg/SETas_Exc/blob/master/SETasGroupsDem.csv) A file containing information about the functional groups in the model.
 * [**Geography.bgm**](https://github.com/jporobicg/SETas_Exc/blob/master/VMPA_setas.bgm) The file defines the geography used in the Atlantis model to define the bathymetry of the model system.
