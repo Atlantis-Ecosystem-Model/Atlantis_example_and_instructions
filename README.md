@@ -10,9 +10,9 @@ Software for modelling marine ecosystem including spatial and temporal dynamics
 # Atlantis model configuration
 This page contains the summary instructions for running an Atlantis model on your
 computer. For more detailed explanation about the code,  the parameters and how to run Atlantis visit Atlantis manual
-([part 1](https://confluence.csiro.au/display/Atlantis/Atlantis+Documentation?preview=/43155557/397385419/AtlantisUserGuide_PartI.pdf)
+([part 1](https://research.csiro.au/atlantis/?ddownload=111)
 and
-[part 2](https://confluence.csiro.au/display/Atlantis/Atlantis+Documentation?preview=/43155557/397385421/AtlantisUserGuide_PartII.pdf))
+[part 2](https://research.csiro.au/atlantis/?ddownload=112))
 
  **Attention!**
 >Due to licensing requirements, new users must register to access the
@@ -59,7 +59,8 @@ operating system for more details.
 **Note**
 > If you have questions, visit
 [Atlantis-Wiki](https://confluence.csiro.au/pages/viewpage.action?pageId=43155693)
-
+write you are putting the
+you code can be access with your code
 ## Linux
 ####  Checking libraries and packages
 
@@ -185,7 +186,6 @@ $ sudo make install
 
 
 # Checking out the Atlantis code.
-
 The source code can be accessed through the following URL's:
  * CSIRO users: https://svnserv.csiro.au/svn/atlantis/Atlantis/trunk/atlantis
  * External Partners: https://svnserv.csiro.au/svn/ext/atlantis/Atlantis/trunk/atlantis
@@ -362,9 +362,9 @@ The most used model example is the South East Tasmania (SETas) Atlantis model. T
 ## Input files
 Brief description of all the input files required to run an Atlantis model. See the
 Atlantis manual
-([part 1](https://confluence.csiro.au/display/Atlantis/Atlantis+Documentation?preview=/43155557/397385419/AtlantisUserGuide_PartI.pdf)
+([part 1](https://confluence.csiro.au/display/Atlantis/Atlantis+Documentation?preview=/43155557/397385419/AtlantisUserGuide_PartI.pdfhttps://research.csiro.au/atlantis/?ddownload=111)
 and
-[part 2](https://confluence.csiro.au/display/Atlantis/Atlantis+Documentation?preview=/43155557/397385421/AtlantisUserGuide_PartII.pdf))
+[part 2](https://research.csiro.au/atlantis/?ddownload=112https://confluence.csiro.au/display/Atlantis/Atlantis+Documentation?preview=/43155557/397385421/AtlantisUserGuide_PartII.pdf))
 or [Atlantis-wiki](https://confluence.csiro.au/display/Atlantis/Atlantis+Ecosystem+Model+Home+Page) for more details.
 > All the files can be downloaded [here](https://github.com/jporobicg/SETas_Exc/archive/master.zip)
 ### Basic files
@@ -458,6 +458,7 @@ The discards of each species per fishery across the entire model domain (summed
 ![test](./img/pred1.png)
 ### Predation by Age class
 ![test](./img/pred2.png)
+
 <hr>
 
 # Additional useful software
