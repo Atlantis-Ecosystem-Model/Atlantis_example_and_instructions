@@ -43,7 +43,7 @@ ___
    * [Check out the code](#checking-out-the-atlantis-code)
    * [Building Atlantis](#building-atlantis)
    * [Running Atlantis](#running-atlantis)
-* [Instructions for Operating Systems](#Specific-instructions-for-Operating-Systems)
+* [Instructions for Different Operating Systems](#Specific-instructions-for-your-Operating-Systems)
    * [Linux](#linux3)
    * [Windows](#win3)
    * [MacOS](#macos3)
