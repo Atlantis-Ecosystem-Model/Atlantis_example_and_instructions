@@ -45,8 +45,8 @@ Atlantis model installation and running
 * [Example Operational Model](#example-operational-model)
    * [Input](#input-files)
    * [Output](#output-files)
-   * [Example outputs](#outputs-for-the-setas-model)
-* [Supporting software](#additional-useful-software)
+   * [Example visual outputs](#outputs-for-the-setas-model)
+* [Additional useful software](#additional-useful-software)
 
 # Preparing your machine
 Atlantis requires the following packages and libraries to be installed. This includes
@@ -130,18 +130,18 @@ Follow instructions to download [NetCDF](https://www.unidata.ucar.edu/software/n
 [Atlantis-Wiki](https://confluence.csiro.au/display/Atlantis/NetCDF+4+in+Windows)
 
 #### SVN
-We support the use [tortoiseSVN](http://tortoisesvn.tigris.org/) as a GUI to check out the code.
+[TortoiseSVN](http://tortoisesvn.tigris.org/) is the referred GUI to check out the code from the code repository.
 
 ---
 ## MacOS
 ##### Important
 > We would not recommend using Mac if you have a choice. It generally takes a couple
-of hours and as much as a day per machine to set up and Mac is constantly changing
-things. Its not as simple as running on windows or Linux and you will need to be
-comfortable installing libraries from source.
+of hours and as much as a day per machine to set up. Its not as simple as running on
+windows or Linux and you will need to be comfortable installing libraries from
+source.
 
 #### Compiler:
-* **Xcode** [site](https://developer.apple.com/xcode/): Compiler (GCC and others). To install Xcode you might download
+* **Xcode** [site](https://developer.apple.com/xcode/): To install Xcode you might download
 a dgm file. Once this is downloaded open Finder and drag the Xcode folder into your
 applications to install it. Once its finished installing you need to eject it before
 you delete it from your downloads folder. Then you might need to type something like
@@ -212,8 +212,8 @@ repository field’.
 
 
 # Building Atlantis
-Once all the required software and source code has been installed on your machine, you will need to connect them.
-
+Once you have your compiler, NetCDF reader and source code, it is time to build
+(upload and connect) your model files.
 ___
 <a name="linux2">
 
@@ -253,7 +253,14 @@ the root Atlantis SVN repository folder.
 * Visual Studio 2010 uses atlantis_VS2010.sln
 * Visual Studio 2012 uses atlantis_VS2012.sln
 
-If you have questions related visit [Wiki-Building-Windows](https://confluence.csiro.au/display/Atlantis/Building+under+windows)
+* Step 1: In Visual Studio, right click on the atlantis solution and select ‘Rebuild all’. The
+build process should show all projects succeeding with 0 failings.
+
+* The executable file *atlantismain.exe* should then be copy from the
+atlantismain/Debug folder to the folder where your model run files are kept.
+
+For more details on the building process, including how to fix common build errors,
+visit [Wiki-Building-Windows](https://confluence.csiro.au/display/Atlantis/Building+under+windows)
 
 
 ___
@@ -290,7 +297,7 @@ This will install the Atlantis header files and the executable in /usr/local/inc
 more detailed information bout how to build Atlantis can be found in the [Wiki-building-macOS](https://confluence.csiro.au/display/Atlantis/Building+under+mac)
 
 # Running Atlantis
-At this stage you should be able to run an operational Atlantis model. An example is provided [below](example-operational-model)
+At this stage you should be able to run an operational model (such as that provided [below](example-operational-model).)
 
 <a name="linux3">
 
@@ -417,7 +424,7 @@ over all fleets). Tracers provided are:
    * Numbers at age per species in the discards
 
 ### Plain text files
-these files can contains a simplified or aggregate version of the information
+These files can contains a simplified or aggregate version of the information
 contained in the NetCDF Files or and specific output.
 ##### Biologically relevant output:
 *  **BiomIndx.txt**
@@ -439,8 +446,8 @@ The catch of each species per fishery (in tonnes) across the entire model domain
 The total discards per species across the entire model domain (summed over fisheries)
 *  **DiscardsPerFishery.txt**
 The discards of each species per fishery across the entire model domain (summed over fisheries)
-## Example outputs for the SETas model
 
+## Example outputs for the SETas model
 ### Trophic relationship between functional groups
 ![fw](./img/foodweb.png)
 ### Biomass dynamics by age class for a specific functional group (Small demersal fish)
