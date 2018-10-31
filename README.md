@@ -36,7 +36,7 @@ ___
    * [Inputs](#input-files)
    * [Outputs](#output-files)
    * [Example visual outputs](#outputs-for-the-setas-model)
-   * [Software to assess inputs and outputs](#Software-to-assess-input-and-output-files)
+   * [Software to anlyze inputs and outputs](#Software-to-analyze-input-and-output-files)
 * [Model Instualation and Running](#Atlantis-model-installation-and-running)
    * [Preparing your machine](#preparing-your-machine)
    * [Additional useful software](#additional-useful-software)
@@ -165,7 +165,7 @@ The discards of each species per fishery across the entire model domain (summed
 ![test](./img/pred2.png)
 
 
-## Software to assess input and output files
+## Software to analyze input and output files
 To process and visualize inputs and output files of an Atlantis model, there exists a number of
 [software](https://confluence.csiro.au/display/Atlantis/Atlantis+Helper+Tools). Below we describe some
 widely used examples.
@@ -195,17 +195,11 @@ during the calibration of Atlantis. This tool was used to produce the figures ab
 # Model installation and running
 
 ## Preparing your machine
-Atlantis can be run on Linux, windows, and MacOS operating systems. Depending on your [operating system](#Specific-instructions-for-Operating-Systems)
+Atlantis can be run on Linux, windows, and MacOS operating systems. Depending on your operating system
 Atlantis requires the a number of packages and libraries to be installed. This includes
 software that operates as: (i) a compiler, (ii) to check out the code (an SVN
 platform), and (iii) to a NetCDF file system. Please read the instructions for your
-operating system for more details, [below](Specific-instructions-for-Operating-Systems).
-
-**Note**
-> If you have questions, visit
-[Atlantis-Wiki](https://confluence.csiro.au/pages/viewpage.action?pageId=43155693)
-write you are putting the
-you code can be access with your code
+operating system for more details [below](Specific-instructions-for-Operating-Systems).
 
 ## Checking out the Atlantis code.
 
@@ -213,11 +207,10 @@ The source code can be accessed through a SVN platform to get access to the code
 
 **Note**
 > Remember that if you want a copy of the Atlantis main code you will need to go
-first to this page
-[Atlantis-Page](https://confluence.csiro.au/display/Atlantis/CSIRO+licence+and+repository+request)
+first to the [Atlantis-Page](https://confluence.csiro.au/display/Atlantis/CSIRO+licence+and+repository+request)
 and sign the
-[licence](https://confluence.csiro.au/display/Atlantis/CSIRO+licence+and+repository+request)
-agreement and then send an email to the developers, who will give you access to the
+[licence agreement](https://confluence.csiro.au/display/Atlantis/CSIRO+licence+and+repository+request)
+ and then send an email to the developers, who will give you access to the
 code.
 
 ## Building Atlantis
@@ -225,7 +218,8 @@ Once you have your compiler, NetCDF reader and source code, it is time to build
 (upload and connect) your model files.
 
 ## Running Atlantis
-At this stage you should be able to run an operational model (such as that provided [below](example-operational-model).)
+At this stage you should be able to run an operational model 
+(such as that provided [above](example-operational-model), by calling a .sh or .bat file in the command line.
 
 <hr>
 <a name="linux3">
@@ -283,7 +277,7 @@ $ yum install pkgconfig     # Install pkgconfig
 the necessary packages and libraries. If you have questions, visit
 [Wiki-Packages-Linux](https://confluence.csiro.au/display/Atlantis/Building+under+linux)
 
-#### Linux CODE
+## Code
 ```
 $ svn co https://svnserv.csiro.au/svn/ext/atlantis/Atlantis/trunk/atlantis
 ```
@@ -324,12 +318,7 @@ ___
    ```
    #!/bin/bash
    atlantisMerged -i in.nc 0 -o output.nc -r run.prm -f force.prm -p physics.prm -b biol.prm -h harvest.prm -a assess.prm -e economics.prm -s functionalGroups.csv -d outputFolder
-   ```
-   If Your are using MacOS
-   ```
-   #!/bin/bash
-   atlantis -i in.nc 0 -o output.nc -r run.prm -f force.prm -p physics.prm -b biol.prm -h harvest.prm -a assess.prm -e economics.prm -s functionalGroups.csv -d outputFolder
-   ```
+   ```   
  3. Open the terminal window, navigate to your model run
  directory that has the  **.sh**  file in it (and your Atlantis model), type the name of your
  **.sh** file and press ENTER.
