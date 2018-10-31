@@ -33,8 +33,8 @@ ___
 
 ### Index
 * [Example Operational Model](#example-operational-model)
-   * [Inputs](#input-files)
-   * [Outputs](#output-files)
+   * [Input files](#input-files)
+   * [Output files](#output-files)
    * [Example visual outputs](#outputs-for-the-setas-model)
    * [Software to anlyze inputs and outputs](#Software-to-analyze-input-and-output-files)
 * [Model Instualation and Running](#Atlantis-model-installation-and-running)
