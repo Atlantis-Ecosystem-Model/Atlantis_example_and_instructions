@@ -177,18 +177,17 @@ Links to other software used can be accessed via the [Wiki](https://confluence.c
 
 <hr>
 
-# Model installation and running
+# Model Installation and Running
 
 ## Preparing your machine
 Atlantis can be run on Linux, windows, and MacOS operating systems. Depending on your operating system
 Atlantis requires the a number of packages and libraries to be installed. This includes
-software that operates as: (i) a compiler, (ii) to check out the code (an SVN
-platform), and (iii) to a NetCDF file system. Please read the instructions for your
-operating system for more details [below](Specific-instructions-for-Operating-Systems).
-
-## Checking out the Atlantis code.
-
-The source code can be accessed through a SVN platform. 
+software that operates as: 
+  1. a compiler, 
+  2. An SVN platform to check out the code, and 
+  3. A NetCDF file system. 
+  
+  Please read the instructions for your operating system for more details [below](Specific-instructions-for-Operating-Systems).
 
 **Note**
 > Remember that if you want a copy of the Atlantis main code you will need to go
