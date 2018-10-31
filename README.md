@@ -368,9 +368,6 @@ atlantismain/Debug folder to the folder where your model run files are kept.
 For more details on the building process, including how to fix common errors,
 visit [Wiki-Building-Windows](https://confluence.csiro.au/display/Atlantis/Building+under+windows)
 
-___
-<a name="macos2">
-
 #### Code
 To locally compile the code, create a new folder or checkout directory for your
 source code (e.g. c:\Code\atlantis). Right click in this new folder and select the
