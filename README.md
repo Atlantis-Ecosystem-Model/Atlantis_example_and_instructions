@@ -319,12 +319,10 @@ To build Atlantis in another versions of Linux please visit the
 
 <a name="abcde">
 
-*Note*
-> *Note* Atlantis will not compile using Visual Studio 2015
+> *Note: Atlantis will not compile using Visual Studio 2015*
 
 2. A NetCDF development library
 
-2. A NetCDF development library
     Follow instructions to download [NetCDF 4](https://www.unidata.ucar.edu/software/netcdf/docs/winbin.html). For further information see the
 [Atlantis-Wiki](https://confluence.csiro.au/display/Atlantis/NetCDF+4+in+Windows)
 
