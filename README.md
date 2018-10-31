@@ -189,13 +189,12 @@ software that operates as:
   
   Please read the instructions for your operating system for more details [below](Specific-instructions-for-Operating-Systems).
 
-**Note**
-> Remember that if you want a copy of the Atlantis main code you will need to go
+> *Note: Remember that if you want a copy of the Atlantis main code you will need to go
 first to the [Atlantis-Page](https://confluence.csiro.au/display/Atlantis/CSIRO+licence+and+repository+request)
 and sign the
 [licence agreement](https://confluence.csiro.au/display/Atlantis/CSIRO+licence+and+repository+request)
  and then send an email to the developers, who will give you access to the
-code.
+code.*
 
 ## Building Atlantis
 Once you have your compiler, NetCDF reader and source code, it is time to build
@@ -254,10 +253,10 @@ $ yum install libxml2-devel # Install the libxml developer package
 $ yum install automake      # Install automake
 $ yum install pkgconfig     # Install pkgconfig
 ```
-*Note*
-> Most computers with other versions of Linux, follow similar instructions to install
+
+> *Note: Most computers with other versions of Linux, follow similar instructions to install
 the necessary packages and libraries. If you have questions, visit
-[Wiki-Packages-Linux](https://confluence.csiro.au/display/Atlantis/Building+under+linux)
+[Wiki-Packages-Linux](https://confluence.csiro.au/display/Atlantis/Building+under+linux)*
 
 #### Code
 ```
