@@ -38,7 +38,7 @@ ___
    * [Outputs](#output-files)
    * [Example visual outputs](#outputs-for-the-setas-model)
    * [Additional useful software](#additional-useful-software)
-* [Model Instualation and Code Access](#Model-Instualation-and-Code Access)
+* [Model Instualation and running](#Atlantis-model-installation-and-running)
    * [Preparing your machine](#preparing-your-machine)
    * [Additional useful software](#additional-useful-software)
    * [Check out the code](#checking-out-the-atlantis-code)
