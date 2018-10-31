@@ -107,11 +107,6 @@ This output file contains cumulative values of:
    * Discards per species per age class (cohort) in numbers
    * Catch per species per fishery (in tonnes) - that is the total tonnes taken from that box
    * Discards per species per fishery (in tonnes) - that is the total tonnes taken from that box
-
-*Note*
-> To convert the numbers to biomass you have to multiple by individual size-at-age
-(form biol.nc) and then * X_CN * mg_2_tonne where X_CN is the Redfield ratio
-specified in the biol.prm file (typically 5.7) and mg_2_tonne is 0.00000002
 *  **TOTCATCH.nc**
 This output files also contains cumulative values in tonnes. All values are zeroed after they are written out. Tracers include:
    * Total catch per species
@@ -119,10 +114,6 @@ This output files also contains cumulative values in tonnes. All values are zero
    * Total discards per species.
 *  **ANNAGEBIO.nc**
 This output provides abundance in each annual age class (Numbers at age per species)
-
-*Note*
-> So mapped from Atlantis "age class" which can contain multiple years to true annual
-age classes).
 
 *  **ANNAGECATCH.nc**
 This output provides numbers at annual age class in the catch and discards (summed
