@@ -314,8 +314,7 @@ To build Atlantis in another versions of Linux please visit the
 	** Visual Studio C++ 2010
 	** Visual Studio C++ 2012
 	** Visual Studio C++ Express Edition
-
-You can download all these versions [here](https://visualstudio.microsoft.com/vs/older-downloads/)
+	You can download all these versions [here](https://visualstudio.microsoft.com/vs/older-downloads/)
 
 <a name="abcde">
 
