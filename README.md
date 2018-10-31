@@ -102,11 +102,9 @@ This 2D (time, box) output file contains a sum of the tracer values in each box.
 *  **biolPROD.nc**
 This output file is useful during the model tuning process and contains 2D data (time, box) for each box. It contains the tracers for production and grazing for invertebrate groups, growth and consumption for each age class for each vertebrate group, and a number of indices such as the diversity index.
 *  **CATCH.nc**
-This output file contains cumulative values of:
-   * Catch per species per age class (cohort) in numbers
-   * Discards per species per age class (cohort) in numbers
-   * Catch per species per fishery (in tonnes) - that is the total tonnes taken from that box
-   * Discards per species per fishery (in tonnes) - that is the total tonnes taken from that box
+This output file contains cumulative values of catch and discard per species and age class (cohort) in numbers. 
+It also details catch and discards per species per fishery (in tonnes per box) 
+
 *  **TOTCATCH.nc**
 This output files also contains cumulative values in tonnes. All values are zeroed after they are written out. Tracers include:
    * Total catch per species
