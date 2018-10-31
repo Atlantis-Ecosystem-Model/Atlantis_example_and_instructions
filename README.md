@@ -331,12 +331,12 @@ To build Atlantis in another versions of Linux please visit the
 ---
 
 ## Windows
-#### To build Atlantis you will need to have installed any of the following versions of Visual studio:
-
-* Visual Studio C++ 2008
-* Visual Studio C++ 2010
-* Visual Studio C++ 2012
-* Visual Studio C++ Express Edition
+#### Required software 
+* Visual Sudio C++ - the compiler
+	** Visual Studio C++ 2008
+	** Visual Studio C++ 2010
+	** Visual Studio C++ 2012
+	** Visual Studio C++ Express Edition
 
 <a name="abcde">
 
@@ -344,14 +344,15 @@ You can download all these versions [here](https://visualstudio.microsoft.com/vs
 
 Note
 >Atlantis will not compile using Visual Studio 2015
-#### NetCDF library
+
+* NetCDF 4 -  development library
 Follow instructions to download [NetCDF](https://www.unidata.ucar.edu/software/netcdf/docs/winbin.html). For further information see the
 [Atlantis-Wiki](https://confluence.csiro.au/display/Atlantis/NetCDF+4+in+Windows)
 
-#### SVN
+* TortoiseSVN - SVN platform to check out the source code from the code repository
 [TortoiseSVN](http://tortoisesvn.tigris.org/) is the referred GUI to check out the code from the code repository.
 
-## Build Atlantis
+## Build 
 Building in Visual Studio requires opening the appropriate visual studio solution in
 the root Atlantis SVN repository folder.
 * Visual Studio 2008 uses atlantis_VS2008.sln
@@ -364,50 +365,22 @@ build process should show all projects succeeding with 0 failings.
 * The executable file *atlantismain.exe* should then be copy from the
 atlantismain/Debug folder to the folder where your model run files are kept.
 
-For more details on the building process, including how to fix common build errors,
+For more details on the building process, including how to fix common errors,
 visit [Wiki-Building-Windows](https://confluence.csiro.au/display/Atlantis/Building+under+windows)
 
 ___
 <a name="macos2">
 
-#### compile
+## Code
 To locally compile the code, create a new folder or checkout directory for your
 source code (e.g. c:\Code\atlantis). Right click in this new folder and select the
-new menu option  **"SVN checkout"**  and enter the appropriate URL into the *"URL"* of the
-repository field’.
+new menu option  **"SVN checkout"** and enter the appropriate URL into the *"URL"* of the
+repository field’. 
+You will then be asked to authenticate using your domain username and password 
+provided after registering to be a user.
 
 
-## Build from the source code
-Initially,  to include all the source code you will need to build
-the code via command line rather than using other developer software (e.g. eclipse ).
-In the Atlantis code there is a file called *configure_mac*,  you will probably need
-to edit this file to point to each of the locations of the libraries you have
-installed. In the following instructions substitute  *configure_N* with the name of
-the custom *configure_mac* file you have created.
-
-Open a terminal and go to where your source code is and type:
-```
-$ aclocal
-$ autoheader
-$ autoconf
-$ automake -a
-$ ./configure_N
-make
-```
-This will hopefully build an executable called atlantisNew in the atlantismain
-folder. If it doesn't work you will probably need to edit the configure_N script you
-have created to point to the correct folders or check the libraries are correctly
-installed.
-
-```
-$ sudo make install
-```
-This will install the Atlantis header files and the executable in /usr/local/include/Atlantis-1.0/Atlantis and /usr/local/bin
-
-more detailed information bout how to build Atlantis can be found in the [Wiki-building-macOS](https://confluence.csiro.au/display/Atlantis/Building+under+mac)
-
-
-## Run Atlantis
+## Run
  Create the batch file (**.bat**)
  - Open your plain text editor, such as a Notepad or WordPad document. (e.g. *runAtlantis.bat*)
  - Add the commands to run Atlantis, which should have the following format:
@@ -431,7 +404,7 @@ of hours and as much as a day per machine to set up. Its not as simple as runnin
 windows or Linux and you will need to be comfortable installing libraries from
 source.
 
-#### Compiler:
+#### Compiler
 * **Xcode** [site](https://developer.apple.com/xcode/): To install Xcode you might download
 a dgm file. Once this is downloaded open Finder and drag the Xcode folder into your
 applications to install it. Once its finished installing you need to eject it before
@@ -471,6 +444,36 @@ $ ./configure
 $ make
 $ sudo make install
 ```
+
+## Build from the source code
+Initially,  to include all the source code you will need to build
+the code via command line rather than using other developer software (e.g. eclipse ).
+In the Atlantis code there is a file called *configure_mac*,  you will probably need
+to edit this file to point to each of the locations of the libraries you have
+installed. In the following instructions substitute  *configure_N* with the name of
+the custom *configure_mac* file you have created.
+
+Open a terminal and go to where your source code is and type:
+```
+$ aclocal
+$ autoheader
+$ autoconf
+$ automake -a
+$ ./configure_N
+make
+```
+This will hopefully build an executable called atlantisNew in the atlantismain
+folder. If it doesn't work you will probably need to edit the configure_N script you
+have created to point to the correct folders or check the libraries are correctly
+installed.
+
+```
+$ sudo make install
+```
+This will install the Atlantis header files and the executable in /usr/local/include/Atlantis-1.0/Atlantis and /usr/local/bin
+
+more detailed information bout how to build Atlantis can be found in the [Wiki-building-macOS](https://confluence.csiro.au/display/Atlantis/Building+under+mac)
+
 
 ## Run Atlantis
  Create the bash application program file (**.sh**)
