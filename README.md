@@ -314,19 +314,20 @@ To build Atlantis in another versions of Linux please visit the
 	** Visual Studio C++ 2010
 	** Visual Studio C++ 2012
 	** Visual Studio C++ Express Edition
-	You can download all these versions [here](https://visualstudio.microsoft.com/vs/older-downloads/)
+  You can download all these versions [here](https://visualstudio.microsoft.com/vs/older-downloads/)
 
 <a name="abcde">
 
 Note
 >Atlantis will not compile using Visual Studio 2015
 
+
 * A NetCDF development library    
-Follow instructions to download [NetCDF 4](https://www.unidata.ucar.edu/software/netcdf/docs/winbin.html). For further information see the
+  Follow instructions to download [NetCDF 4](https://www.unidata.ucar.edu/software/netcdf/docs/winbin.html). For further information see the
 [Atlantis-Wiki](https://confluence.csiro.au/display/Atlantis/NetCDF+4+in+Windows)
 
 * An SVN platform to check out the source code from the code repository
-Dowload [TortoiseSVN](http://tortoisesvn.tigris.org/) as the preferred GUI.
+  Dowload [TortoiseSVN](http://tortoisesvn.tigris.org/) as the preferred GUI.
 
 #### Build 
 Building in Visual Studio requires opening the appropriate visual studio solution in
@@ -335,10 +336,10 @@ the root Atlantis SVN repository folder.
 * Visual Studio 2010 uses atlantis_VS2010.sln
 * Visual Studio 2012 uses atlantis_VS2012.sln
 
-* Step 1: In Visual Studio, right click on the atlantis solution and select ‘Rebuild all’. The
+Step 1: In Visual Studio, right click on the atlantis solution and select ‘Rebuild all’. The
 build process should show all projects succeeding with 0 failings.
 
-* Step 2: The executable file *atlantismain.exe* should then be copy from the
+Step 2: The executable file *atlantismain.exe* should then be copy from the
 atlantismain/Debug folder to the folder where your model run files are kept.
 
 For more details on the building process, including how to fix common errors,
