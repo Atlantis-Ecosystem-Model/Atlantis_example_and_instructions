@@ -14,7 +14,8 @@ computer. For more detailed explanation about the code,  the parameters and how 
 and
 [part 2](https://research.csiro.au/atlantis/?ddownload=112))
 
-=======
+___
+
  **Attention!**
 >Due to licensing requirements, new users must register to access the
 code. If you want a copy of the Atlantis main code (which you will need to start using the
@@ -30,7 +31,7 @@ output files with expected types and values for model parameters.
 ___
 
 Atlantis model installation and running
-===============
+_____
 ### Index
 * [Preparing your machine](#preparing-your-machine)
    * [Linux](#linux)
@@ -369,12 +370,13 @@ and
 or [Atlantis-wiki](https://confluence.csiro.au/display/Atlantis/Atlantis+Ecosystem+Model+Home+Page) for more details.
 > All the files can be downloaded [here](https://github.com/jporobicg/SETas_Exc/archive/master.zip)
 ### Basic files
-* [**Group.csv**](https://github.com/jporobicg/SETas_Exc/blob/master/SETasGroupsDem.csv) A file containing information about the functional groups in the model.
-* [**XXX.bgm**](https://github.com/jporobicg/SETas_Exc/blob/master/VMPA_setas.bgm) The file defines the geography used in the Atlantis model to define the bathymetry of the model system.
+* [**Functional_groups.csv**](https://github.com/Atlantis-Ecosystem-Model/South_East_Tasmania_model/blob/master/Functional_groups.csv) A file containing information about the functional groups in the model.
+* [**.bgm**](https://github.com/jporobicg/SETas_Exc/blob/master/VMPA_setas.bgm) The file defines the geography used in the Atlantis model to define the bathymetry of the model system.
 * [**run.prm**](https://github.com/jporobicg/SETas_Exc/blob/master/VMPA_setas_run_fishing_F_Trunk.prm) A file storing all the parameters defining the run setup (timestep, run and stop times, etc.)
 * [**physics.prm**](https://github.com/jporobicg/SETas_Exc/blob/master/VMPA_setas_physics.prm) Physics parameters (coefficients) - apart from setting some flags (e.g. turning resuspension on/off), point-source scaling and quarterly eddy strength distribution these parameters are not typically changed.
-* [**force.prm**](https://github.com/jporobicg/SETas_Exc/blob/master/VMPA_setas_force_fish_Trunk.prm) A file that lays out the forcing file pathways for hydrodynamics, point sources, climate time series (precipitation, irradiance, temperature and salinity), historical catch, fuel prices, GDP and complex spatial zonation.
-* [**biol.prm**](https://github.com/jporobicg/SETas_Exc/blob/master/VMPA_setas_biol_fishing_Trunk.prm) File detailing all the ecological parameters, submodel selection, network connection definitions and quarterly distributions.
+* [**Forcing.prm**](https://github.com/Atlantis-Ecosystem-Model/South_East_Tasmania_model/blob/master/Forcings.prm) A file that lays out the forcing file pathways for hydrodynamics, point sources, climate time series (precipitation, irradiance, temperature and salinity), historical catch, fuel prices, GDP and complex spatial zonation.
+* [**Biology.prm**](https://github.com/Atlantis-Ecosystem-Model/South_East_Tasmania_model/blob/master/Biology.prm) File detailing all the ecological parameters, submodel selection, network connection definitions and quarterly distributions.
+* [**Fisheries.csv**](https://github.com/Atlantis-Ecosystem-Model/South_East_Tasmania_model/blob/master/Fisheries.csv)
 * **in.nc** A NetCDF file where the initial conditions of the model are given, such as the initial biomass and size values for each functional group and age structure.
 ### Additional files
 * **assess.prm** File detailing the sample design, sampling error structures and basic assessment model parameters.
