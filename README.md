@@ -87,6 +87,11 @@ or [Atlantis-wiki](https://confluence.csiro.au/display/Atlantis/Atlantis+Ecosyst
 * **XXX.ts** Time-series files used to force the model with N data columns and a reference year.
 
 ## Output files
+Here we provide a brief description of all the output files from an Atlantis model. For more details see the
+Atlantis manual
+([part 1](https://confluence.csiro.au/display/Atlantis/Atlantis+Documentation?preview=/43155557/397385419/AtlantisUserGuide_PartI.pdf)
+and
+[part 2](https://confluence.csiro.au/display/Atlantis/Atlantis+Documentation?preview=/43155557/397385421/AtlantisUserGuide_PartII.pdf))
 ### NetCDF output Files
 Atlantis generates a number of NetCDF output files that contain spatial information
 such as the biomass of functional groups in boxes and layers.  The NetCDF files do
@@ -106,10 +111,9 @@ It also contains the tracers for production and grazing for invertebrate groups,
 Contains cumulative values of catch and discard per species and age class (cohort) in numbers. 
 It also details catch and discards per species per fishery (in tonnes per box) 
 *  **TOTCATCH.nc**
-This output files also contains cumulative total catch and discards per species in tonnes. All values are zeroed after they are written out. Tracers include:
+This output files also contains cumulative total catch and discards per species in tonnes. All values are zeroed after they are written out.
 *  **ANNAGEBIO.nc**
 This output provides abundance in each annual age class (Numbers at age per species)
-
 *  **ANNAGECATCH.nc**
 Provides numbers at age per species in the catch and discards (summed over all fleets). 
 
@@ -122,7 +126,8 @@ Biomass in tonnes of each species across the entire model domain
 *  **DietCheck.txt**
 Indication of diet pressure
 *  **DetailedDietCheck.txt**
-This file is only produced if flagdietcheck is set to 1. The file produced provides the total biomass consumed of each prey species per age class of each predator species per box and layer. 
+This file is only produced if flagdietcheck is set to 1. The file produced provides the total biomass 
+consumed of each prey species per age class of each predator species per box and layer. 
 *  **YOY.txt**
 This is the biomass in tonnes per spawning event summed over the total model domain.
 ##### Catch and fisheries relevant output
@@ -302,8 +307,6 @@ To build Atlantis in another versions of Linux please visit the
    user@pc:~/Atlantis/run>  ./runAtlantis.sh
    ```
 
-<a name="win3">
-
 ---
 
 ## Windows
@@ -359,7 +362,7 @@ provided after registering to be a user.
    ```
    atlantis -i in.nc 0 -o output.nc -r run.prm -f force.prm -p physics.prm -b biol.prm -h harvest.prm -a assess.prm -e economics.prm -s functionalGroups.csv -d outputFolder
    ```
- 3. Open the dos command prompt window, navigate to your model run
+ Open the dos command prompt window, navigate to your model run
  directory that has the *.bat* files in it (and the *.exe*  file if you have not
  formally installed Atlantis to the command line paths), type the name of your *.bat*
  file and press ENTER.
@@ -462,7 +465,7 @@ more detailed information bout how to build Atlantis can be found in the [Wiki-b
    #!/bin/bash
    atlantis -i in.nc 0 -o output.nc -r run.prm -f force.prm -p physics.prm -b biol.prm -h harvest.prm -a assess.prm -e economics.prm -s functionalGroups.csv -d outputFolder
    ```
- 3. Open the terminal window, navigate to your model run
+ Open the terminal window, navigate to your model run
  directory that has the  **.sh**  file in it (and your Atlantis model), type the name of your
  **.sh** file and press ENTER.
    ```
