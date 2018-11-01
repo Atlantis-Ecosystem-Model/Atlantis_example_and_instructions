@@ -241,7 +241,7 @@ $ dpkg -l | grep flip               # convert text file line endings between Uni
 
 #### Installing libraries and packages
 In the case that you do not have any of the libraries or packages of the previous
-point installed, this is the way to install them on your machine.
+point installed, this is the way to install them on your machine (using the terminal).
 
 **Ubuntu**
 ```
@@ -299,12 +299,12 @@ To build Atlantis in another versions of Linux please visit the
  Create the bash application program file (**.sh**)
  - Open your plain text editor, such as gedit, emacs or nano. (e.g. *runAtlantis.sh*)
  - Add the commands to run Atlantis, which should have the following fortat:
-
    If you're using Ubuntu:
-      #!/bin/bash
+   ```
+   #!/bin/bash
    atlantisMerged -i in.nc 0 -o output.nc -r run.prm -f force.prm -p physics.prm -b biol.prm -h harvest.prm -a assess.prm -e economics.prm -s functionalGroups.csv -d outputFolder
    ```
- 3. Open the terminal window, navigate to your model run
+ - Open the terminal window, navigate to your model run
  directory that has the  **.sh**  file in it (and your Atlantis model), type the name of your
  **.sh** file and press ENTER.
    ```
@@ -339,9 +339,9 @@ To build Atlantis in another versions of Linux please visit the
 #### Build
 Building in Visual Studio requires opening the appropriate visual studio solution in
 the root Atlantis SVN repository folder.
-    * Visual Studio 2008 uses atlantis_VS2008.sln
-    * Visual Studio 2010 uses atlantis_VS2010.sln
-    * Visual Studio 2012 uses atlantis_VS2012.sln
+* Visual Studio 2008 uses atlantis_VS2008.sln
+* Visual Studio 2010 uses atlantis_VS2010.sln
+* Visual Studio 2012 uses atlantis_VS2012.sln
 
 Step 1: In Visual Studio, right click on the atlantis solution and select ‘Rebuild all’. The
 build process should show all projects succeeding with 0 failings.
