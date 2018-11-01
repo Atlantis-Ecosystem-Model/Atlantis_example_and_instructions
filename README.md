@@ -244,6 +244,7 @@ In the case that you do not have any of the libraries or packages of the previou
 point installed, this is the way to install them on your machine.
 
 **Ubuntu**
+```
 $ sudo apt-get install build-essential
 $ sudo apt-get install autoconf
 $ sudo apt-get install subversion
@@ -251,9 +252,11 @@ $ sudo apt-get install libxml2-dev
 $ sudo apt-get install libnetcdf-dev
 $ sudo apt-get install gawk
 ```
+
 **proj4**  install proj.4 following the instruction from developers [webpage](https://proj4.org/)
 
 **Fedora**
+```
 $ yum install netcdf-devel  # Install the netcdf developer package:
 $ yum install subversion    # Install Subversion
 $ yum install proj-devel    # Install the proj4 projection package
