@@ -61,7 +61,7 @@ The most used model example is the South East Tasmania (SETas) Atlantis model. T
  fish catches, and arsenic concentration.
 
 <p align="center">
-    <img alt="SETas" src="./img/SETas_bound.jpg" height="400" width="400">
+    <img alt="SETas" src="./img/map_soom_a.png" height="400" width="600">
 </p>
 
 ## Input files
@@ -86,6 +86,13 @@ or [Atlantis-wiki](https://confluence.csiro.au/display/Atlantis/Atlantis+Ecosyst
 * [**Harvest.prm**](https://github.com/Atlantis-Ecosystem-Model/South_East_Tasmania_model/blob/master/Harvest.prm) File storing all the fisheries and management parameters and submodel definitions.
 * **econ.prm** A file storing all the socio-economics parameters (for the market model, trading model, and black-book based effort allocation model).
 * [**time_serie.ts**](https://github.com/Atlantis-Ecosystem-Model/South_East_Tasmania_model/blob/master/inputs/catchts/catch1.ts) Time-series files used to force the model with N data columns and a reference year.
+
+## Visualisation of some parameters used by the SETas Atlantis model.
+### Trophic relationship between functional groups
+![fw](./img/Init_N_selecterGroups.png)
+### Trophic relationship between functional groups
+![fw](./img/spatial distribution_a.png)
+
 
 ## Output files
 Here we provide a brief description of all the output files from an Atlantis model. For more details see the
@@ -144,6 +151,9 @@ The total discards per species across the entire model domain (summed over fishe
 The discards of each species per fishery across the entire model domain (summed over fisheries)
 
 ## Example outputs for the SETas model
+Refer to [**Functional_groups.csv**](https://github.com/Atlantis-Ecosystem-Model/South_East_Tasmania_model/blob/master/Functional_groups.csv) 
+for full names and descriptions of functional groups in the model.
+
 ### Trophic relationship between functional groups
 ![fw](./img/foodweb.png)
 ### Biomass dynamics by functional groups
