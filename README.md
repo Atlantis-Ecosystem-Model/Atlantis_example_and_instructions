@@ -91,7 +91,7 @@ or [Atlantis-wiki](https://confluence.csiro.au/display/Atlantis/Atlantis+Ecosyst
 ### Inital reserve and structural biomasses (mg N) for selected functional groups
 ![fw](./img/Init_N_selectedGroups.png)
 ### Spatial (horizontal and vertical) distributions of functional groups
-![fw](./img/spatial distributions_a.png)
+![fw](./img/spatial distributions.png)
 
 
 ## Output files
