@@ -122,7 +122,7 @@ Provides numbers at age per species in the catch and discards (summed over all f
 These files can contains a simplified or aggregate version of the information
 contained in the NetCDF files or and specific output.
 ##### Biologically relevant output:
-*  **BiomIndx.txt**
+*  [**BiomIndx.txt**](https://github.com/Atlantis-Ecosystem-Model/South_East_Tasmania_model/blob/master/output/BiomIndx.txt)
 Biomass in tonnes of each species across the entire model domain
 *  **DietCheck.txt**
 Indication of diet pressure
@@ -146,6 +146,8 @@ The discards of each species per fishery across the entire model domain (summed
 ## Example outputs for the SETas model
 ### Trophic relationship between functional groups
 ![fw](./img/foodweb.png)
+### Biomass dynamics by functional groups
+![biomtot](./img/Biomass.png)
 ### Biomass dynamics by age class for a specific functional group (Small demersal fish)
 ![biom](./img/out1.png)
 ### Dynamics of total functional group's predation
