@@ -87,7 +87,7 @@ or [Atlantis-wiki](https://confluence.csiro.au/display/Atlantis/Atlantis+Ecosyst
 * **econ.prm** A file storing all the socio-economics parameters (for the market model, trading model, and black-book based effort allocation model).
 * [**time_serie.ts**](https://github.com/Atlantis-Ecosystem-Model/South_East_Tasmania_model/blob/master/inputs/catchts/catch1.ts) Time-series files used to force the model with N data columns and a reference year.
 
-## Visualisation of some parameters used by the SETas Atlantis model.
+## Visualisations of selected parameters used by the SETas Atlantis model.
 ### Inital reserve and structural biomasses (mg N) for selected functional groups
 ![fw](./img/Init_N_selectedGroups.png)
 ### Spatial (horizontal and vertical) distributions of functional groups
