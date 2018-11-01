@@ -3,8 +3,8 @@ Software for modelling marine ecosystem including spatial and temporal dynamics.
 
 [Download manuscript](https://besjournals.onlinelibrary.wiley.com/journal/2041210x)
 
-This page contains an example of an operational Atlatis model with details of the parameter (input) files and model output files given. 
-It also gives brief details and instructions on how to compile and run an Atlantis model on your computer. 
+This page contains an example of an operational Atlatis model with details of the parameter (input) files and model output files given.
+It also gives brief details and instructions on how to compile and run an Atlantis model on your computer.
 For more detailed explanation about the code, the parameters and how to run Atlantis you will need to download the Atlantis manual
 ([part 1](https://research.csiro.au/atlantis/?ddownload=111)
 and [part 2](https://confluence.csiro.au/display/Atlantis/Atlantis+Documentation?preview=/43155557/397385421/AtlantisUserGuide_PartII.pdf)).
@@ -51,7 +51,7 @@ ___
 
 # Example Operational Model
 
-The best way to learn about a model, including it's input (parameter) files and outputs, 
+The best way to learn about a model, including it's input (parameter) files and outputs,
 is through the illustration of an existing operational model.
 The most used model example is the South East Tasmania (SETas) Atlantis model. This
  model is divided into 8 polygons and has 5 water layers and one sediment layer. It
@@ -73,18 +73,19 @@ and
 or [Atlantis-wiki](https://confluence.csiro.au/display/Atlantis/Atlantis+Ecosystem+Model+Home+Page).
 > All the input files needed to run the SETas model can be downloaded [here](https://github.com/jporobicg/SETas_Exc/archive/master.zip).
 ### Basic files
-* [**Group.csv**](https://github.com/jporobicg/SETas_Exc/blob/master/SETasGroupsDem.csv) A file containing information about the functional groups in the model.
-* [**Geography.bgm**](https://github.com/jporobicg/SETas_Exc/blob/master/VMPA_setas.bgm) The file defines the geography used in the Atlantis model to define the bathymetry of the model system.
-* [**run.prm**](https://github.com/jporobicg/SETas_Exc/blob/master/VMPA_setas_run_fishing_F_Trunk.prm) A file storing all the parameters defining the run setup (timestep, run and stop times, etc.)
-* [**physics.prm**](https://github.com/jporobicg/SETas_Exc/blob/master/VMPA_setas_physics.prm) Physics parameters (coefficients) - apart from setting some flags (e.g. turning resuspension on/off), point-source scaling and quarterly eddy strength distribution these parameters are not typically changed.
-* [**force.prm**](https://github.com/jporobicg/SETas_Exc/blob/master/VMPA_setas_force_fish_Trunk.prm) A file that lays out the forcing file pathways for hydrodynamics, point sources, climate time series (precipitation, irradiance, temperature and salinity), historical catch, fuel prices, GDP and complex spatial zonation.
-* [**biol.prm**](https://github.com/jporobicg/SETas_Exc/blob/master/VMPA_setas_biol_fishing_Trunk.prm) File detailing all the ecological parameters, submodel selection, network connection definitions and quarterly distributions.
-* **in.nc** A NetCDF file where the initial conditions of the model are given, such as the initial biomass and size values for each functional group and age structure.
+* [**Functional_groups.csv**](https://github.com/Atlantis-Ecosystem-Model/South_East_Tasmania_model/blob/master/Functional_groups.csv) A file containing information about the functional groups in the model.
+* [**Geography.bgm**](https://github.com/Atlantis-Ecosystem-Model/South_East_Tasmania_model/blob/master/Geography.bgm) The file defines the geography used in the Atlantis model to define the bathymetry of the model system.
+* [**Run_settings.prm**](https://github.com/Atlantis-Ecosystem-Model/South_East_Tasmania_model/blob/master/Run_settings.prm) A file storing all the parameters defining the run setup (timestep, run and stop times, etc.)
+* [**Physics.prm**](https://github.com/Atlantis-Ecosystem-Model/South_East_Tasmania_model/blob/master/Physics.prm) Physics parameters (coefficients) - apart from setting some flags (e.g. turning resuspension on/off), point-source scaling and quarterly eddy strength distribution these parameters are not typically changed.
+* [**Forcings.prm**](https://github.com/Atlantis-Ecosystem-Model/South_East_Tasmania_model/blob/master/Forcings.prm) A file that lays out the forcing file pathways for hydrodynamics, point sources, climate time series (precipitation, irradiance, temperature and salinity), historical catch, fuel prices, GDP and complex spatial zonation.
+* [**Biology.prm**](https://github.com/Atlantis-Ecosystem-Model/South_East_Tasmania_model/blob/master/Biology.prm) File detailing all the ecological parameters, submodel selection, network connection definitions and quarterly distributions.
+* [**Fisheries**](https://github.com/Atlantis-Ecosystem-Model/South_East_Tasmania_model/blob/master/Fisheries.csv)
+* [**Initial_condition.nc**](https://github.com/Atlantis-Ecosystem-Model/South_East_Tasmania_model/blob/master/Initial_condition.nc) A NetCDF file where the initial conditions of the model are given, such as the initial biomass and size values for each functional group and age structure.
 ### Additional files
 * **assess.prm** File detailing the sample design, sampling error structures and basic assessment model parameters.
-* [**harvest.prm**](https://github.com/jporobicg/SETas_Exc/blob/master/harvest_stripped.prm) File storing all the fisheries and management parameters and submodel definitions.
+* [**Harvest.prm**](https://github.com/Atlantis-Ecosystem-Model/South_East_Tasmania_model/blob/master/Harvest.prm) File storing all the fisheries and management parameters and submodel definitions.
 * **econ.prm** A file storing all the socio-economics parameters (for the market model, trading model, and black-book based effort allocation model).
-* **XXX.ts** Time-series files used to force the model with N data columns and a reference year.
+* [**time_serie.ts**](https://github.com/Atlantis-Ecosystem-Model/South_East_Tasmania_model/blob/master/inputs/catchts/catch1.ts) Time-series files used to force the model with N data columns and a reference year.
 
 ## Output files
 Here we provide a brief description of all the output files from an Atlantis model. For more details see the
@@ -105,17 +106,17 @@ Contains snapshots of the tracers in the model at given time frequencies in each
 *  **biolTOT.nc**
 Contains a sum of the tracer values in each box and time-step.
 *  **biolPROD.nc**
-Useful during the model tuning process and contains 2D data (time, box) for each box. 
+Useful during the model tuning process and contains 2D data (time, box) for each box.
 It also contains the tracers for production and grazing for invertebrate groups, growth and consumption for each age class for each vertebrate group, and a number of indices such as the diversity index.
 *  **CATCH.nc**
-Contains cumulative values of catch and discard per species and age class (cohort) in numbers. 
-It also details catch and discards per species per fishery (in tonnes per box) 
+Contains cumulative values of catch and discard per species and age class (cohort) in numbers.
+It also details catch and discards per species per fishery (in tonnes per box)
 *  **TOTCATCH.nc**
 This output files also contains cumulative total catch and discards per species in tonnes. All values are zeroed after they are written out.
 *  **ANNAGEBIO.nc**
 This output provides abundance in each annual age class (Numbers at age per species)
 *  **ANNAGECATCH.nc**
-Provides numbers at age per species in the catch and discards (summed over all fleets). 
+Provides numbers at age per species in the catch and discards (summed over all fleets).
 
 ### Plain text files
 These files can contains a simplified or aggregate version of the information
@@ -126,7 +127,7 @@ Biomass in tonnes of each species across the entire model domain
 *  **DietCheck.txt**
 Indication of diet pressure
 *  **DetailedDietCheck.txt**
-This file is only produced if flagdietcheck is set to 1. The file produced provides the total biomass 
+This file is only produced if flagdietcheck is set to 1. The file produced provides the total biomass
 consumed of each prey species per age class of each predator species per box and layer. 
 *  **YOY.txt**
 This is the biomass in tonnes per spawning event summed over the total model domain.
@@ -178,7 +179,7 @@ during the calibration of Atlantis. This tool was used to produce the figures ab
   angstroms is to provide easy access to Regional Ocean Modeling System (ROMS) output
   for R.
 
-Links to other software used can be accessed via the [Wiki](https://confluence.csiro.au/display/Atlantis/Atlantis+Helper+Tools). 
+Links to other software used can be accessed via the [Wiki](https://confluence.csiro.au/display/Atlantis/Atlantis+Helper+Tools).
 
 <hr>
 
@@ -187,11 +188,11 @@ Links to other software used can be accessed via the [Wiki](https://confluence.c
 ## Preparing your machine
 Atlantis can be run on Linux, windows, and MacOS operating systems. Depending on your operating system
 Atlantis requires the a number of packages and libraries to be installed. This includes
-software that operates as: 
+software that operates as:
   1. A compiler (e.g. Visal Studio for windows or gcc for Linux)
   2. An SVN platform to check out the code (e.g. Tortoise SVN for windows or subversion for Linux)
   3. A NetCDF file system or development library
-  
+
   Please read the instructions for your operating system for more details [below](Specific-instructions-for-Operating-Systems).
 
 > *Note: Remember that if you want a copy of the Atlantis main code you will need to go
@@ -206,7 +207,7 @@ Once you have your compiler, NetCDF reader and source code, it is time to build
 (upload and connect) your model files.
 
 ## Running Atlantis
-At this stage you should be able to run an operational model 
+At this stage you should be able to run an operational model
 (such as that provided [above](example-operational-model), by calling a .sh or .bat file in the command line.
 
 <hr>
@@ -269,7 +270,7 @@ $ svn co https://svnserv.csiro.au/svn/ext/atlantis/Atlantis/trunk/atlantis
 ```
 
 #### Build
-So far we have built Atlantis, for Linux, on the following platforms: Ubuntu, Fedora, 
+So far we have built Atlantis, for Linux, on the following platforms: Ubuntu, Fedora,
 CentOS, Debian 7.2, and Wheezy 64
 
 We recommend 64-bit Ubuntu.
@@ -297,7 +298,7 @@ To build Atlantis in another versions of Linux please visit the
    If you're using Ubuntu:
       #!/bin/bash
    atlantisMerged -i in.nc 0 -o output.nc -r run.prm -f force.prm -p physics.prm -b biol.prm -h harvest.prm -a assess.prm -e economics.prm -s functionalGroups.csv -d outputFolder
-   ```   
+   ```
  3. Open the terminal window, navigate to your model run
  directory that has the  **.sh**  file in it (and your Atlantis model), type the name of your
  **.sh** file and press ENTER.
@@ -310,13 +311,13 @@ To build Atlantis in another versions of Linux please visit the
 ---
 
 ## Windows
-#### Required software 
-1. The compiler - any of the following versions of Visual Sudio C++ 
+#### Required software
+1. The compiler - any of the following versions of Visual Sudio C++
     * Visual Studio C++ 2008
     * Visual Studio C++ 2010
     * Visual Studio C++ 2012
     * Visual Studio C++ Express Edition
-  
+
   You can download all these versions [here](https://visualstudio.microsoft.com/vs/older-downloads/)
 
 > *Note: Atlantis will not compile using Visual Studio 2015*
@@ -327,10 +328,10 @@ To build Atlantis in another versions of Linux please visit the
 [Atlantis-Wiki](https://confluence.csiro.au/display/Atlantis/NetCDF+4+in+Windows)
 
 3. An SVN platform to check out the source code from the code repository
-  
+
     Dowload [TortoiseSVN](http://tortoisesvn.tigris.org/) as the preferred GUI.
 
-#### Build 
+#### Build
 Building in Visual Studio requires opening the appropriate visual studio solution in
 the root Atlantis SVN repository folder.
     * Visual Studio 2008 uses atlantis_VS2008.sln
@@ -350,8 +351,8 @@ visit [Wiki-Building-Windows](https://confluence.csiro.au/display/Atlantis/Build
 To locally compile the code, create a new folder or checkout directory for your
 source code (e.g. c:\Code\atlantis). Right click in this new folder and select the
 new menu option  **"SVN checkout"** and enter the appropriate URL into the *"URL"* of the
-repository field’. 
-You will then be asked to authenticate using your domain username and password 
+repository field’.
+You will then be asked to authenticate using your domain username and password
 provided after registering to be a user.
 
 
@@ -420,7 +421,7 @@ $ make
 $ sudo make install
 ```
 
-#### Build 
+#### Build
 Initially,  to include all the source code you will need to build
 the code via command line rather than using other developer software (e.g. eclipse ).
 In the Atlantis code there is a file called *configure_mac*,  you will probably need
