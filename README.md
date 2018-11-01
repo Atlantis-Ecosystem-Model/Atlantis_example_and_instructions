@@ -61,7 +61,7 @@ The most used model example is the South East Tasmania (SETas) Atlantis model. T
  fish catches, and arsenic concentration.
 
 <p align="center">
-    <img alt="SETas" src="./img/map_zoom_a.png" height="400" width="600">
+    <img alt="SETas" src="./img/map_zoom_a.png" height="400" width="800">
 </p>
 
 ## Input files
