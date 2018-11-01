@@ -88,10 +88,10 @@ or [Atlantis-wiki](https://confluence.csiro.au/display/Atlantis/Atlantis+Ecosyst
 * [**time_serie.ts**](https://github.com/Atlantis-Ecosystem-Model/South_East_Tasmania_model/blob/master/inputs/catchts/catch1.ts) Time-series files used to force the model with N data columns and a reference year.
 
 ## Visualisation of some parameters used by the SETas Atlantis model.
-### Trophic relationship between functional groups
-![fw](./img/Init_N_selecterGroups.png)
-### Trophic relationship between functional groups
-![fw](./img/spatial distribution_a.png)
+### Inital reserve and structural biomasses (mg N) for selected functional groups
+![fw](./img/Init_N_selectedGroups.png)
+### Spatial (horizontal and vertical) distributions of functional groups
+![fw](./img/spatial distributions_a.png)
 
 
 ## Output files
