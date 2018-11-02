@@ -6,8 +6,7 @@ Software for modelling marine ecosystem including spatial and temporal dynamics.
 This page contains an example of an operational Atlatis model with details of the parameter (input) files and model output files given.
 It also gives brief details and instructions on how to compile and run an Atlantis model on your computer.
 For more detailed explanation about the code, the parameters and how to run Atlantis you will need to download the Atlantis manual
-([part 1](https://research.csiro.au/atlantis/?ddownload=111)
-and [part 2](https://confluence.csiro.au/display/Atlantis/Atlantis+Documentation?preview=/43155557/397385421/AtlantisUserGuide_PartII.pdf)).
+([part 1 and 2](https://research.csiro.au/atlantis/home/useful-references/). Other useful Atlantis references can also be found [here](https://research.csiro.au/atlantis/home/useful-references/).
 
 <hr>
 
@@ -66,12 +65,10 @@ The most used model example is the South East Tasmania (SETas) Atlantis model. T
 
 ## Input files
 Here we provide a brief description of all the input files required to run an Atlantis model. For more details see the
-Atlantis manual
-([part 1](https://confluence.csiro.au/display/Atlantis/Atlantis+Documentation?preview=/43155557/397385419/AtlantisUserGuide_PartI.pdf)
-and
-[part 2](https://confluence.csiro.au/display/Atlantis/Atlantis+Documentation?preview=/43155557/397385421/AtlantisUserGuide_PartII.pdf))
-or [Atlantis-wiki](https://confluence.csiro.au/display/Atlantis/Atlantis+Ecosystem+Model+Home+Page).
+Atlantis manual [part 1 and 2](https://research.csiro.au/atlantis/home/useful-references/) or the [Atlantis-wiki](https://confluence.csiro.au/display/Atlantis/Atlantis+Ecosystem+Model+Home+Page).
+
 > All the input files needed to run the SETas model can be downloaded [here](https://github.com/Atlantis-Ecosystem-Model/South_East_Tasmania_model/archive/master.zip).
+
 ### Basic files
 * [**Functional_groups.csv**](https://github.com/Atlantis-Ecosystem-Model/South_East_Tasmania_model/blob/master/Functional_groups.csv) A file containing information about the functional groups in the model.
 * [**Geography.bgm**](https://github.com/Atlantis-Ecosystem-Model/South_East_Tasmania_model/blob/master/Geography.bgm) The file defines the geography used in the Atlantis model to define the bathymetry of the model system.
@@ -98,9 +95,7 @@ This is an initial distribution of ONE example functional group, not all groups.
 ## Output files
 Here we provide a brief description of all the output files from an Atlantis model. For more details see the
 Atlantis manual
-([part 1](https://confluence.csiro.au/display/Atlantis/Atlantis+Documentation?preview=/43155557/397385419/AtlantisUserGuide_PartI.pdf)
-and
-[part 2](https://confluence.csiro.au/display/Atlantis/Atlantis+Documentation?preview=/43155557/397385421/AtlantisUserGuide_PartII.pdf))
+([part 1 and 2](https://research.csiro.au/atlantis/home/useful-references/)).
 ### NetCDF output Files
 Atlantis generates a number of NetCDF output files that contain spatial information
 such as the biomass of functional groups in boxes and layers.  The NetCDF files do
@@ -108,7 +103,7 @@ not follow the normal gridded NetCDF structure that people are used to as the
 Atlantis model is a box model, not a grid model. The normal packages such as
 [ncview](http://meteora.ucsd.edu/~pierce/ncview_home_page.html) will not work with
 Atlantis output NetCDF files. To read these outputs you can use your own code or one
-of the tools provided [below](#supporting-software).
+of the tools listed [below](#Software-to-analyze-input-and-output-files).
 *  **biol.nc**
 Contains snapshots of the tracers in the model at given time frequencies in each box and layer.
 *  **biolTOT.nc**
@@ -152,8 +147,12 @@ The total discards per species across the entire model domain (summed over fishe
 The discards of each species per fishery across the entire model domain (summed over fisheries)
 
 ## Example outputs for the SETas model
-Refer to [**Functional_groups.csv**](https://github.com/Atlantis-Ecosystem-Model/South_East_Tasmania_model/blob/master/Functional_groups.csv) 
-for full names and descriptions of functional groups in the model.
+There are various tools that help visualise Atlantis output files and many users write their own codes. 
+These tools are listed [below](#Software-to-analyze-input-and-output-files).
+Here we show a few example plots that can be produced with these tools.
+
+> *Note: Refer to [**Functional_groups.csv**](https://github.com/Atlantis-Ecosystem-Model/South_East_Tasmania_model/blob/master/Functional_groups.csv) 
+for full names and descriptions of functional groups in the model.*
 
 ### Trophic relationship between functional groups
 ![fw](./img/foodweb.png)
