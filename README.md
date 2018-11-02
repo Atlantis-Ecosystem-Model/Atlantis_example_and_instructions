@@ -197,6 +197,9 @@ Links to other software used can be accessed via the [Wiki](https://confluence.c
 
 # Model Installation and Running
 
+For detailed model installation and running instructions see chapter 2 in the [Atlantis manual](https://research.csiro.au/atlantis/home/useful-references/). 
+Here we briefly describe the main steps involved. 
+
 ## Preparing your machine
 Atlantis can be run on Linux, windows, and MacOS operating systems. Depending on your operating system
 Atlantis requires the a number of packages and libraries to be installed. This includes
