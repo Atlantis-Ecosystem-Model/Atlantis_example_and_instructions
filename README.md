@@ -156,12 +156,16 @@ for full names and descriptions of functional groups in the model.*
 
 ### Trophic relationship between functional groups
 ![fw](./img/foodweb.png)
-### Biomass dynamics by functional groups
+
+### Biomass dynamics of selected functional groups
 ![biomtot](./img/Biomass.png)
-### Biomass dynamics by age class for a specific functional group (Small demersal fish)
+
+### Biomass dynamics by age class for one functional group (Small demersal fish)
 ![biom](./img/out1.png)
+
 ### Dynamics of total functional group's predation
 ![test](./img/pred1.png)
+
 ### Predation by Age class
 ![test](./img/pred2.png)
 
