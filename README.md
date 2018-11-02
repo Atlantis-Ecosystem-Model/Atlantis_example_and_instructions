@@ -317,7 +317,7 @@ To build Atlantis in another versions of Linux please visit the
 
 ## Windows
 #### Required software
-1. The compiler - any of the following versions of Visual Sudio C++
+1. The compiler - any of the following versions of Visual Studio will the compiler Visual C++
     * Visual Studio C++ 2008
     * Visual Studio C++ 2010
     * Visual Studio C++ 2012
