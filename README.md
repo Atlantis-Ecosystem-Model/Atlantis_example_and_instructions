@@ -6,8 +6,7 @@ Software for modelling marine ecosystem including spatial and temporal dynamics.
 This page contains an example of an operational Atlatis model with details of the parameter (input) files and model output files given.
 It also gives brief details and instructions on how to compile and run an Atlantis model on your computer.
 For more detailed explanation about the code, the parameters and how to run Atlantis you will need to download the Atlantis manual
-([part 1](https://research.csiro.au/atlantis/?ddownload=111)
-and [part 2](https://confluence.csiro.au/display/Atlantis/Atlantis+Documentation?preview=/43155557/397385421/AtlantisUserGuide_PartII.pdf)).
+([part 1 and 2](https://research.csiro.au/atlantis/home/useful-references/). Other useful Atlantis references can also be found [here](https://research.csiro.au/atlantis/home/useful-references/).
 
 <hr>
 
@@ -61,17 +60,15 @@ The most used model example is the South East Tasmania (SETas) Atlantis model. T
  fish catches, and arsenic concentration.
 
 <p align="center">
-    <img alt="SETas" src="./img/SETas_bound.jpg" height="400" width="400">
+    <img alt="SETas" src="./img/map_zoom_a.png" height="400" width="800">
 </p>
 
 ## Input files
 Here we provide a brief description of all the input files required to run an Atlantis model. For more details see the
-Atlantis manual
-([part 1](https://confluence.csiro.au/display/Atlantis/Atlantis+Documentation?preview=/43155557/397385419/AtlantisUserGuide_PartI.pdf)
-and
-[part 2](https://confluence.csiro.au/display/Atlantis/Atlantis+Documentation?preview=/43155557/397385421/AtlantisUserGuide_PartII.pdf))
-or [Atlantis-wiki](https://confluence.csiro.au/display/Atlantis/Atlantis+Ecosystem+Model+Home+Page).
+Atlantis manual [part 1 and 2](https://research.csiro.au/atlantis/home/useful-references/) or the [Atlantis-wiki](https://confluence.csiro.au/display/Atlantis/Atlantis+Ecosystem+Model+Home+Page).
+
 > All the input files needed to run the SETas model can be downloaded [here](https://github.com/Atlantis-Ecosystem-Model/South_East_Tasmania_model/archive/master.zip).
+
 ### Basic files
 * [**Functional_groups.csv**](https://github.com/Atlantis-Ecosystem-Model/South_East_Tasmania_model/blob/master/Functional_groups.csv) A file containing information about the functional groups in the model.
 * [**Geography.bgm**](https://github.com/Atlantis-Ecosystem-Model/South_East_Tasmania_model/blob/master/Geography.bgm) The file defines the geography used in the Atlantis model to define the bathymetry of the model system.
@@ -79,7 +76,7 @@ or [Atlantis-wiki](https://confluence.csiro.au/display/Atlantis/Atlantis+Ecosyst
 * [**Physics.prm**](https://github.com/Atlantis-Ecosystem-Model/South_East_Tasmania_model/blob/master/Physics.prm) Physics parameters (coefficients) - apart from setting some flags (e.g. turning resuspension on/off), point-source scaling and quarterly eddy strength distribution these parameters are not typically changed.
 * [**Forcings.prm**](https://github.com/Atlantis-Ecosystem-Model/South_East_Tasmania_model/blob/master/Forcings.prm) A file that lays out the forcing file pathways for hydrodynamics, point sources, climate time series (precipitation, irradiance, temperature and salinity), historical catch, fuel prices, GDP and complex spatial zonation.
 * [**Biology.prm**](https://github.com/Atlantis-Ecosystem-Model/South_East_Tasmania_model/blob/master/Biology.prm) File detailing all the ecological parameters, submodel selection, network connection definitions and quarterly distributions.
-* [**Fisheries**](https://github.com/Atlantis-Ecosystem-Model/South_East_Tasmania_model/blob/master/Fisheries.csv) A file containing information about the fisheries in the model.
+* [**Fisheries.csv**](https://github.com/Atlantis-Ecosystem-Model/South_East_Tasmania_model/blob/master/Fisheries.csv) A file containing information about the fisheries in the model.
 * [**Initial_condition.nc**](https://github.com/Atlantis-Ecosystem-Model/South_East_Tasmania_model/blob/master/Initial_condition.nc) A NetCDF file where the initial conditions of the model are given, such as the initial biomass and size values for each functional group and age structure.
 ### Additional files
 * **assess.prm** File detailing the sample design, sampling error structures and basic assessment model parameters.
@@ -87,12 +84,18 @@ or [Atlantis-wiki](https://confluence.csiro.au/display/Atlantis/Atlantis+Ecosyst
 * **econ.prm** A file storing all the socio-economics parameters (for the market model, trading model, and black-book based effort allocation model).
 * [**time_serie.ts**](https://github.com/Atlantis-Ecosystem-Model/South_East_Tasmania_model/blob/master/inputs/catchts/catch1.ts) Time-series files used to force the model with N data columns and a reference year.
 
+## Visualisations of selected parameters used by the SETas Atlantis model.
+### Inital reserve and structural biomasses (mg N) for selected functional groups
+![fw](./img/Init_N_selectedGroups_corrected.png)
+### Spatial (horizontal and vertical) distributions of functional groups
+This is an initial distribution of ONE example functional group, not all groups.
+![fw](./img/spatial_distributions.png)
+
+
 ## Output files
 Here we provide a brief description of all the output files from an Atlantis model. For more details see the
 Atlantis manual
-([part 1](https://confluence.csiro.au/display/Atlantis/Atlantis+Documentation?preview=/43155557/397385419/AtlantisUserGuide_PartI.pdf)
-and
-[part 2](https://confluence.csiro.au/display/Atlantis/Atlantis+Documentation?preview=/43155557/397385421/AtlantisUserGuide_PartII.pdf))
+([part 1 and 2](https://research.csiro.au/atlantis/home/useful-references/)).
 ### NetCDF output Files
 Atlantis generates a number of NetCDF output files that contain spatial information
 such as the biomass of functional groups in boxes and layers.  The NetCDF files do
@@ -100,7 +103,7 @@ not follow the normal gridded NetCDF structure that people are used to as the
 Atlantis model is a box model, not a grid model. The normal packages such as
 [ncview](http://meteora.ucsd.edu/~pierce/ncview_home_page.html) will not work with
 Atlantis output NetCDF files. To read these outputs you can use your own code or one
-of the tools provided [below](#supporting-software).
+of the tools listed [below](#Software-to-analyze-input-and-output-files).
 *  **biol.nc**
 Contains snapshots of the tracers in the model at given time frequencies in each box and layer.
 *  **biolTOT.nc**
@@ -144,15 +147,23 @@ The total discards per species across the entire model domain (summed over fishe
 The discards of each species per fishery across the entire model domain (summed over fisheries)
 
 ## Example outputs for the SETas model
+There are various tools that help visualise Atlantis output files and many users write their own codes. 
+These tools are listed [below](#Software-to-analyze-input-and-output-files).
+Here we show a few example plots that can be produced with these tools.
+
+> *Note: Refer to [**Functional_groups.csv**](https://github.com/Atlantis-Ecosystem-Model/South_East_Tasmania_model/blob/master/Functional_groups.csv) 
+for full names and descriptions of functional groups in the model.*
+
 ### Trophic relationship between functional groups
 ![fw](./img/foodweb.png)
-### Biomass dynamics by functional groups
+
+### Biomass dynamics of selected functional groups
 ![biomtot](./img/Biomass.png)
-### Biomass dynamics by age class for a specific functional group (Small demersal fish)
+
+### Biomass dynamics by age class for one functional group (Small demersal fish)
 ![biom](./img/out1.png)
-### Dynamics of total functional group's predation
-![test](./img/pred1.png)
-### Predation by Age class
+
+### Prey and predator interactions 
 ![test](./img/pred2.png)
 
 
@@ -186,6 +197,9 @@ Links to other software used can be accessed via the [Wiki](https://confluence.c
 <hr>
 
 # Model Installation and Running
+
+For detailed model installation and running instructions see chapter 2 in the [Atlantis manual](https://research.csiro.au/atlantis/home/useful-references/). 
+Here we briefly describe the main steps involved. 
 
 ## Preparing your machine
 Atlantis can be run on Linux, windows, and MacOS operating systems. Depending on your operating system
