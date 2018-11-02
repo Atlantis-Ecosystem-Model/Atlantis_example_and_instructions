@@ -77,7 +77,7 @@ Atlantis manual [part 1 and 2](https://research.csiro.au/atlantis/home/useful-re
 * [**Forcings.prm**](https://github.com/Atlantis-Ecosystem-Model/South_East_Tasmania_model/blob/master/Forcings.prm) A file that lays out the forcing file pathways for hydrodynamics, point sources, climate time series (precipitation, irradiance, temperature and salinity), historical catch, fuel prices, GDP and complex spatial zonation.
 * [**Biology.prm**](https://github.com/Atlantis-Ecosystem-Model/South_East_Tasmania_model/blob/master/Biology.prm) File detailing all the ecological parameters, submodel selection, network connection definitions and quarterly distributions.
 * [**Fisheries.csv**](https://github.com/Atlantis-Ecosystem-Model/South_East_Tasmania_model/blob/master/Fisheries.csv) A file containing information about the fisheries in the model.
-* [**Initial_condition.nc**](https://github.com/Atlantis-Ecosystem-Model/South_East_Tasmania_model/blob/master/Initial_condition.nc) A NetCDF file where the initial conditions of the model are given, such as the initial biomass and size values for each functional group and age structure.
+* **Initial_condition.nc** A NetCDF file where the initial conditions of the model are given, such as the initial biomass and size values for each functional group and age structure (Plain text version [here](https://github.com/Atlantis-Ecosystem-Model/South_East_Tasmania_model/blob/master/Initial_condition.cdf).
 ### Additional files
 * **assess.prm** File detailing the sample design, sampling error structures and basic assessment model parameters.
 * [**Harvest.prm**](https://github.com/Atlantis-Ecosystem-Model/South_East_Tasmania_model/blob/master/Harvest.prm) File storing all the fisheries and management parameters and submodel definitions.
@@ -147,11 +147,11 @@ The total discards per species across the entire model domain (summed over fishe
 The discards of each species per fishery across the entire model domain (summed over fisheries)
 
 ## Example outputs for the SETas model
-There are various tools that help visualise Atlantis output files and many users write their own codes. 
+There are various tools that help visualise Atlantis output files and many users write their own codes.
 These tools are listed [below](#Software-to-analyze-input-and-output-files).
 Here we show a few example plots that can be produced with these tools.
 
-> *Note: Refer to [**Functional_groups.csv**](https://github.com/Atlantis-Ecosystem-Model/South_East_Tasmania_model/blob/master/Functional_groups.csv) 
+> *Note: Refer to [**Functional_groups.csv**](https://github.com/Atlantis-Ecosystem-Model/South_East_Tasmania_model/blob/master/Functional_groups.csv)
 for full names and descriptions of functional groups in the model.*
 
 ### Trophic relationship between functional groups
@@ -163,7 +163,7 @@ for full names and descriptions of functional groups in the model.*
 ### Biomass dynamics by age class for one functional group (Small demersal fish)
 ![biom](./img/out1.png)
 
-### Prey and predator interactions 
+### Prey and predator interactions
 ![test](./img/pred2.png)
 
 
@@ -198,8 +198,8 @@ Links to other software used can be accessed via the [Wiki](https://confluence.c
 
 # Model Installation and Running
 
-For detailed model installation and running instructions see chapter 2 in the [Atlantis manual](https://research.csiro.au/atlantis/home/useful-references/). 
-Here we briefly describe the main steps involved. 
+For detailed model installation and running instructions see chapter 2 in the [Atlantis manual](https://research.csiro.au/atlantis/home/useful-references/).
+Here we briefly describe the main steps involved.
 
 ## Preparing your machine
 Atlantis can be run on Linux, windows, and MacOS operating systems. Depending on your operating system
