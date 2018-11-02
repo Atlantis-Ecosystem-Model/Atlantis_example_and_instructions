@@ -209,7 +209,7 @@ software that operates as:
   2. An SVN platform to check out the code (e.g. Tortoise SVN for windows or subversion for Linux)
   3. A NetCDF file system or development library
 
-  Please read the instructions for your operating system for more details [below](Specific-instructions-for-Operating-Systems).
+  Please read the instructions for your operating system for more details [below](specific-instructions-for-your-operating-systems).
 
 > *Note: Remember that if you want a copy of the Atlantis main code you will need to go
 first to the [Atlantis-Page](https://confluence.csiro.au/display/Atlantis/CSIRO+licence+and+repository+request)
