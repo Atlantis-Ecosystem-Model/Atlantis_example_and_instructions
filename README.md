@@ -209,7 +209,7 @@ software that operates as:
   2. An SVN platform to check out the code (e.g. Tortoise SVN for windows or subversion for Linux)
   3. A NetCDF file system or development library
 
-  Please read the instructions for your operating system for more details [below](operate).
+  Please read the instructions for your operating system for more details [below](#Specific-instructions-for-your-operating-systems).
 
 > *Note: Remember that if you want a copy of the Atlantis main code you will need to go
 first to the [Atlantis-Page](https://confluence.csiro.au/display/Atlantis/CSIRO+licence+and+repository+request)
@@ -224,10 +224,13 @@ Once you have your compiler, NetCDF reader and source code, it is time to build
 
 ## Running Atlantis
 At this stage you should be able to run an operational model
-(such as that provided [above](example-operational-model), by calling a .sh or .bat file in the command line.
+(such as that provided [above](#example-operational-model), by calling a .sh or .bat file in the command line.
 
 <hr>
-<a name="operate">
+<a name="linux3">
+
+
+
 # Specific instructions for your Operating Systems
 
 ## Linux
