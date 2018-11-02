@@ -163,7 +163,7 @@ for full names and descriptions of functional groups in the model.*
 ### Biomass dynamics by age class for one functional group (Small demersal fish)
 ![biom](./img/out1.png)
 
-### Prey and predator interactions
+### Prey and predator interactions. Biomass of prey consumed by small demersal fish in day 406
 ![test](./img/pred2.png)
 
 
