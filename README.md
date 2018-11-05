@@ -220,8 +220,8 @@ and sign the
 code.*
 
 To download the code, the following links will need to be checked in by your SVN platform:
-CSIRO users: https://svnserv.csiro.au/svn/atlantis/Atlantis/trunk/atlantis
-External Partners: https://svnserv.csiro.au/svn/ext/atlantis/Atlantis/trunk/atlantis
+	CSIRO users: https://svnserv.csiro.au/svn/atlantis/Atlantis/trunk/atlantis
+	External Partners: https://svnserv.csiro.au/svn/ext/atlantis/Atlantis/trunk/atlantis
 
 ## Building Atlantis
 Once you have your compiler, NetCDF reader and source code, it is time to build
