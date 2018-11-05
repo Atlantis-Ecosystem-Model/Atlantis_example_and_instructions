@@ -414,10 +414,10 @@ Atlantis needs the following libraries to be installed. For each library downloa
 
 * **autoconf**  Automatic configure script builder. Download using macports.
 * **automake** Automatic make script builder. Download using macports.
-* **Netcdf** Development library. Install from [source](http://www.unidata.ucar.edu/downloads/netcdf/index.jsp)
-* **proj4** Development library, used for GIS projections. Install from [source](http://trac.osgeo.org/proj/). Make sure you get version 4.7.0.
-* **pkgconfig** Helper tool used when compiling applications and libraries. Download using macports or from [source](http://www.freedesktop.org/wiki/Software/pkg-config)
-* **libxml** - Library to deal with xml files format. Download and installed from [source](http://www.xmlsoft.org/).
+* [**Netcdf** Development library](http://www.unidata.ucar.edu/downloads/netcdf/index.jsp)
+* [**proj4** Development library](http://trac.osgeo.org/proj/), used for GIS projections. Make sure you get version 4.7.0.
+* **pkgconfig** Helper tool used when compiling applications and libraries. Download using macports or from [freedesktop](http://www.freedesktop.org/wiki/Software/pkg-config)
+* [**libxml**](http://www.xmlsoft.org/) - Library to deal with xml files format. 
 
 All of the following libraries should be downloaded to a folder such as /home/Downloads
 To install the library "libname" you should do :
@@ -464,7 +464,7 @@ $ sudo make install
 ```
 This will install the Atlantis header files and the executable in /usr/local/include/Atlantis-1.0/Atlantis and /usr/local/bin
 
-more detailed information bout how to build Atlantis can be found in the [Wiki-building-macOS](https://confluence.csiro.au/display/Atlantis/Building+under+mac)
+more detailed information bout how to build Atlantis can be found in the [Wiki-Building-MacOS](https://confluence.csiro.au/display/Atlantis/Building+under+mac)
 
 
 #### Run
