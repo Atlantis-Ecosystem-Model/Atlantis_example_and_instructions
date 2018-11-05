@@ -219,8 +219,9 @@ and sign the
  and then send an email to the developers, who will give you access to the
 code.*
 
-To download the code, the following links will need to be checked in by your SVN platform:
+To download the code, the following URL link will need to be checked in by your SVN platform:
 	CSIRO users: https://svnserv.csiro.au/svn/atlantis/Atlantis/trunk/atlantis
+	
 	External Partners: https://svnserv.csiro.au/svn/ext/atlantis/Atlantis/trunk/atlantis
 
 ## Building Atlantis
