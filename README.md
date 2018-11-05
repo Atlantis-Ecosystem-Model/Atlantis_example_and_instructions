@@ -66,7 +66,7 @@ Atlantis manual [part 1 and 2](https://research.csiro.au/atlantis/home/useful-re
 
 > All the input files needed to run the SETas model can be downloaded [here](https://github.com/Atlantis-Ecosystem-Model/South_East_Tasmania_model/archive/master.zip).
 
-### Basic files
+### Essential files
 * [**Functional_groups.csv**](https://github.com/Atlantis-Ecosystem-Model/South_East_Tasmania_model/blob/master/Functional_groups.csv) A file containing information about the functional groups in the model.
 * [**Geography.bgm**](https://github.com/Atlantis-Ecosystem-Model/South_East_Tasmania_model/blob/master/Geography.bgm) The file defines the geography used in the Atlantis model to define the bathymetry of the model system.
 * [**Run_settings.prm**](https://github.com/Atlantis-Ecosystem-Model/South_East_Tasmania_model/blob/master/Run_settings.prm) A file storing all the parameters defining the run setup (timestep, run and stop times, etc.)
@@ -74,8 +74,10 @@ Atlantis manual [part 1 and 2](https://research.csiro.au/atlantis/home/useful-re
 * [**Forcings.prm**](https://github.com/Atlantis-Ecosystem-Model/South_East_Tasmania_model/blob/master/Forcings.prm) A file that lays out the forcing file pathways for hydrodynamics, point sources, climate time series (precipitation, irradiance, temperature and salinity), historical catch, fuel prices, GDP and complex spatial zonation.
 * [**Biology.prm**](https://github.com/Atlantis-Ecosystem-Model/South_East_Tasmania_model/blob/master/Biology.prm) File detailing all the ecological parameters, submodel selection, network connection definitions and quarterly distributions.
 * [**Fisheries.csv**](https://github.com/Atlantis-Ecosystem-Model/South_East_Tasmania_model/blob/master/Fisheries.csv) A file containing information about the fisheries in the model.
-* **Initial_condition.nc** A NetCDF file where the initial conditions of the model are given, such as the initial biomass and size values for each functional group and age structure (Plain text version [here](https://github.com/Atlantis-Ecosystem-Model/South_East_Tasmania_model/blob/master/Initial_condition.cdf)).
-### Additional files
+* **Initial_condition.nc** A NetCDF file where the initial conditions of the model are given, 
+such as the initial biomass and size values for each functional group and age structure 
+(Access the plain text version [here](https://github.com/Atlantis-Ecosystem-Model/South_East_Tasmania_model/blob/master/Initial_condition.cdf)).
+### Additional files (optional)
 * **assess.prm** File detailing the sample design, sampling error structures and basic assessment model parameters.
 * [**Harvest.prm**](https://github.com/Atlantis-Ecosystem-Model/South_East_Tasmania_model/blob/master/Harvest.prm) File storing all the fisheries and management parameters and submodel definitions.
 * **econ.prm** A file storing all the socio-economics parameters (for the market model, trading model, and black-book based effort allocation model).
@@ -189,13 +191,13 @@ during the calibration of Atlantis. This tool was used to produce the figures ab
   angstroms is to provide easy access to Regional Ocean Modeling System (ROMS) output
   for R.
 
-Links to other software used can be accessed via the [Wiki](https://confluence.csiro.au/display/Atlantis/Atlantis+Helper+Tools).
+Links to other software used can be accessed via the [Atlantis-Wiki](https://confluence.csiro.au/display/Atlantis/Atlantis+Helper+Tools).
 
 <hr>
 
 # Model Installation and Running
 
-For detailed model installation and running instructions see chapter 2 in the [Atlantis manual](https://research.csiro.au/atlantis/home/useful-references/).
+For detailed model installation and running instructions see chapter 2 in the [Atlantis manual Part I](https://research.csiro.au/atlantis/home/useful-references/).
 Here we briefly describe the main steps involved.
 
 ## Preparing your machine
@@ -204,7 +206,7 @@ Atlantis requires the a number of packages and libraries to be installed. This i
 software that operates as:
   1. A compiler (e.g. Visal Studio for windows or gcc for Linux)
   2. An SVN platform to check out the code (e.g. Tortoise SVN for windows or subversion for Linux)
-  3. A NetCDF file system or development library
+  3. A NetCDF file system or development library (e.g. NetCDF 4 for windows)
 
   Please read the instructions for your operating system for more details [below](#Specific-instructions-for-your-operating-systems).
 
