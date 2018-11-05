@@ -50,9 +50,9 @@ ___
 The best way to learn about a model, including it's input (parameter) files and outputs,
 is through the illustration of an existing operational model.
 The most used model example is the South East Tasmania (SETas) Atlantis model. This
- model is divided into 8 polygons and has 5 water layers and one sediment layer. It
- has 35 functional groups of which 9 are groups structured by age, 23 are pool
- biomass and three are detritus. This model is also forced by a hydrodynamic model that
+ model is divided into 9 polygons and has 5 water layers and one sediment layer. It
+ has 35 functional groups: 10 are structured by age, 23 are biomass pools, 
+ and three are detritus. This model is also forced by outputs from a hydrodynamic model that
  represent the flows between boxes, also includes forcing of salinity, temperature,
  fish catches, and arsenic concentration.
 
@@ -81,7 +81,7 @@ such as the initial biomass and size values for each functional group and age st
 * **assess.prm** File detailing the sample design, sampling error structures and basic assessment model parameters.
 * [**Harvest.prm**](https://github.com/Atlantis-Ecosystem-Model/South_East_Tasmania_model/blob/master/Harvest.prm) File storing all the fisheries and management parameters and submodel definitions.
 * **econ.prm** A file storing all the socio-economics parameters (for the market model, trading model, and black-book based effort allocation model).
-* [**time_serie.ts**](https://github.com/Atlantis-Ecosystem-Model/South_East_Tasmania_model/blob/master/inputs/catchts/catch1.ts) Time-series files used to force the model with N data columns and a reference year.
+* [**time_serie.ts**](https://github.com/Atlantis-Ecosystem-Model/South_East_Tasmania_model/blob/master/inputs/catchts/catch1.ts) Optional forcing and input files with data columns for a particlar reference year (e.g. fisheries catch or solar radiation data).
 
 ## Visualisations of selected parameters used by the SETas Atlantis model
 ### Inital reserve and structural biomasses (mg N) for selected functional groups
@@ -416,7 +416,7 @@ Atlantis needs the following libraries to be installed. For each library downloa
 * **automake** Automatic make script builder. Download using macports.
 * [**Netcdf** Development library](http://www.unidata.ucar.edu/downloads/netcdf/index.jsp)
 * [**proj4** Development library](http://trac.osgeo.org/proj/), used for GIS projections. Make sure you get version 4.7.0.
-* **pkgconfig** Helper tool used when compiling applications and libraries. Download using macports or from [freedesktop](http://www.freedesktop.org/wiki/Software/pkg-config)
+* **pkgconfig** Helper tool used when compiling applications and libraries. Download using macports or from [freedesktop](http://www.freedesktop.org/wiki/Software/pkg-config).
 * [**libxml**](http://www.xmlsoft.org/) - Library to deal with xml files format. 
 
 All of the following libraries should be downloaded to a folder such as /home/Downloads
@@ -464,7 +464,7 @@ $ sudo make install
 ```
 This will install the Atlantis header files and the executable in /usr/local/include/Atlantis-1.0/Atlantis and /usr/local/bin
 
-more detailed information bout how to build Atlantis can be found in the [Wiki-Building-MacOS](https://confluence.csiro.au/display/Atlantis/Building+under+mac)
+More detailed information bout how to build Atlantis can be found in the [Wiki-Building-MacOS](https://confluence.csiro.au/display/Atlantis/Building+under+mac)
 
 
 #### Run
