@@ -351,10 +351,7 @@ To build Atlantis in another versions of Linux please visit the
 3. An SVN platform to check out the source code from the code repository
 
     Dowload [TortoiseSVN](http://tortoisesvn.tigris.org/) as the preferred GUI.
-    
-    Right click on the foler where your code is to be stored and find SVN Checkout. The URL of repository should be: 
-    CSIRO users: https://svnserv.csiro.au/svn/atlantis/Atlantis/trunk/atlantis
-    External Partners: https://svnserv.csiro.au/svn/ext/atlantis/Atlantis/trunk/atlantis
+   
 
 #### Build
 Building in Visual Studio requires opening the appropriate visual studio solution in
@@ -375,8 +372,10 @@ visit [Wiki-Building-Windows](https://confluence.csiro.au/display/Atlantis/Build
 #### Code
 To locally compile the code, create a new folder or checkout directory for your
 source code (e.g. c:\Code\atlantis). Right click in this new folder and select the
-new menu option  **"SVN checkout"** and enter the appropriate URL into the *"URL"* of the
-repository field’.
+new menu option  **"SVN checkout"** and enter the appropriate URL of repository: 
+    CSIRO users: https://svnserv.csiro.au/svn/atlantis/Atlantis/trunk/atlantis
+    External Partners: https://svnserv.csiro.au/svn/ext/atlantis/Atlantis/trunk/atlantis
+
 You will then be asked to authenticate using your domain username and password
 provided after registering to be a user.
 
