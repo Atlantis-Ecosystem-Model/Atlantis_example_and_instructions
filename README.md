@@ -319,7 +319,7 @@ On your terminal navigate to your Atlantis model folder and then convert the fil
 $ cd ~\You\Atlantis\Model\Folder\
 $ flip -mv *
 ```
-*
+
 
 #### Run
  Create the bash application program file (**.sh**)
