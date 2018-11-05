@@ -218,7 +218,8 @@ and sign the
 [licence agreement](https://confluence.csiro.au/display/Atlantis/CSIRO+licence+and+repository+request)
  and then send an email to the developers, who will give you access to the
 code.*
-Typically this will require the following links to be copied and pasted (or checked) into your SVN platform:
+
+To download the code, the following links will need to be checked in by your SVN platform:
 CSIRO users: https://svnserv.csiro.au/svn/atlantis/Atlantis/trunk/atlantis
 External Partners: https://svnserv.csiro.au/svn/ext/atlantis/Atlantis/trunk/atlantis
 
