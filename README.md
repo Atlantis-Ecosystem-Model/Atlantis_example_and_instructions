@@ -313,6 +313,14 @@ $ sudo make install
 To build Atlantis in another versions of Linux please visit the
 [Wiki-Building-Linux](https://confluence.csiro.au/display/Atlantis/Building+under+linux).
 
+> *Note: Before you can run Atlantis under Linux you will need to convert the [example input files](./img/SETas_MEE_test.zip) in Linux [EOL](https://en.wikipedia.org/wiki/Newline) format.
+On your terminal navigate to your Atlantis model folder and then convert the files:
+```
+$ cd ~\You\Atlantis\Model\Folder\
+$ flip -mv *
+```
+*
+
 #### Run
  Create the bash application program file (**.sh**)
  - Open your plain text editor, such as gedit, emacs or nano. (e.g. *runAtlantis.sh*)
@@ -330,7 +338,6 @@ To build Atlantis in another versions of Linux please visit the
    user@pc:~$ cd Atlantis/run
    user@pc:~/Atlantis/run>  ./runAtlantis.sh
    ```
-
 ---
 
 ## Windows
