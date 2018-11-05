@@ -41,8 +41,8 @@ ___
    * [Running Atlantis](#Running-Atlantis)
 * [Instructions for Different Operating Systems](#Specific-instructions-for-your-Operating-Systems)
    * [Linux](#linux3)
-   * [Windows](#win3)
-   * [MacOS](#macos3)
+   * [Windows](#Windows)
+   * [MacOS](#MacOS)
 
 
 # Example Operational Model
