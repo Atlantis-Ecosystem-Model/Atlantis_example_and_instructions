@@ -154,16 +154,16 @@ Here we show a few example plots that can be produced with these tools.
 > *Note: Refer to [**Functional_groups.csv**](https://github.com/Atlantis-Ecosystem-Model/South_East_Tasmania_model/blob/master/Functional_groups.csv)
 for full names and descriptions of functional groups in the model.*
 
-### Predator-prey (or food web) matrix
+### Food web matrix (predator-prey interactions between functional groups)
 ![fw](./img/foodweb.png)
 
 ### Biomass dynamics of selected functional groups
 ![biomtot](./img/Biomass.png)
 
-### Biomass dynamics by age class for one functional group (Small demersal fish)
+### Biomass dynamics by age class for one functional group (small demersal fish)
 ![biom](./img/out1.png)
 
-### Prey-predator interactions. Biomass of prey consumed by small demersal fish on day 406
+### Prey-predator interactions (biomass of prey consumed by small demersal fish on day 406)
 ![test](./img/pred2.png)
 
 
