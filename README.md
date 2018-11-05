@@ -69,25 +69,26 @@ Atlantis manual [part 1 and 2](https://research.csiro.au/atlantis/home/useful-re
 ### Essential files
 * [**Functional_groups.csv**](https://github.com/Atlantis-Ecosystem-Model/South_East_Tasmania_model/blob/master/Functional_groups.csv) A file containing information about the functional groups in the model.
 * [**Geography.bgm**](https://github.com/Atlantis-Ecosystem-Model/South_East_Tasmania_model/blob/master/Geography.bgm) The file defines the geography used in the Atlantis model to define the bathymetry of the model system.
-* [**Run_settings.prm**](https://github.com/Atlantis-Ecosystem-Model/South_East_Tasmania_model/blob/master/Run_settings.prm) A file storing all the parameters defining the run setup (timestep, run and stop times, etc.)
+* [**Run_settings.prm**](https://github.com/Atlantis-Ecosystem-Model/South_East_Tasmania_model/blob/master/Run_settings.prm) A file storing all the parameters defining the run setup (timestep, run and stop times, etc.).
 * [**Physics.prm**](https://github.com/Atlantis-Ecosystem-Model/South_East_Tasmania_model/blob/master/Physics.prm) Physics parameters (coefficients) - apart from setting some flags (e.g. turning resuspension on/off), point-source scaling and quarterly eddy strength distribution these parameters are not typically changed.
 * [**Forcings.prm**](https://github.com/Atlantis-Ecosystem-Model/South_East_Tasmania_model/blob/master/Forcings.prm) A file that lays out the forcing file pathways for hydrodynamics, point sources, climate time series (precipitation, irradiance, temperature and salinity), historical catch, fuel prices, GDP and complex spatial zonation.
 * [**Biology.prm**](https://github.com/Atlantis-Ecosystem-Model/South_East_Tasmania_model/blob/master/Biology.prm) File detailing all the ecological parameters, submodel selection, network connection definitions and quarterly distributions.
 * [**Fisheries.csv**](https://github.com/Atlantis-Ecosystem-Model/South_East_Tasmania_model/blob/master/Fisheries.csv) A file containing information about the fisheries in the model.
 * **Initial_condition.nc** A NetCDF file where the initial conditions of the model are given, 
 such as the initial biomass and size values for each functional group and age structure 
-(Access the plain text version [here](https://github.com/Atlantis-Ecosystem-Model/South_East_Tasmania_model/blob/master/Initial_condition.cdf)).
+(access the plain text version [here](https://github.com/Atlantis-Ecosystem-Model/South_East_Tasmania_model/blob/master/Initial_condition.cdf)).
+
 ### Additional files (optional)
 * **assess.prm** File detailing the sample design, sampling error structures and basic assessment model parameters.
 * [**Harvest.prm**](https://github.com/Atlantis-Ecosystem-Model/South_East_Tasmania_model/blob/master/Harvest.prm) File storing all the fisheries and management parameters and submodel definitions.
 * **econ.prm** A file storing all the socio-economics parameters (for the market model, trading model, and black-book based effort allocation model).
 * [**time_serie.ts**](https://github.com/Atlantis-Ecosystem-Model/South_East_Tasmania_model/blob/master/inputs/catchts/catch1.ts) Optional forcing and input files with data columns for a particlar reference year (e.g. fisheries catch or solar radiation data).
 
-## Visualisations of selected parameters used by the SETas Atlantis model
+## Visualisations of selected parameters used by the example SETas Atlantis model
 ### Inital reserve and structural biomasses (mg N) for selected functional groups
 ![fw](./img/Init_N_selectedGroups_corrected.png)
 ### Spatial (horizontal and vertical) distributions of functional groups
-Initial distribution of one functional group.
+Initial distribution of one functional group
 ![fw](./img/spatial_distributions.png)
 
 
@@ -112,11 +113,11 @@ Useful during the model tuning process and contains 2D data (time, box) for each
 It also contains the tracers for production and grazing for invertebrate groups, growth and consumption for each age class for each vertebrate group, and a number of indices such as the diversity index.
 *  **CATCH.nc**
 Contains cumulative values of catch and discard per species and age class (cohort) in numbers.
-It also details catch and discards per species per fishery (in tonnes per box)
+It also details catch and discards per species per fishery (in tonnes per box).
 *  **TOTCATCH.nc**
 This output files also contains cumulative total catch and discards per species in tonnes. All values are zeroed after they are written out.
 *  **ANNAGEBIO.nc**
-This output provides abundance in each annual age class (Numbers at age per species)
+This output provides abundance in each annual age class (Numbers at age per species).
 *  **ANNAGECATCH.nc**
 Provides numbers at age per species in the catch and discards (summed over all fleets).
 
@@ -153,7 +154,7 @@ Here we show a few example plots that can be produced with these tools.
 > *Note: Refer to [**Functional_groups.csv**](https://github.com/Atlantis-Ecosystem-Model/South_East_Tasmania_model/blob/master/Functional_groups.csv)
 for full names and descriptions of functional groups in the model.*
 
-### Trophic relationship between functional groups
+### Predator-prey (or food web) matrix
 ![fw](./img/foodweb.png)
 
 ### Biomass dynamics of selected functional groups
@@ -162,7 +163,7 @@ for full names and descriptions of functional groups in the model.*
 ### Biomass dynamics by age class for one functional group (Small demersal fish)
 ![biom](./img/out1.png)
 
-### Prey and predator interactions. Biomass of prey consumed by small demersal fish in day 406
+### Prey-predator interactions. Biomass of prey consumed by small demersal fish on day 406
 ![test](./img/pred2.png)
 
 
@@ -204,9 +205,9 @@ Here we briefly describe the main steps involved.
 Atlantis can be run on Linux, windows, and MacOS operating systems. Depending on your operating system
 Atlantis requires the a number of packages and libraries to be installed. This includes
 software that operates as:
-  1. A compiler (e.g. Visal Studio for windows or gcc for Linux)
-  2. An SVN platform to check out the code (e.g. Tortoise SVN for windows or subversion for Linux)
-  3. A NetCDF file system or development library (e.g. NetCDF 4 for windows)
+  1. A compiler (e.g. Visal Studio for windows or gcc for Linux).
+  2. An SVN platform to check out the code (e.g. Tortoise SVN for windows or subversion for Linux).
+  3. A NetCDF file system or development library (e.g. NetCDF 4 for windows).
 
   Please read the instructions for your operating system for more details [below](#Specific-instructions-for-your-operating-systems).
 
@@ -233,11 +234,11 @@ At this stage you should be able to run an operational model
 ## Linux
 ####  Checking libraries and packages
 * **gcc** - GNU Compiler Collection
-* **subversion** - Used to check out the code from the code repository.
+* **subversion** - Used to check out the code from the code repository
 * **netcdf** Development library
 * **libxml** Development library
-* **proj** Development library - used for GIS projections.
-* **pkg-config** Can get by without this but it will be easier if you have it.
+* **proj** Development library - used for GIS projections
+* **pkg-config** Can get by without this but it will be easier if you have it
 
 ```
 $ dpkg -l | grep build-essential    # Essential packages to build Debian
@@ -268,7 +269,7 @@ $ sudo apt-get install gawk
 
 **Fedora**
 ```
-$ yum install netcdf-devel  # Install the netcdf developer package:
+$ yum install netcdf-devel  # Install the netcdf developer package
 $ yum install subversion    # Install Subversion
 $ yum install proj-devel    # Install the proj4 projection package
 $ yum install libxml2-devel # Install the libxml developer package
@@ -297,7 +298,7 @@ $ cd  /to/your/atlantis/trunk/folder/
 $ aclocal
 $ autoconf
 $ automake -a               # If you have problems with this section
-$ autoreconf  -fvi          # you can use this command instead.
+$ autoreconf  -fvi          # you can use this command instead
 $ sudo chmod +x configure   # Change the permissions to the configure script
 $ ./configure
 $ make
@@ -361,7 +362,7 @@ Step 2: The executable file *atlantismain.exe* should then be copy from the
 atlantismain/Debug folder to the folder where your model run files are kept.
 
 For more details on the building process, including how to fix common errors,
-visit [Wiki-Building-Windows](https://confluence.csiro.au/display/Atlantis/Building+under+windows)
+visit [Wiki-Building-Windows](https://confluence.csiro.au/display/Atlantis/Building+under+windows).
 
 #### Code
 To locally compile the code, create a new folder or checkout directory for your
@@ -414,14 +415,14 @@ Atlantis needs the following libraries to be installed. For each library downloa
 
 * **autoconf**  Automatic configure script builder. Download using macports.
 * **automake** Automatic make script builder. Download using macports.
-* [**Netcdf** Development library](http://www.unidata.ucar.edu/downloads/netcdf/index.jsp)
+* [**Netcdf** Development library](http://www.unidata.ucar.edu/downloads/netcdf/index.jsp).
 * [**proj4** Development library](http://trac.osgeo.org/proj/), used for GIS projections. Make sure you get version 4.7.0.
 * **pkgconfig** Helper tool used when compiling applications and libraries. Download using macports or from [freedesktop](http://www.freedesktop.org/wiki/Software/pkg-config).
 * [**libxml**](http://www.xmlsoft.org/) - Library to deal with xml files format. 
 
 All of the following libraries should be downloaded to a folder such as /home/Downloads
 To install the library "libname" you should do :
-* Unpacked using :
+* Unpacked using:
 ```
 $ gzip -dv libname.tar.gz
 $ tar -xvf libname.tar
@@ -464,7 +465,7 @@ $ sudo make install
 ```
 This will install the Atlantis header files and the executable in /usr/local/include/Atlantis-1.0/Atlantis and /usr/local/bin
 
-More detailed information bout how to build Atlantis can be found in the [Wiki-Building-MacOS](https://confluence.csiro.au/display/Atlantis/Building+under+mac)
+More detailed information bout how to build Atlantis can be found in the [Wiki-Building-MacOS](https://confluence.csiro.au/display/Atlantis/Building+under+mac).
 
 
 #### Run
