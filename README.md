@@ -64,7 +64,7 @@ The most used model example is the South East Tasmania (SETas) Atlantis model. T
 Here we provide a brief description of all the input files required to run an Atlantis model. For more details see the
 Atlantis manual [part 1 and 2](https://research.csiro.au/atlantis/home/useful-references/) or the [Atlantis-wiki](https://confluence.csiro.au/display/Atlantis/Atlantis+Ecosystem+Model+Home+Page).
 
-> All the input files needed to run the SETas model can be downloaded [here](./Example_Atlantis_Model_inputfiles.zip).
+> All the input files needed to run the SETas model can be downloaded [here](./Example_Atlantis_Model_files.zip).
 
 ### Essential files
 * [**Functional_groups.csv**](https://github.com/Atlantis-Ecosystem-Model/South_East_Tasmania_model/blob/master/Functional_groups.csv) A file containing information about the functional groups in the model.
@@ -314,7 +314,7 @@ To build Atlantis in another versions of Linux please visit the
 [Wiki-Building-Linux](https://confluence.csiro.au/display/Atlantis/Building+under+linux).
 
 ```
-> *Note: Before you can run the example Atlantis model under Linux you will need to convert the [input files](./Example_Atlantis_Model_inputfiles.zip). 
+> *Note: Before you can run the example Atlantis model under Linux you will need to convert the [input files](./Example_Atlantis_Model_files.zip) 
 in Linux (EOL) format. On your terminal navigate to your Atlantis model folder and then convert the files:
 
 $ cd ~\You\Atlantis\Model\Folder\
