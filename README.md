@@ -314,7 +314,7 @@ To build Atlantis in another versions of Linux please visit the
 [Wiki-Building-Linux](https://confluence.csiro.au/display/Atlantis/Building+under+linux).
 
 ```
-> *Note: Before you can run the example Atlantis model under Linux you will need to convert the [input files](./Example_Atlantis_Model_files.zip) 
+> *Note: Before you can run the example Atlantis model under Linux you will need to convert the [input files](./Example_Atlantis_Model_files.zip).
 in Linux (EOL) format. On your terminal navigate to your Atlantis model folder and then convert the files:
 
 $ cd ~\You\Atlantis\Model\Folder\
