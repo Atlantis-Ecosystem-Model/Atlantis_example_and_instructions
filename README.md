@@ -6,7 +6,7 @@ Software for modelling marine ecosystem including spatial and temporal dynamics.
 This page contains an example of an operational Atlatis model with details of the parameter (input) files and model output files given.
 It also gives brief details and instructions on how to compile and run an Atlantis model on your computer.
 For more detailed explanation about the code, the parameters and how to run Atlantis you will need to download the Atlantis manual
-([part 1 and 2](https://research.csiro.au/atlantis/home/useful-references/). Other useful Atlantis references can also be found [here](https://research.csiro.au/atlantis/home/useful-references/).
+([part 1 and 2](https://research.csiro.au/atlantis/home/useful-references/)). Other useful Atlantis references can also be found [here](https://research.csiro.au/atlantis/home/useful-references/).
 
 <hr>
 
@@ -55,8 +55,8 @@ The best way to learn about a model, including it's input (parameter) files and 
 is through the illustration of an existing operational model.
 The most used model example is the South East Tasmania (SETas) Atlantis model. This
  model is divided into 8 polygons and has 5 water layers and one sediment layer. It
- has 35 functional groups of which 9 are groups structured by size, 23 are pool
- biomass and three are detritus. This model also includes a hydrodynamic model that
+ has 35 functional groups of which 9 are groups structured by age, 23 are pool
+ biomass and three are detritus. This model is also forced by a hydrodynamic model that
  represent the flows between boxes, also includes forcing of salinity, temperature,
  fish catches, and arsenic concentration.
 
@@ -89,7 +89,7 @@ Atlantis manual [part 1 and 2](https://research.csiro.au/atlantis/home/useful-re
 ### Inital reserve and structural biomasses (mg N) for selected functional groups
 ![fw](./img/Init_N_selectedGroups_corrected.png)
 ### Spatial (horizontal and vertical) distributions of functional groups
-This is an initial distribution of ONE example functional group, not all groups.
+Initial distribution of one functional group.
 ![fw](./img/spatial_distributions.png)
 
 
