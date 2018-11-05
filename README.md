@@ -211,12 +211,16 @@ software that operates as:
 
   Please read the instructions for your operating system for more details [below](#Specific-instructions-for-your-operating-systems).
 
+Code:
 > *Note: Remember that if you want a copy of the Atlantis main code you will need to go
 first to the [Atlantis-Page](https://confluence.csiro.au/display/Atlantis/CSIRO+licence+and+repository+request)
 and sign the
 [licence agreement](https://confluence.csiro.au/display/Atlantis/CSIRO+licence+and+repository+request)
  and then send an email to the developers, who will give you access to the
 code.*
+Typically this will require the following links to be copied and pasted (or checked) into your SVN platform:
+CSIRO users: https://svnserv.csiro.au/svn/atlantis/Atlantis/trunk/atlantis
+External Partners: https://svnserv.csiro.au/svn/ext/atlantis/Atlantis/trunk/atlantis
 
 ## Building Atlantis
 Once you have your compiler, NetCDF reader and source code, it is time to build
@@ -347,6 +351,10 @@ To build Atlantis in another versions of Linux please visit the
 3. An SVN platform to check out the source code from the code repository
 
     Dowload [TortoiseSVN](http://tortoisesvn.tigris.org/) as the preferred GUI.
+    
+    Right click on the foler where your code is to be stored and find SVN Checkout. The URL of repository should be: 
+    CSIRO users: https://svnserv.csiro.au/svn/atlantis/Atlantis/trunk/atlantis
+    External Partners: https://svnserv.csiro.au/svn/ext/atlantis/Atlantis/trunk/atlantis
 
 #### Build
 Building in Visual Studio requires opening the appropriate visual studio solution in
