@@ -226,8 +226,6 @@ At this stage you should be able to run an operational model
 (such as that provided [above](#example-operational-model), by calling a .sh or .bat file in the command line.
 
 <hr>
-<a name="linux3">
-
 
 
 # Specific instructions for your Operating Systems
@@ -399,7 +397,7 @@ windows or Linux and you will need to be comfortable installing libraries from
 source.
 
 #### Compiler
-* **Xcode** [site](https://developer.apple.com/xcode/): To install Xcode you might download
+* [Xcode](https://developer.apple.com/xcode/): To install Xcode you might download
 a dgm file. Once this is downloaded open Finder and drag the Xcode folder into your
 applications to install it. Once its finished installing you need to eject it before
 you delete it from your downloads folder. Then you might need to type something like
