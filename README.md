@@ -51,7 +51,7 @@ The best way to learn about a model, including it's input (parameter) files and 
 is through the illustration of an existing operational model.
 The most used model example is the South East Tasmania (SETas) Atlantis model. This
  model is divided into 9 polygons and has 5 water layers and one sediment layer. It
- has 35 functional groups: 10 are structured by age, 23 are biomass pools, 
+ has 35 functional groups: 10 are structured by age, 23 are biomass pools,
  and three are detritus. This model is also forced by outputs from a hydrodynamic model that
  represent the flows between boxes, also includes forcing of salinity, temperature,
  fish catches, and arsenic concentration.
@@ -64,7 +64,7 @@ The most used model example is the South East Tasmania (SETas) Atlantis model. T
 Here we provide a brief description of all the input files required to run an Atlantis model. For more details see the
 Atlantis manual [part 1 and 2](https://research.csiro.au/atlantis/home/useful-references/) or the [Atlantis-wiki](https://confluence.csiro.au/display/Atlantis/Atlantis+Ecosystem+Model+Home+Page).
 
-> All the input files needed to run the SETas model can be downloaded [here](./Example_Atlantis_Model_files.zip).
+> All the input files needed to run the SETas model can be downloaded [here](https://github.com/Atlantis-Ecosystem-Model/South_East_Tasmania_model/archive/master.zip).
 
 ### Essential files
 * [**Functional_groups.csv**](https://github.com/Atlantis-Ecosystem-Model/South_East_Tasmania_model/blob/master/Functional_groups.csv) A file containing information about the functional groups in the model.
@@ -74,8 +74,8 @@ Atlantis manual [part 1 and 2](https://research.csiro.au/atlantis/home/useful-re
 * [**Forcings.prm**](https://github.com/Atlantis-Ecosystem-Model/South_East_Tasmania_model/blob/master/Forcings.prm) A file that lays out the forcing file pathways for hydrodynamics, point sources, climate time series (precipitation, irradiance, temperature and salinity), historical catch, fuel prices, GDP and complex spatial zonation.
 * [**Biology.prm**](https://github.com/Atlantis-Ecosystem-Model/South_East_Tasmania_model/blob/master/Biology.prm) File detailing all the ecological parameters, submodel selection, network connection definitions and quarterly distributions.
 * [**Fisheries.csv**](https://github.com/Atlantis-Ecosystem-Model/South_East_Tasmania_model/blob/master/Fisheries.csv) A file containing information about the fisheries in the model.
-* **Initial_condition.nc** A NetCDF file where the initial conditions of the model are given, 
-such as the initial biomass and size values for each functional group and age structure 
+* **Initial_condition.nc** A NetCDF file where the initial conditions of the model are given,
+such as the initial biomass and size values for each functional group and age structure
 (access the plain text version [here](https://github.com/Atlantis-Ecosystem-Model/South_East_Tasmania_model/blob/master/Initial_condition.cdf)).
 
 ### Additional files (optional)
@@ -221,7 +221,7 @@ code.*
 
 To download the code, the following URL link will need to be checked in by your SVN platform:
 	CSIRO users: https://svnserv.csiro.au/svn/atlantis/Atlantis/trunk/atlantis
-	
+
 	External Partners: https://svnserv.csiro.au/svn/ext/atlantis/Atlantis/trunk/atlantis
 
 ## Building Atlantis
@@ -313,7 +313,7 @@ $ sudo make install
 To build Atlantis in another versions of Linux please visit the
 [Wiki-Building-Linux](https://confluence.csiro.au/display/Atlantis/Building+under+linux).
 
-> Note: Before you can run the example Atlantis model under Linux you will need to convert the [input files](./Example_Atlantis_Model_files.zip) in Linux EOL format.
+> Note: Before you can run the example Atlantis model under Linux you will need to convert the [input files](https://github.com/Atlantis-Ecosystem-Model/South_East_Tasmania_model/archive/master.zip) in Linux EOL format.
 On your terminal navigate to your Atlantis model folder and then convert the files:
 ```
 $ cd ~\You\Atlantis\Model\Folder\
@@ -359,7 +359,7 @@ $ flip -mv *
 3. An SVN platform to check out the source code from the code repository
 
     Dowload [TortoiseSVN](http://tortoisesvn.tigris.org/) as the preferred GUI.
-   
+
 
 #### Build
 Building in Visual Studio requires opening the appropriate visual studio solution in
@@ -380,7 +380,7 @@ visit [Wiki-Building-Windows](https://confluence.csiro.au/display/Atlantis/Build
 #### Code
 To locally compile the code, create a new folder or checkout directory for your
 source code (e.g. c:\Code\atlantis). Right click in this new folder and select the
-new menu option  **"SVN checkout"** and enter the appropriate URL of repository: 
+new menu option  **"SVN checkout"** and enter the appropriate URL of repository:
     CSIRO users: https://svnserv.csiro.au/svn/atlantis/Atlantis/trunk/atlantis
     External Partners: https://svnserv.csiro.au/svn/ext/atlantis/Atlantis/trunk/atlantis
 
@@ -433,7 +433,7 @@ Atlantis needs the following libraries to be installed. For each library downloa
 * [**Netcdf** Development library](http://www.unidata.ucar.edu/downloads/netcdf/index.jsp).
 * [**proj4** Development library](http://trac.osgeo.org/proj/), used for GIS projections. Make sure you get version 4.7.0.
 * **pkgconfig** Helper tool used when compiling applications and libraries. Download using macports or from [freedesktop](http://www.freedesktop.org/wiki/Software/pkg-config).
-* [**libxml**](http://www.xmlsoft.org/) - Library to deal with xml files format. 
+* [**libxml**](http://www.xmlsoft.org/) - Library to deal with xml files format.
 
 All of the following libraries should be downloaded to a folder such as /home/Downloads
 To install the library "libname" you should do :
