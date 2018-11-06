@@ -20,7 +20,7 @@ For more detailed explanation about the code, the parameters and how to run Atla
 >Due to licensing requirements, new users must register to access the
 code. If you want a copy of the Atlantis main code (which you will need to start using the
 model) you will need to [email the developers](mailto:Javier.Porobicgarate@csiro.au) to get access to the [Atlantis-Wiki](https://confluence.csiro.au/display/Atlantis/Atlantis+Ecosystem+Model+Home+Page)
-where you will need to sign the [licence agreement](https://confluence.csiro.au/display/Atlantis/CSIRO+licence+and+repository+request). 
+where you will need to sign the [licence agreement](https://confluence.csiro.au/display/Atlantis/CSIRO+licence+and+repository+request).
 From the [Atlantis-Wiki](https://confluence.csiro.au/display/Atlantis/Atlantis+Ecosystem+Model+Home+Page)
 page you can access the code repository, detailed instructions, and operational examples. Here below is a synthesise of this information.
 ___
@@ -318,12 +318,12 @@ $ flip -mv *
 
 #### Run
  Create the bash application program file (**.sh**)
- - Open your plain text editor, such as gedit, emacs or nano. (e.g. *runAtlantis.sh*)
+ - Open your plain text editor, such as gedit, emacs or nano. (e.g. [*runAtlantis.sh*](https://github.com/Atlantis-Ecosystem-Model/South_East_Tasmania_model/blob/master/RunAtlantis.sh))
  - Add the commands to run Atlantis, which should have the following fortat:
    If you're using Ubuntu:
    ```
-   #!/bin/bash 
-   atlantismain.exe -i Initial_condition.nc 0 -o Test_output.nc -r Run_settings.prm -f Forcings.prm -p Physics.prm -b Biology.prm -h Harvest.prm -s Functional_groups.csv -q Fisheries.csv -d outputFoder 
+   #!/bin/bash
+   atlantisMerged -i Initial_condition.nc 0 -o Test_output.nc -r Run_settings.prm -f Forcings.prm -p Physics.prm -b Biology.prm -h Harvest.prm -s Functional_groups.csv -q Fisheries.csv -d outputFoder
    ```
  - Open the terminal window, navigate to your model run
  directory that has the  **.sh**  file in it (and your Atlantis model), type the name of your
@@ -388,10 +388,10 @@ provided after registering to be a user.
 
 #### Run
  Create the batch file (**.bat**)
- - Open your plain text editor (e.g. Textpad, Notepad or WordPad) and save (e.g. *runAtlantis.bat*)
+ - Open your plain text editor (e.g. Textpad, Notepad or WordPad) and save (e.g. [*runAtlantis.bat*](https://github.com/Atlantis-Ecosystem-Model/South_East_Tasmania_model/blob/master/RunAtlantis.bat))
  - Add the commands to run Atlantis, which should have the following format:
    ```
-   atlantismain.exe -i Initial_condition.nc 0 -o Test_output.nc -r Run_settings.prm -f Forcings.prm -p Physics.prm -b Biology.prm -h Harvest.prm -s Functional_groups.csv -q Fisheries.csv -d outputFoder 
+   atlantismain.exe -i Initial_condition.nc 0 -o Test_output.nc -r Run_settings.prm -f Forcings.prm -p Physics.prm -b Biology.prm -h Harvest.prm -s Functional_groups.csv -q Fisheries.csv -d outputFoder
    ```
  Open the dos command prompt window, navigate to your model run
  directory that has the *.bat* files in it (and the *.exe*  file if you have not
@@ -483,12 +483,12 @@ More detailed information bout how to build Atlantis can be found in the [Wiki-B
 
 #### Run
  Create the bash application program file (**.sh**)
- - Open your plain text editor, such as gedit, emacs or nano. (e.g. *runAtlantis.sh*)
+ - Open your plain text editor, such as gedit, emacs or nano. (e.g. [*runAtlantis.sh*](https://github.com/Atlantis-Ecosystem-Model/South_East_Tasmania_model/blob/master/RunAtlantis.bat))
  - Add the commands to run Atlantis, which should have the following fortat:
 
    ```
    #!/bin/bash
-   atlantismain.exe -i Initial_condition.nc 0 -o Test_output.nc -r Run_settings.prm -f Forcings.prm -p Physics.prm -b Biology.prm -h Harvest.prm -s Functional_groups.csv -q Fisheries.csv -d outputFoder 
+   atlantisMerged -i Initial_condition.nc 0 -o Test_output.nc -r Run_settings.prm -f Forcings.prm -p Physics.prm -b Biology.prm -h Harvest.prm -s Functional_groups.csv -q Fisheries.csv -d outputFoder
    ```
  Open the terminal window, navigate to your model run
  directory that has the  **.sh**  file in it (and your Atlantis model), type the name of your
