@@ -19,11 +19,10 @@ For more detailed explanation about the code, the parameters and how to run Atla
  **Attention!**
 >Due to licensing requirements, new users must register to access the
 code. If you want a copy of the Atlantis main code (which you will need to start using the
-model) you will need to go email to the developers to get access to the [Atlantis-Wiki](https://confluence.csiro.au/display/Atlantis/Atlantis+Ecosystem+Model+Home+Page)
+model) you will need to [email the developers](mailto:Javier.Porobicgarate@csiro.au) to get access to the [Atlantis-Wiki](https://confluence.csiro.au/display/Atlantis/Atlantis+Ecosystem+Model+Home+Page)
 where you will need to sign the [licence agreement](https://confluence.csiro.au/display/Atlantis/CSIRO+licence+and+repository+request). 
-The [Atlantis-Wiki](https://confluence.csiro.au/display/Atlantis/Atlantis+Ecosystem+Model+Home+Page)
-page allows you to access the code repository and examples of input and
-output files with expected types and values for model parameters. Here below is a synthesise of this information.
+From the [Atlantis-Wiki](https://confluence.csiro.au/display/Atlantis/Atlantis+Ecosystem+Model+Home+Page)
+page you can access the code repository, detailed instructions, and operational examples. Here below is a synthesise of this information.
 ___
 
 ### Index
