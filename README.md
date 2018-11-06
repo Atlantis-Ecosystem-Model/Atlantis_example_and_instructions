@@ -322,8 +322,8 @@ $ flip -mv *
  - Add the commands to run Atlantis, which should have the following fortat:
    If you're using Ubuntu:
    ```
-   #!/bin/bash
-   atlantisMerged -i in.nc 0 -o output.nc -r run.prm -f force.prm -p physics.prm -b biol.prm -h harvest.prm -a assess.prm -e economics.prm -s functionalGroups.csv -d outputFolder
+   #!/bin/bash 
+   atlantismain.exe -i Initial_condition.nc 0 -o Test_output.nc -r Run_settings.prm -f Forcings.prm -p Physics.prm -b Biology.prm -h Harvest.prm -s Functional_groups.csv -q Fisheries.csv -d outputFoder 
    ```
  - Open the terminal window, navigate to your model run
  directory that has the  **.sh**  file in it (and your Atlantis model), type the name of your
@@ -391,7 +391,7 @@ provided after registering to be a user.
  - Open your plain text editor (e.g. Textpad, Notepad or WordPad) and save (e.g. *runAtlantis.bat*)
  - Add the commands to run Atlantis, which should have the following format:
    ```
-   atlantis -i in.nc 0 -o output.nc -r run.prm -f force.prm -p physics.prm -b biol.prm -h harvest.prm -a assess.prm -e economics.prm -s functionalGroups.csv -d outputFolder
+   atlantismain.exe -i Initial_condition.nc 0 -o Test_output.nc -r Run_settings.prm -f Forcings.prm -p Physics.prm -b Biology.prm -h Harvest.prm -s Functional_groups.csv -q Fisheries.csv -d outputFoder 
    ```
  Open the dos command prompt window, navigate to your model run
  directory that has the *.bat* files in it (and the *.exe*  file if you have not
@@ -494,7 +494,7 @@ More detailed information bout how to build Atlantis can be found in the [Wiki-B
    If Your are using MacOS
    ```
    #!/bin/bash
-   atlantis -i in.nc 0 -o output.nc -r run.prm -f force.prm -p physics.prm -b biol.prm -h harvest.prm -a assess.prm -e economics.prm -s functionalGroups.csv -d outputFolder
+   atlantismain.exe -i Initial_condition.nc 0 -o Test_output.nc -r Run_settings.prm -f Forcings.prm -p Physics.prm -b Biology.prm -h Harvest.prm -s Functional_groups.csv -q Fisheries.csv -d outputFoder 
    ```
  Open the terminal window, navigate to your model run
  directory that has the  **.sh**  file in it (and your Atlantis model), type the name of your
