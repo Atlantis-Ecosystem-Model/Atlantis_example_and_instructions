@@ -35,7 +35,7 @@ ___
    * [Building Atlantis](#Building-Atlantis)
    * [Running Atlantis](#Running-Atlantis)
 * [Instructions for Different Operating Systems](#Specific-instructions-for-your-Operating-Systems)
-   * [Linux](#linux3)
+   * [Linux](#Linux)
    * [Windows](#Windows)
    * [MacOS](#MacOS)
 
