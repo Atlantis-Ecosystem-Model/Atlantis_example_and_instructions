@@ -6,7 +6,7 @@ Software for modelling marine ecosystem including spatial and temporal dynamics.
 This page contains an example of an operational Atlatis model with details of the parameter (input) files and model output files given.
 It also gives brief details and instructions on how to compile and run an Atlantis model on your computer.
 For more detailed explanation about the code, the parameters and how to run Atlantis you will need to download the Atlantis manual
-([part 1 and 2](https://research.csiro.au/atlantis/home/useful-references/)). Other useful Atlantis references can also be found [here](https://research.csiro.au/atlantis/home/useful-references/).
+([part 1](https://research.csiro.au/atlantis/?ddownload=111) and [part 2](https://research.csiro.au/atlantis/?ddownload=112)). Other useful Atlantis references can also be found [here](https://research.csiro.au/atlantis/home/useful-references/).
 
 <hr>
 
@@ -62,7 +62,7 @@ The most used model example is the South East Tasmania (SETas) Atlantis model. T
 
 ## Input files
 Here we provide a brief description of all the input files required to run an Atlantis model. For more details see the
-Atlantis manual [part 1 and 2](https://research.csiro.au/atlantis/home/useful-references/) or the [Atlantis-wiki](https://confluence.csiro.au/display/Atlantis/Atlantis+Ecosystem+Model+Home+Page).
+Atlantis manual [part 1](https://research.csiro.au/atlantis/?ddownload=111) and [part 2](https://research.csiro.au/atlantis/?ddownload=112) or the [Atlantis-wiki](https://confluence.csiro.au/display/Atlantis/Atlantis+Ecosystem+Model+Home+Page).
 
 > All the input files needed to run the SETas model can be downloaded [here](https://github.com/Atlantis-Ecosystem-Model/South_East_Tasmania_model/archive/master.zip).
 
@@ -95,7 +95,7 @@ Initial distribution of one functional group
 ## Output files
 Here we provide a brief description of all the output files from an Atlantis model. For more details see the
 Atlantis manual
-([part 1 and 2](https://research.csiro.au/atlantis/home/useful-references/)).
+([part 1](https://research.csiro.au/atlantis/?ddownload=111) and [part 2](https://research.csiro.au/atlantis/?ddownload=112)).
 ### NetCDF output Files
 Atlantis generates a number of NetCDF output files that contain spatial information
 such as the biomass of functional groups in boxes and layers.  The NetCDF files do
@@ -198,7 +198,7 @@ Links to other software used can be accessed via the [Atlantis-Wiki](https://con
 
 # Model Installation and Running
 
-For detailed model installation and running instructions see chapter 2 in the [Atlantis manual Part I](https://research.csiro.au/atlantis/home/useful-references/).
+For detailed model installation and running instructions see chapter 2 in the [Atlantis manual Part I](https://research.csiro.au/atlantis/?ddownload=111).
 Here we briefly describe the main steps involved.
 
 ## Preparing your machine
