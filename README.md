@@ -356,7 +356,6 @@ $ flip -mv *
 
     Dowload [TortoiseSVN](http://tortoisesvn.tigris.org/) as the preferred GUI.
 
-
 #### Build
 Building in Visual Studio requires opening the appropriate visual studio solution in
 the root Atlantis SVN repository folder.
@@ -401,6 +400,9 @@ provided after registering to be a user.
  C:\> cd Atlantis\run
  C:\Atlantis\run$  runAtlantis.bat
  ```
+
+> *Note: An operational Atlantis model can be run on a windows computer without having to download the compiler, NetCDF library, or the code. Please contact the developers for more information about this option, if desired.*
+
 
 ---
 ## MacOS
