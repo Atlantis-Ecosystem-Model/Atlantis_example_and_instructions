@@ -401,7 +401,7 @@ provided after registering to be a user.
  C:\Atlantis\run$  runAtlantis.bat
  ```
 
-> *Note: An operational Atlantis model can be run on a windows computer without having to download the compiler, NetCDF library, or the code. Please contact the developers for more information about this option, if desired.*
+> *Note: An operational Atlantis model can be run on a windows computer without a compiler, NetCDF library, or the code. Please contact the developers for more information about this option, if desired.*
 
 
 ---
