@@ -1,7 +1,8 @@
 # Atlantis ecosystem model
 Software for modelling marine ecosystem including spatial and temporal dynamics.
 
-[Download manuscript](https://besjournals.onlinelibrary.wiley.com/journal/2041210x)
+<!-- [Download manuscript](https://besjournals.onlinelibrary.wiley.com/journal/2041210x) -->
+ **Download manuscript** (link to the published manuscript introducing the model will be available here)
 
 This page contains an example of an operational Atlatis model with details of the parameter (input) files and model output files given.
 It also gives brief details and instructions on how to compile and run an Atlantis model on your computer.
@@ -197,12 +198,12 @@ For detailed model installation and running instructions see chapter 2 in the [A
 Here we briefly describe the main steps involved.
 
 ## Preparing your machine
-Atlantis can be run on Linux, windows, and MacOS operating systems. Depending on your operating system
+Atlantis can be run on Linux, Windows, and MacOS operating systems. Depending on your operating system
 Atlantis requires the a number of packages and libraries to be installed. This includes
 software that operates as:
-  1. A compiler (e.g. Visal Studio for windows or gcc for Linux).
-  2. An SVN platform to check out the code (e.g. Tortoise SVN for windows or subversion for Linux).
-  3. A NetCDF file system or development library (e.g. NetCDF 4 for windows).
+  1. A compiler (e.g. Visal Studio for Windows or gcc for Linux).
+  2. An SVN platform to check out the code (e.g. Tortoise SVN for Windows or subversion for Linux).
+  3. A NetCDF file system or development library (e.g. NetCDF 4 for Windows).
 
   Please read the instructions for your operating system for more details [below](#Specific-instructions-for-your-operating-systems).
 
@@ -401,7 +402,7 @@ provided after registering to be a user.
  C:\Atlantis\run$  runAtlantis.bat
  ```
 
-> *Note: An operational Atlantis model can be run on a windows computer without a compiler, NetCDF library, or the code. Please contact the developers for more information about this option, if desired.*
+> *Note: An operational Atlantis model can be run on a Windows computer without a compiler, NetCDF library, or the code. Please contact the developers for more information about this option, if desired.*
 
 
 ---
@@ -409,7 +410,7 @@ provided after registering to be a user.
 ##### Important
 > We would not recommend using Mac if you have a choice. It generally takes a couple
 of hours and as much as a day per machine to set up. Its not as simple as running on
-windows or Linux and you will need to be comfortable installing libraries from
+Windows or Linux and you will need to be comfortable installing libraries from
 source.
 
 #### Compiler
