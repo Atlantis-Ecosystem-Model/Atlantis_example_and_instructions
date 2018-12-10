@@ -197,6 +197,23 @@ Links to other software used can be accessed via the [Atlantis-Wiki](https://con
 For detailed model installation and running instructions see chapter 2 in the [Atlantis manual Part I](https://research.csiro.au/atlantis/?ddownload=111).
 Here we briefly describe the main steps involved.
 
+## Why the users are asked to compile the code themselves? 
+ 
+Atlantis is a complex modelling package that is based on a large number of processes, 
+assumptions and equations. Appropriate and responsible use of such a package therefore 
+requires users to have reasonable computational and basic coding skills. The [Atlantis User Guide] (https://research.csiro.au/atlantis/?ddownload=111) 
+provides details on code libraries and routines for the processes included in Atlantis. 
+This means that users can track down specific aspects of the code and make sure they are 
+comfortable with the assumptions of the model. Developing and calibrating specific model 
+applications is greatly enhanced if users can write their own print statements to understand 
+behaviour of their specific system, e.g. recruits of a specific functional group in a specific model box. 
+This means that the code has to be compiled locally after each print statement. 
+Please note, that checking out, compiling and getting the example model to run on your computer 
+will take about 1-2 hours. While this may seem long, the development of new application to your system 
+is likely to take months. If you consider that this timeframe is too long, it is advisable to consider a 
+simpler modelling framework.  
+
+
 ## Preparing your machine
 Atlantis can be run on Linux, Windows, and MacOS operating systems. Depending on your operating system
 Atlantis requires the a number of packages and libraries to be installed. This includes
