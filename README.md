@@ -246,13 +246,13 @@ Once you have your compiler, NetCDF reader and source code, it is time to build
 At this stage you should be able to run an operational model
 (such as that provided [above](#example-operational-model)), by calling a .sh or .bat file in the command line.
 
-> *Note: Atlantis will start loading input files and will likely output several warning messages at the start of a model run. 
+> *Note: Atlantis will start loading input files and will likely get several warning messages at the start of a model run. 
 Most of these warning messages are produced to inform users about the spatial position of their functional groups, missing non-essential parameters
 and other model aspects that can largely be ignored. It is however highly advisable that users read these messages to make sure that there model is set up 
 as intended. Where more concerning issues are present, the model will stop running. 
-A possible reason for this occuring is when parameter files are out of date with the code in which case a missing praameter error message will be relayed. 
-(e.g., Error: Unable to find species parameter _min_spawn_temp in file Biology.prm for group FPS). Please consult the wiki page for 
-a dated log of code updates to include in your input files.*
+A possible reason for this occuring is when parameter files are out of date with the code in which case a missing parameter error message will be relayed. 
+(e.g., Error: Unable to find species parameter _min_spawn_temp in file Biology.prm for group FPS). Please consult the [wiki page](https://confluence.csiro.au/display/Atlantis/Atlantis+Documentation) for 
+a log of code updates to include in your input files.*
 
 <hr>
 
@@ -336,10 +336,10 @@ To build Atlantis in another versions of Linux please visit the
 [Wiki-Building-Linux](https://confluence.csiro.au/display/Atlantis/Building+under+linux).
 
 > *Note: Before you can run the example Atlantis model under Linux you will need to convert the [input files](https://github.com/Atlantis-Ecosystem-Model/South_East_Tasmania_model/archive/master.zip) in Linux EOL format.
-On your terminal navigate to your Atlantis model folder and then convert the files:
+On your terminal navigate to your Atlantis model folder and then convert the files:*
 ```
 $ cd ~\You\Atlantis\Model\Folder\
-$ flip -mv*
+$ flip -mv
 ```
 
 #### Run
