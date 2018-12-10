@@ -60,7 +60,7 @@ The most used model example is the South East Tasmania (SETas) Atlantis model. T
 Here we provide a brief description of all the input files required to run an Atlantis model. For more details see the
 Atlantis manual [part 1](https://research.csiro.au/atlantis/?ddownload=111) and [part 2](https://research.csiro.au/atlantis/?ddownload=112) or the [Atlantis-wiki](https://confluence.csiro.au/display/Atlantis/Atlantis+Ecosystem+Model+Home+Page).
 
-> All the input files needed to run the SETas model and output files can be downloaded [here](https://github.com/Atlantis-Ecosystem-Model/South_East_Tasmania_model/archive/master.zip).
+> All the input files needed to run the SETas model under Atlantis version 6411 and output files can be downloaded [here](https://github.com/Atlantis-Ecosystem-Model/South_East_Tasmania_model/archive/master.zip).
 
 ### Essential files
 * [**Functional_groups.csv**](https://github.com/Atlantis-Ecosystem-Model/South_East_Tasmania_model/blob/master/Functional_groups.csv) A file containing information about the functional groups in the model.
@@ -197,21 +197,21 @@ Links to other software used can be accessed via the [Atlantis-Wiki](https://con
 For detailed model installation and running instructions see chapter 2 in the [Atlantis manual Part I](https://research.csiro.au/atlantis/?ddownload=111).
 Here we briefly describe the main steps involved.
 
-Why the users are asked to compile the code themselves? 
- 
-> *Atlantis is a complex modelling package that is based on a large number of processes, 
-assumptions and equations. Appropriate and responsible use of such a package therefore 
-requires users to have reasonable computational and basic coding skills. The Atlantis manual 
-provides details on code libraries and routines for the processes included in Atlantis. 
-This means that users can track down specific aspects of the code and make sure they are 
-comfortable with the assumptions of the model. Developing and calibrating specific model 
-applications is greatly enhanced if users can write their own print statements to understand 
-behaviour of their specific system, e.g. recruits of a specific functional group in a particular model box. 
-This means that the code has to be compiled locally after each print statement. 
-Please note, that checking out, compiling and getting the example model to run on your computer 
-will take about 1-2 hours. While this may seem long, the development of a new application to your system 
-is likely to take months. If you consider that this timeframe is too long, it is advisable to consider a 
-simpler modelling framework.* 
+Why the users are asked to compile the code themselves?
+
+> *Atlantis is a complex modelling package that is based on a large number of processes,
+assumptions and equations. Appropriate and responsible use of such a package therefore
+requires users to have reasonable computational and basic coding skills. The Atlantis manual
+provides details on code libraries and routines for the processes included in Atlantis.
+This means that users can track down specific aspects of the code and make sure they are
+comfortable with the assumptions of the model. Developing and calibrating specific model
+applications is greatly enhanced if users can write their own print statements to understand
+behaviour of their specific system, e.g. recruits of a specific functional group in a particular model box.
+This means that the code has to be compiled locally after each print statement.
+Please note, that checking out, compiling and getting the example model to run on your computer
+will take about 1-2 hours. While this may seem long, the development of a new application to your system
+is likely to take months. If you consider that this timeframe is too long, it is advisable to consider a
+simpler modelling framework.*
 
 
 ## Preparing your machine
@@ -246,12 +246,12 @@ Once you have your compiler, NetCDF reader and source code, it is time to build
 At this stage you should be able to run an operational model
 (such as that provided [above](#example-operational-model)), by calling a .sh or .bat file in the command line.
 
-> *Note: Atlantis will start loading input files and will likely get several warning messages at the start of a model run. 
+> *Note: Atlantis will start loading input files and will likely get several warning messages at the start of a model run.
 Most of these warning messages are produced to inform users about the spatial position of their functional groups, missing non-essential parameters
-and other model aspects that can largely be ignored. It is however highly advisable that users read these messages to make sure that there model is set up 
-as intended. Where more concerning issues are present, the model will stop running. 
-A possible reason for this occuring is when parameter files are out of date with the code in which case a missing parameter error message will be relayed. 
-(e.g., Error: Unable to find species parameter _min_spawn_temp in file Biology.prm for group FPS). Please consult the [wiki page](https://confluence.csiro.au/display/Atlantis/Atlantis+Documentation) for 
+and other model aspects that can largely be ignored. It is however highly advisable that users read these messages to make sure that there model is set up
+as intended. Where more concerning issues are present, the model will stop running.
+A possible reason for this occuring is when parameter files are out of date with the code in which case a missing parameter error message will be relayed.
+(e.g., Error: Unable to find species parameter _min_spawn_temp in file Biology.prm for group FPS). Please consult the [wiki page](https://confluence.csiro.au/display/Atlantis/Atlantis+Documentation) for
 a log of code updates to include in your input files.*
 
 <hr>
