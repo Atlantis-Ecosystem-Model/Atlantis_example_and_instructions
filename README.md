@@ -201,7 +201,7 @@ Why the users are asked to compile the code themselves?
  
 >*Atlantis is a complex modelling package that is based on a large number of processes, 
 assumptions and equations. Appropriate and responsible use of such a package therefore 
-requires users to have reasonable computational and basic coding skills. The [Atlantis User Guide] (https://research.csiro.au/atlantis/?ddownload=111) 
+requires users to have reasonable computational and basic coding skills. The [Atlantis User Guide](https://research.csiro.au/atlantis/?ddownload=111) 
 provides details on code libraries and routines for the processes included in Atlantis. 
 This means that users can track down specific aspects of the code and make sure they are 
 comfortable with the assumptions of the model. Developing and calibrating specific model 
@@ -209,7 +209,7 @@ applications is greatly enhanced if users can write their own print statements t
 behaviour of their specific system, e.g. recruits of a specific functional group in a specific model box. 
 This means that the code has to be compiled locally after each print statement. 
 Please note, that checking out, compiling and getting the example model to run on your computer 
-will take about 1-2 hours. While this may seem long, the development of new application to your system 
+will take about 1-2 hours. While this may seem long, the development of a new application to your system 
 is likely to take months. If you consider that this timeframe is too long, it is advisable to consider a 
 simpler modelling framework. * 
 
