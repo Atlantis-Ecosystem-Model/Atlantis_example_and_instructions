@@ -199,7 +199,7 @@ Here we briefly describe the main steps involved.
 
 Why the users are asked to compile the code themselves? 
  
->*Atlantis is a complex modelling package that is based on a large number of processes, 
+> *Atlantis is a complex modelling package that is based on a large number of processes, 
 assumptions and equations. Appropriate and responsible use of such a package therefore 
 requires users to have reasonable computational and basic coding skills. The Atlantis manual 
 provides details on code libraries and routines for the processes included in Atlantis. 
@@ -211,7 +211,7 @@ This means that the code has to be compiled locally after each print statement.
 Please note, that checking out, compiling and getting the example model to run on your computer 
 will take about 1-2 hours. While this may seem long, the development of a new application to your system 
 is likely to take months. If you consider that this timeframe is too long, it is advisable to consider a 
-simpler modelling framework. * 
+simpler modelling framework.* 
 
 
 ## Preparing your machine
@@ -246,12 +246,11 @@ Once you have your compiler, NetCDF reader and source code, it is time to build
 At this stage you should be able to run an operational model
 (such as that provided [above](#example-operational-model)), by calling a .sh or .bat file in the command line.
 
-Note:
-> *Atlantis will start loading input files and will likely output several warning messages. 
+> *Note: Atlantis will start loading input files and will likely output several warning messages. 
 Most of these warning messages are produced to inform users about the spatial position of their functional groups, missing non-essential parameters
 and other model aspects and can largely be ignored. Where more concerning issues are present, the model will stop running. 
 A likely reason for this occuring is when parameter files are out of date with the code in which case a missing praameter error message will be relayed. 
-(e.g., Error: Unable to find species parameter _min_spawn_temp in file Biology.prm for group FPS). *
+(e.g., Error: Unable to find species parameter _min_spawn_temp in file Biology.prm for group FPS).*
 
 <hr>
 
