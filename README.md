@@ -251,8 +251,7 @@ Note:
 Most of these warning messages are produced to inform users about the spatial position of their functional groups, missing non-essential parameters
 and other model aspects and can largely be ignored. Where more concerning issues are present, the model will stop running. 
 A likely reason for this occuring is when parameter files are out of date with the code in which case a missing praameter error message will be relayed. 
-(e.g., Error: Unable to find species parameter _min_spawn_temp in file Biology.prm for group FPS)  
-*
+(e.g., Error: Unable to find species parameter _min_spawn_temp in file Biology.prm for group FPS). *
 
 <hr>
 
