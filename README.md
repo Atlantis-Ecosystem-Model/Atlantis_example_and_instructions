@@ -87,7 +87,6 @@ such as the initial biomass and size values for each functional group and age st
 Initial distribution of one functional group
 ![fw](./img/spatial_distributions.png)
 
-
 ## Output files
 Here we provide a brief description of all the output files from an Atlantis model. For more details see the
 Atlantis manual
@@ -251,8 +250,8 @@ Most of these warning messages are produced to inform users about the spatial po
 and other model aspects that can largely be ignored. It is however highly advisable that users read these messages to make sure that there model is set up
 as intended. Where more concerning issues are present, the model will stop running.
 A possible reason for this occuring is when parameter files are out of date with the code in which case a missing parameter error message will be relayed.
-(e.g., Error: Unable to find species parameter _min_spawn_temp in file Biology.prm for group FPS). Please consult the [wiki page](https://confluence.csiro.au/display/Atlantis/Atlantis+Documentation) for
-a log of code updates to include in your input files.*
+(e.g., Error: Unable to find species parameter _min_spawn_temp in file Biology.prm for group FPS). Please consult the [wiki page](https://confluence.csiro.au/display/Atlantis/Atlantis+Updates) for
+a lists major repository revisions and the updates to include in your input files.*
 
 <hr>
 
