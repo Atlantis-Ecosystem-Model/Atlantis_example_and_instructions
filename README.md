@@ -23,10 +23,10 @@ code. If you want a copy of the Atlantis main code (which you will need to start
 model) you will need to [email the developers](mailto:Javier.Porobicgarate@csiro.au) to get access to the [Atlantis-Wiki](https://confluence.csiro.au/display/Atlantis/Atlantis+Ecosystem+Model+Home+Page)
 where you will need to sign the [licence agreement](https://confluence.csiro.au/display/Atlantis/CSIRO+licence+and+repository+request).
 From the [Atlantis-Wiki](https://confluence.csiro.au/display/Atlantis/Atlantis+Ecosystem+Model+Home+Page)
-page you can access the code repository, detailed instructions, and operational examples. 
+page you can access the code repository, detailed instructions, and operational examples.
 
 **List of model updates**
->A list of changes made in new code revisions can be found in Atlantis wiki under([Atlantis Updates](https://confluence.csiro.au/display/Atlantis/Atlantis+Updates)), 
+>A list of changes made in new code revisions can be found in Atlantis wiki under ([Atlantis Updates](https://confluence.csiro.au/display/Atlantis/Atlantis+Updates)),
 ___
 
 ### Index
