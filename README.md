@@ -23,7 +23,10 @@ code. If you want a copy of the Atlantis main code (which you will need to start
 model) you will need to [email the developers](mailto:Javier.Porobicgarate@csiro.au) to get access to the [Atlantis-Wiki](https://confluence.csiro.au/display/Atlantis/Atlantis+Ecosystem+Model+Home+Page)
 where you will need to sign the [licence agreement](https://confluence.csiro.au/display/Atlantis/CSIRO+licence+and+repository+request).
 From the [Atlantis-Wiki](https://confluence.csiro.au/display/Atlantis/Atlantis+Ecosystem+Model+Home+Page)
-page you can access the code repository, a list of changes made in new code revisions([updates](https://confluence.csiro.au/display/Atlantis/Atlantis+Updates)), detailed instructions, and operational examples. Here below is a synthesise of this information.
+page you can access the code repository, detailed instructions, and operational examples. 
+
+**List of model updates**
+A list of changes made in new code revisions can be found in Atlantis wiki under([Atlantis Updates](https://confluence.csiro.au/display/Atlantis/Atlantis+Updates)), 
 ___
 
 ### Index
@@ -31,10 +34,12 @@ ___
    * [Input files and plots](#input-files)
    * [Output files and plots](#output-files)
    * [Software to anlyze inputs and outputs](#Software-to-analyze-input-and-output-files)
-* [Model Instualation and Running](#Model-Installation-and-Running)
+* [Model Installation and Running](#Model-Installation-and-Running)
+   * [Why to compile the code yoursel?] (#Why-to-compile-the-code-yourself)
    * [Preparing your machine](#preparing-your-machine)
    * [Building Atlantis](#Building-Atlantis)
    * [Running Atlantis](#Running-Atlantis)
+   * [Warning messages and missing paramters](#Warning-messages-and-missing-paramters)
 * [Instructions for Different Operating Systems](#Specific-instructions-for-your-Operating-Systems)
    * [Linux](#Linux)
    * [Windows](#Windows)
@@ -196,9 +201,9 @@ Links to other software used can be accessed via the [Atlantis-Wiki](https://con
 For detailed model installation and running instructions see chapter 2 in the [Atlantis manual Part I](https://research.csiro.au/atlantis/?ddownload=111).
 Here we briefly describe the main steps involved.
 
-Why the users are asked to compile the code themselves?
+## Why to compile the code yourself?
 
-> *Atlantis is a complex modelling package that is based on a large number of processes,
+Atlantis is a complex modelling package that is based on a large number of processes,
 assumptions and equations. Appropriate and responsible use of such a package therefore
 requires users to have reasonable computational and basic coding skills. The Atlantis manual
 provides details on code libraries and routines for the processes included in Atlantis.
@@ -210,7 +215,7 @@ This means that the code has to be compiled locally after each print statement.
 Please note, that checking out, compiling and getting the example model to run on your computer
 will take about 1-2 hours. While this may seem long, the development of a new application to your system
 is likely to take months. If you consider that this timeframe is too long, it is advisable to consider a
-simpler modelling framework.*
+simpler modelling framework.
 
 
 ## Preparing your machine
@@ -245,13 +250,14 @@ Once you have your compiler, NetCDF reader and source code, it is time to build
 At this stage you should be able to run an operational model
 (such as that provided [above](#example-operational-model)), by calling a .sh or .bat file in the command line.
 
-> *Note: Atlantis will start loading input files and will likely get several warning messages at the start of a model run.
+## Warning messages and missing paramters
+After starting the run, Atlantis will start loading input files and will likely give several warning messages.
 Most of these warning messages are produced to inform users about the spatial position of their functional groups, missing non-essential parameters
-and other model aspects that can largely be ignored. It is however highly advisable that users read these messages to make sure that there model is set up
+and other model aspects that may require attention. It is advisable that users read these messages to make sure that there model is set up
 as intended. Where more concerning issues are present, the model will stop running.
 A possible reason for this occuring is when parameter files are out of date with the code in which case a missing parameter error message will be relayed.
-(e.g., Error: Unable to find species parameter _min_spawn_temp in file Biology.prm for group FPS). Please consult the [Atlantis updates page](https://confluence.csiro.au/display/Atlantis/Atlantis+Updates) for
-a lists major repository revisions and the updates to include in your input files.*
+(e.g., Error: Unable to find species parameter _min_spawn_temp in file Biology.prm for group FPS). Please consult the [Atlantis Updates](https://confluence.csiro.au/display/Atlantis/Atlantis+Updates) for
+a lists major repository revisions and the updates to include in your input files.
 
 <hr>
 
