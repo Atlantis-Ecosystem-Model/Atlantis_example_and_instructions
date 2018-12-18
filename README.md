@@ -35,7 +35,7 @@ ___
    * [Output files and plots](#output-files)
    * [Software to anlyze inputs and outputs](#Software-to-analyze-input-and-output-files)
 * [Model Installation and Running](#Model-Installation-and-Running)
-   * [Why to compile the code yourself?](#Why-to-compile-the-code-yourself?)
+   * [Why to compile the code yourself](#Why-to-compile-the-code-yourself)
    * [Preparing your machine](#preparing-your-machine)
    * [Building Atlantis](#Building-Atlantis)
    * [Running Atlantis](#Running-Atlantis)
@@ -201,7 +201,7 @@ Links to other software used can be accessed via the [Atlantis-Wiki](https://con
 For detailed model installation and running instructions see chapter 2 in the [Atlantis manual Part I](https://research.csiro.au/atlantis/?ddownload=111).
 Here we briefly describe the main steps involved.
 
-## Why to compile the code yourself?
+## Why to compile the code yourself
 
 Atlantis is a complex modelling package that is based on a large number of processes,
 assumptions and equations. Appropriate and responsible use of such a package therefore
