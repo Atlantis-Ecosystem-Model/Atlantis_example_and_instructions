@@ -26,7 +26,7 @@ From the [Atlantis-Wiki](https://confluence.csiro.au/display/Atlantis/Atlantis+E
 page you can access the code repository, detailed instructions, and operational examples. 
 
 **List of model updates**
-A list of changes made in new code revisions can be found in Atlantis wiki under([Atlantis Updates](https://confluence.csiro.au/display/Atlantis/Atlantis+Updates)), 
+>A list of changes made in new code revisions can be found in Atlantis wiki under([Atlantis Updates](https://confluence.csiro.au/display/Atlantis/Atlantis+Updates)), 
 ___
 
 ### Index
@@ -35,7 +35,7 @@ ___
    * [Output files and plots](#output-files)
    * [Software to anlyze inputs and outputs](#Software-to-analyze-input-and-output-files)
 * [Model Installation and Running](#Model-Installation-and-Running)
-   * [Why to compile the code yoursel?] (#Why-to-compile-the-code-yourself)
+   * [Why to compile the code yourself?](#Why-to-compile-the-code-yourself?)
    * [Preparing your machine](#preparing-your-machine)
    * [Building Atlantis](#Building-Atlantis)
    * [Running Atlantis](#Running-Atlantis)
