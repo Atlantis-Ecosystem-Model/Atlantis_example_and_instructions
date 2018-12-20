@@ -250,10 +250,10 @@ and sign the
  and then send an email to the developers, who will give you access to the
 code.*
 
-To check out the Atlantis version associated with the publication (version 6419) please enter this line in your SVN platform”
+To check out the Atlantis version associated with the publication (version 6420) please enter this line in your SVN platform
 ```
-CSIRO users: svn co -r 6419 https://svnserv.csiro.au/svn/atlantis/Atlantis/trunk/atlantis
-External Partners: svn co -r 6419 https://svnserv.csiro.au/svn/ext/atlantis/Atlantis/trunk/atlantis
+CSIRO users: svn co -r 6420 https://svnserv.csiro.au/svn/atlantis/Atlantis/trunk/atlantis
+External Partners: svn co -r 6420 https://svnserv.csiro.au/svn/ext/atlantis/Atlantis/trunk/atlantis
 ```
 
 To download the latest version code, the following URL link will need to be checked in by your SVN platform:
