@@ -38,6 +38,7 @@ ___
    * [Software to anlyze inputs and outputs](#Software-to-analyze-input-and-output-files)
 * [Model Installation and Running](#Model-Installation-and-Running)
    * [Why to compile the code yourself](#Why-to-compile-the-code-yourself)
+   * [Why to check out the code using version control tools](#Why-to-check-out-the-code-using-version-control-tools)
    * [Preparing your machine](#preparing-your-machine)
    * [Building Atlantis](#Building-Atlantis)
    * [Running Atlantis](#Running-Atlantis)
