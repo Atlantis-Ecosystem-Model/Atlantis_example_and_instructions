@@ -262,7 +262,7 @@ To download the latest version code, the following URL link will need to be chec
 CSIRO users: https://svnserv.csiro.au/svn/atlantis/Atlantis/trunk/atlantis
 External Partners: https://svnserv.csiro.au/svn/ext/atlantis/Atlantis/trunk/atlantis
 ```
-> To check the updates and changes since the Atlantis publication version go to the [Atlantis Updates](https://confluence.csiro.au/display/Atlantis/Atlantis+Updates) page on the wiki.
+> To check the updates and changes in the code since the Atlantis publication, go to the [Atlantis Updates](https://confluence.csiro.au/display/Atlantis/Atlantis+Updates) page on the wiki.
 
 ## Building Atlantis
 Once you have your compiler, NetCDF reader and source code, it is time to build
