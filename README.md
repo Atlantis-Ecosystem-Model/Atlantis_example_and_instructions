@@ -202,6 +202,18 @@ Links to other software used can be accessed via the [Atlantis-Wiki](https://con
 For detailed model installation and running instructions see chapter 2 in the [Atlantis manual Part I](https://research.csiro.au/atlantis/?ddownload=111).
 Here we briefly describe the main steps involved.
 
+## Why to check out the code using version control tools
+Atlantis is available for multiple operating systems. By using version control tools
+(such as SVN) the users are guaranteed to get the
+correct formatting (i.e. line endings) of the files for their operating system. Further, the version
+control tools allow users to check out specific versions of the code, which ensures
+better replicability of results (please always put the version of the code used in
+your publications). The tools also contain details about changes between versions,
+which makes code development more transparent, because all users can track the
+changes. Finally, as new updates and bug fixes are released the version control tools
+provide an easy way to update the code, because users don’t need to download the
+entire code but just update the libraries.
+
 ## Why to compile the code yourself
 
 Atlantis is a complex modelling package that is based on a large number of processes,
