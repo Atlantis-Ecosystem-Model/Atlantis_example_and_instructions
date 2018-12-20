@@ -66,7 +66,7 @@ The most used model example is the South East Tasmania (SETas) Atlantis model. T
 Here we provide a brief description of all the input files required to run an Atlantis model. For more details see the
 Atlantis manual [part 1](https://research.csiro.au/atlantis/?ddownload=111) and [part 2](https://research.csiro.au/atlantis/?ddownload=112) or the [Atlantis-wiki](https://confluence.csiro.au/display/Atlantis/Atlantis+Ecosystem+Model+Home+Page).
 
-> All the input files needed to run the SETas model under Atlantis version 6411 and output files can be downloaded [here](https://github.com/Atlantis-Ecosystem-Model/South_East_Tasmania_model/archive/master.zip).
+> All the input files needed to run the SETas model under Atlantis and output files can be downloaded [here](https://github.com/Atlantis-Ecosystem-Model/South_East_Tasmania_model/archive/master.zip).
 
 ### Essential files
 * [**Functional_groups.csv**](https://github.com/Atlantis-Ecosystem-Model/South_East_Tasmania_model/blob/master/Functional_groups.csv) A file containing information about the functional groups in the model.
