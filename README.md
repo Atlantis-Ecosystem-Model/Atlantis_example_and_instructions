@@ -25,7 +25,7 @@ where you will need to sign the [licence agreement](https://confluence.csiro.au/
 From the [Atlantis-Wiki](https://confluence.csiro.au/display/Atlantis/Atlantis+Ecosystem+Model+Home+Page)
 page you can access the code repository, detailed instructions, and operational examples.
 
-<sub>** *If the hyperlink does not work, right click on the mouse and select the option "copy mail"* .</sub>
+<sub>** *If the hyperlink does not work, right click on the text "email to developers" and select the option "copy mail"* .</sub>
 
 **List of model updates**
 >A list of changes made in new code revisions can be found in Atlantis wiki under ([Atlantis Updates](https://confluence.csiro.au/display/Atlantis/Atlantis+Updates)),
@@ -250,12 +250,20 @@ and sign the
  and then send an email to the developers, who will give you access to the
 code.*
 
-To download the code, the following URL link will need to be checked in by your SVN platform:
+To check out the Atlantis version associated with the publication (version 6419) please enter this line in your SVN platform”
+```
+CSIRO users: svn co -r 6419 https://svnserv.csiro.au/svn/atlantis/Atlantis/trunk/atlantis
+External Partners: svn co -r 6419 https://svnserv.csiro.au/svn/ext/atlantis/Atlantis/trunk/atlantis
+```
+
+To download the latest version code, the following URL link will need to be checked in by your SVN platform:
 
 ```
 CSIRO users: https://svnserv.csiro.au/svn/atlantis/Atlantis/trunk/atlantis
 External Partners: https://svnserv.csiro.au/svn/ext/atlantis/Atlantis/trunk/atlantis
 ```
+> To check the updates and changes since the Atlantis publication version go to the [Atlantis Updates](https://confluence.csiro.au/display/Atlantis/Atlantis+Updates) page on the wiki.
+
 ## Building Atlantis
 Once you have your compiler, NetCDF reader and source code, it is time to build
 (upload and connect) your model files.
