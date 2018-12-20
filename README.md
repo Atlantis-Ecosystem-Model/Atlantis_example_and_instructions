@@ -25,7 +25,7 @@ where you will need to sign the [licence agreement](https://confluence.csiro.au/
 From the [Atlantis-Wiki](https://confluence.csiro.au/display/Atlantis/Atlantis+Ecosystem+Model+Home+Page)
 page you can access the code repository, detailed instructions, and operational examples.
 
-<sub>** *If the hyperlink does not work, right click on the text "email to developers" and select the option "copy mail"* .</sub>
+<sub>** *If the hyperlink does not work, right click on the text "email to developers" and select the option "copy email"* .</sub>
 
 **List of model updates**
 >A list of changes made in new code revisions can be found in Atlantis wiki under ([Atlantis Updates](https://confluence.csiro.au/display/Atlantis/Atlantis+Updates)),
