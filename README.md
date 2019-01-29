@@ -251,7 +251,7 @@ and sign the
  and then send an email to the developers, who will give you access to the
 code.*
 
-Where possible, this page will be updated to include model outputs for the most recent version of the Atlantis code (currently version 6427). 
+This page will be updated to include model inputs and outputs for the most recent version of the Atlantis code (currently version 6427). 
 To get this specific version, please enter this line in your SVN platform
 ```
 CSIRO users: svn co -r 6427 https://svnserv.csiro.au/svn/atlantis/Atlantis/trunk/atlantis
