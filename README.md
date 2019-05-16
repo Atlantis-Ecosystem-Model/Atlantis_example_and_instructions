@@ -251,11 +251,11 @@ and sign the
  and then send an email to the developers, who will give you access to the
 code.*
 
-This page will be updated to include model inputs and outputs for the most recent version of the Atlantis code (currently version 6427). 
+This page will be updated to include model inputs and outputs for the most recent version of the Atlantis code (currently version 6444).
 To get this specific version, please enter this line in your SVN platform
 ```
-CSIRO users: svn co -r 6427 https://svnserv.csiro.au/svn/atlantis/Atlantis/trunk/atlantis
-External Partners: svn co -r 6427 https://svnserv.csiro.au/svn/ext/atlantis/Atlantis/trunk/atlantis
+CSIRO users: svn co -r 6444 https://svnserv.csiro.au/svn/atlantis/Atlantis/trunk/atlantis
+External Partners: svn co -r 6444 https://svnserv.csiro.au/svn/ext/atlantis/Atlantis/trunk/atlantis
 ```
 
 To download the latest version code, the following URL link will need to be checked in by your SVN platform:
@@ -368,7 +368,7 @@ To build Atlantis in another versions of Linux please visit the
 On your terminal navigate to your Atlantis model folder and then convert the files:*
 ```
 $ cd ~\You\Atlantis\Model\Folder\
-$ flip -mv
+$ flip -uvt *.*
 ```
 
 #### Run
