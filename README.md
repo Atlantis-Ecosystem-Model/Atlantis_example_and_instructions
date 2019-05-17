@@ -28,7 +28,7 @@ page you can access the code repository, detailed instructions, and operational 
 <sub>** *If the hyperlink does not work, right click on the text "email to developers" and select the option "copy email"* .</sub>
 
 **List of model updates**
->A list of major changes made in new code revisions can be found ([here](https://github.com/Atlantis-Ecosystem-Model/Atlantis_example_and_instructions/tree/master/img/Table Atlantis updates.pdf) 
+>A list of major changes made in new code revisions can be found ([here](https://github.com/Atlantis-Ecosystem-Model/Atlantis_example_and_instructions/tree/master/img/Table_Atlantis_updates.pdf)) 
 and on the Atlantis wiki under ([Atlantis Updates](https://confluence.csiro.au/display/Atlantis/Atlantis+Updates)),
 ___
 
