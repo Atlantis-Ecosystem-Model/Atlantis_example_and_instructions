@@ -20,12 +20,11 @@ For more detailed explanation about the code, the parameters and how to run Atla
  **Attention!**
 >Due to licensing requirements, new users must register to access the
 code. If you want a copy of the Atlantis main code (which you will need to start using the
-model) you will need to <a target="_top" href="mailto:javier.porobicgarate@csiro.au">email to developers</a>** to get access to the [Atlantis-Wiki](https://confluence.csiro.au/display/Atlantis/Atlantis+Ecosystem+Model+Home+Page)
-where you will need to sign the [licence agreement](https://confluence.csiro.au/display/Atlantis/CSIRO+licence+and+repository+request).
-From the [Atlantis-Wiki](https://confluence.csiro.au/display/Atlantis/Atlantis+Ecosystem+Model+Home+Page)
-page you can access the code repository, detailed instructions, and operational examples.
+model) you will need to <a href="mailto:atlantis@csiro.au?subject=Atlantis%20InQuiry">email the developers</a> to get access to the [Atlantis-Wiki](https://confluence.csiro.au/display/Atlantis/Atlantis+Ecosystem+Model+Home+Page). If the link doesn't autoconnect to email for you please check if you have a pop-up blocker turned on in your browser. Alternatively, right click on the text "email to developers" and select the option "copy email". When you send the email, please be sure that the email contains your name, affiliation and a quick line on why you are interested. This is important for us to provide you the best possible support - it will not affect access, which is free of charge regardless.
 
-<sub>** *If the hyperlink does not work, right click on the text "email to developers" and select the option "copy email"* .</sub>
+Once you register and gain access to the wiki you will need to sign the (free) [licence agreement](https://confluence.csiro.au/display/Atlantis/CSIRO+licence+and+repository+request).
+From the [Atlantis-Wiki](https://confluence.csiro.au/display/Atlantis/Atlantis+Ecosystem+Model+Home+Page)
+page you can access all the information on the code repository, detailed instructions, and operational examples.
 
 **List of model updates**
 >A list of major changes made in new code revisions can be found [here](https://github.com/Atlantis-Ecosystem-Model/Atlantis_example_and_instructions/tree/master/img/Table_Atlantis_updates.pdf) 
