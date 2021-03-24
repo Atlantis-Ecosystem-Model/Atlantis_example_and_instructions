@@ -4,7 +4,7 @@ Software for modelling marine ecosystem including spatial and temporal dynamics.
 <!-- [Download manuscript](https://besjournals.onlinelibrary.wiley.com/journal/2041210x) -->
  **Download manuscript** (link to the published manuscript introducing the model will be available here)
 
-This page contains an example of an operational Atlatis model with details of the parameter (input) files and model output files given.
+This page contains an example of an operational Atlantis model with details of the parameter (input) files and model output files given.
 It also gives brief details and instructions on how to compile and run an Atlantis model on your computer.
 For more detailed explanation about the code, the parameters and how to run Atlantis you will need to download the Atlantis manual
 ([part 1](https://research.csiro.au/atlantis/wp-content/uploads/sites/52/2021/01/AtlantisUserGuide_PartI.pdf) and [part 2](https://research.csiro.au/atlantis/wp-content/uploads/sites/52/2021/01/AtlantisUserGuide_PartII.pdf)). Other useful Atlantis references can also be found [here](https://research.csiro.au/atlantis/home/useful-references/).
