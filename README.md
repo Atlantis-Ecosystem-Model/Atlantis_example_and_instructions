@@ -2,7 +2,7 @@
 Software for modelling marine ecosystem including spatial and temporal dynamics.
 
 **Attention!**
->Atlantis is a living piece of software and the information here cn get out of date quickly. While the informaiton here faithfully reflects the state of the model when the paper mentioned below was created things have moved on since. If you would like to more please go to the [Atlantis research page](https://research.csiro.au/atlantis) or [Atlantis-Wiki](https://confluence.csiro.au/display/Atlantis/Atlantis+Ecosystem+Model+Home+Page)
+>Atlantis is a living piece of software and the information here cn get out of date quickly. While the informaiton here faithfully reflects the state of the model when the paper mentioned below was created things have moved on since. If you would like to more please go to the [Atlantis research page](https://research.csiro.au/atlantis).
 
 Due to licensing requirements, new users must register to access the code. If you want a copy of the Atlantis main code (which you will need to start using the model) you will need to email the developers to get access to the Atlantis-Wiki. If the link doesn't autoconnect to email for you please check if you have a pop-up blocker turned on in your browser. Alternatively, right click on the text "email to developers" and select the option "copy email".
 
@@ -72,7 +72,7 @@ The most used model example is the South East Tasmania (SETas) Atlantis model. T
 
 ## Input files
 Here we provide a brief description of all the input files required to run an Atlantis model. For more details see the
-Atlantis manual [part 1](https://research.csiro.au/atlantis/?ddownload=111) and [part 2](https://research.csiro.au/atlantis/?ddownload=112) or the [Atlantis-wiki](https://confluence.csiro.au/display/Atlantis/Atlantis+Ecosystem+Model+Home+Page).
+[Atlantis manual](https://research.csiro.au/atlantis/home/links/).
 
 > All the input files needed to run the SETas model under Atlantis and output files can be downloaded [here](https://github.com/Atlantis-Ecosystem-Model/South_East_Tasmania_model/archive/master.zip).
 
