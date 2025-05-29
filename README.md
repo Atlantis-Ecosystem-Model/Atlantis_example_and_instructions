@@ -24,17 +24,14 @@ For more detailed explanation about the code, the parameters and how to run Atla
  **Attention!**
 >Due to licensing requirements, new users must register to access the
 code. If you want a copy of the Atlantis main code (which you will need to start using the
-model) you will need to <a href="mailto:atlantis@csiro.au?subject=Atlantis%20InQuiry">email the developers</a> to get access to the [Atlantis-Wiki](https://confluence.csiro.au/display/Atlantis/Atlantis+Ecosystem+Model+Home+Page). If the link doesn't autoconnect to email for you please check if you have a pop-up blocker turned on in your browser. Alternatively, right click on the text "email to developers" and select the option "copy email". 
+model) you will need to <a href="mailto:atlantis@csiro.au?subject=Atlantis%20InQuiry">email the developers</a> to get access to the code. If the link doesn't autoconnect to email for you please check if you have a pop-up blocker turned on in your browser. Alternatively, right click on the text "email to developers" and select the option "copy email". The manual is available from the links below and the old wiki will move here in coming months.
 
 When you send the email, please be sure that the email contains your name, affiliation and a quick line on why you are interested. This is important for us to provide you the best possible support - it will not affect access, which is free of charge regardless.
 
-Once you register and gain access to the wiki you will need to sign the (free) [licence agreement](https://confluence.csiro.au/display/Atlantis/CSIRO+licence+and+repository+request).
-From the [Atlantis-Wiki](https://confluence.csiro.au/display/Atlantis/Atlantis+Ecosystem+Model+Home+Page)
-page you can access all the information on the code repository, detailed instructions, and operational examples.
+Once you register and gain access to the wiki you will need to sign the (free) licence agreement. The developers will share that with you. They can also share information on the code repository, detailed instructions, and operational examples. The essential information has been copied here too (see below).
 
 **List of model updates**
->A list of major changes made in new code revisions can be found [here](https://github.com/Atlantis-Ecosystem-Model/Atlantis_example_and_instructions/tree/master/img/Table_Atlantis_updates.pdf) 
-and on the [Atlantis-Wiki page](https://confluence.csiro.au/display/Atlantis/Atlantis+Updates).
+>A list of major changes made in new code revisions can be found [here](https://github.com/Atlantis-Ecosystem-Model/Atlantis_example_and_instructions/tree/master/img/Table_Atlantis_updates.pdf).
 ___
 
 ### Index
@@ -202,7 +199,7 @@ during the calibration of Atlantis. This tool was used to produce the figures ab
   angstroms is to provide easy access to Regional Ocean Modeling System (ROMS) output
   for R.
 
-Links to other software used can be accessed via the [Atlantis-Wiki](https://confluence.csiro.au/display/Atlantis/Atlantis+Helper+Tools).
+Until the wiki is relocated please <a href="mailto:atlantis@csiro.au?subject=Atlantis%20InQuiry">contact the developers</a> to links to other software used.
 
 <hr>
 
@@ -251,12 +248,8 @@ software that operates as:
   Please read the instructions for your operating system for more details [below](#Specific-instructions-for-your-operating-systems).
 
 Code:
-> *Note: Remember that if you want a copy of the Atlantis main code you will need to go
-first to the [Atlantis-Page](https://confluence.csiro.au/display/Atlantis/CSIRO+licence+and+repository+request)
-and sign the
-[licence agreement](https://confluence.csiro.au/display/Atlantis/CSIRO+licence+and+repository+request)
- and then send an email to the developers, who will give you access to the
-code.*
+> *Note: Remember that if you want a copy of the Atlantis main code you will need to <a href="mailto:atlantis@csiro.au?subject=Atlantis%20InQuiry">email the developers</a>
+and sign the licence agreement.*
 
 This page will be updated to include model inputs and outputs for the most recent version of the Atlantis code (currently version 6444).
 To get this specific version, please enter this line in your SVN platform
@@ -271,7 +264,7 @@ To download the latest version code, the following URL link will need to be chec
 CSIRO users: https://svnserv.csiro.au/svn/atlantis/Atlantis/trunk/atlantis
 External Partners: https://svnserv.csiro.au/svn/ext/atlantis/Atlantis/trunk/atlantis
 ```
-> To check the updates and changes in the code since the Atlantis publication, go to the [Atlantis Updates](https://confluence.csiro.au/display/Atlantis/Atlantis+Updates) page on the wiki.
+> To check the updates and changes in the code since the Atlantis publication, check the manual and go to the [updates page](https://github.com/Atlantis-Ecosystem-Model/Atlantis_example_and_instructions/tree/master/img/Table_Atlantis_updates.pdf).
 
 ## Building Atlantis
 Once you have your compiler, NetCDF reader and source code, it is time to build
@@ -287,7 +280,7 @@ Most of these warning messages are produced to inform users about the spatial po
 and other model aspects that may require attention. It is advisable that users read these messages to make sure that there model is set up
 as intended. Where more concerning issues are present, the model will stop running.
 A possible reason for this occuring is when parameter files are out of date with the code in which case a missing parameter error message will be relayed.
-(e.g., Error: Unable to find species parameter _min_spawn_temp in file Biology.prm for group FPS). Please consult the [Atlantis Updates](https://confluence.csiro.au/display/Atlantis/Atlantis+Updates) for
+(e.g., Error: Unable to find species parameter _min_spawn_temp in file Biology.prm for group FPS). Please consult the [here](https://github.com/Atlantis-Ecosystem-Model/Atlantis_example_and_instructions/tree/master/img/Table_Atlantis_updates.pdf) for
 a lists major repository revisions and the updates to include in your input files.
 
 <hr>
@@ -342,8 +335,7 @@ $ yum install pkgconfig     # Install pkgconfig
 ```
 
 > *Note: Most computers with other versions of Linux, follow similar instructions to install
-the necessary packages and libraries. If you have questions, visit
-[Wiki-Packages-Linux](https://confluence.csiro.au/display/Atlantis/Building+under+linux)*
+the necessary packages and libraries. If you have questions, please contact teh developers *
 
 #### Code
 ```
@@ -368,8 +360,7 @@ $ ./configure
 $ make
 $ sudo make install
 ```
-To build Atlantis in another versions of Linux please visit the
-[Wiki-Building-Linux](https://confluence.csiro.au/display/Atlantis/Building+under+linux).
+To build Atlantis in another versions of Linux please <a href="mailto:atlantis@csiro.au?subject=Atlantis%20InQuiry">email the developers</a>.
 
 > *Note: Before you can run the example Atlantis model under Linux you will need to convert the [input files](https://github.com/Atlantis-Ecosystem-Model/South_East_Tasmania_model/archive/master.zip) in Linux EOL format.
 On your terminal navigate to your Atlantis model folder and then convert the files:*
@@ -411,8 +402,7 @@ $ flip -uvt *.*
 
 2. A NetCDF development library
 
-    Follow instructions to download [NetCDF 4](https://www.unidata.ucar.edu/software/netcdf/docs/winbin.html). For further information see the
-[Atlantis-Wiki](https://confluence.csiro.au/display/Atlantis/NetCDF+4+in+Windows)
+    Follow instructions to download [NetCDF 4](https://www.unidata.ucar.edu/software/netcdf/docs/winbin.html). 
 
 3. An SVN platform to check out the source code from the code repository
 
@@ -432,7 +422,7 @@ Step 2: The executable file *atlantismain.exe* should then be copy from the
 atlantismain/Debug folder to the folder where your model run files are kept.
 
 For more details on the building process, including how to fix common errors,
-visit [Wiki-Building-Windows](https://confluence.csiro.au/display/Atlantis/Building+under+windows).
+<a href="mailto:atlantis@csiro.au?subject=Atlantis%20InQuiry">please email the developers</a> until the wiki is relocated here.
 
 #### Code
 To locally compile the code, create a new folder or checkout directory for your
@@ -463,7 +453,7 @@ provided after registering to be a user.
  C:\Atlantis\run$  runAtlantis.bat
  ```
 
-> *Note: An operational Atlantis model can be run on a Windows computer without a compiler, NetCDF library, or the code. Please contact the developers for more information about this option, if desired.*
+> *Note: An operational Atlantis model can be run on a Windows computer without a compiler, NetCDF library, or the code. Please <a href="mailto:atlantis@csiro.au?subject=Atlantis%20InQuiry">contact the developers</a> for more information about this option, if desired.*
 
 
 ---
@@ -542,7 +532,7 @@ $ sudo make install
 ```
 This will install the Atlantis header files and the executable in /usr/local/include/Atlantis-1.0/Atlantis and /usr/local/bin
 
-More detailed information bout how to build Atlantis can be found in the [Wiki-Building-MacOS](https://confluence.csiro.au/display/Atlantis/Building+under+mac).
+More detailed information about how to build Atlantis can be <a href="mailto:atlantis@csiro.au?subject=Atlantis%20InQuiry">obtained from the developers</a>.
 
 
 #### Run
