@@ -4,7 +4,10 @@ Software for modelling marine ecosystem including spatial and temporal dynamics.
 **Attention!**
 >Atlantis is a living piece of software and the information here cn get out of date quickly. While the informaiton here faithfully reflects the state of the model when the paper mentioned below was created things have moved on since. If you would like to more please go to the [Atlantis research page](https://research.csiro.au/atlantis).
 
-Due to licensing requirements, new users must register to access the code. If you want a copy of the Atlantis main code (which you will need to start using the model) you will need to email the developers to get access to the Atlantis-Wiki. If the link doesn't autoconnect to email for you please check if you have a pop-up blocker turned on in your browser. Alternatively, right click on the text "email to developers" and select the option "copy email".
+**Attention!**
+>Due to licensing requirements, new users must register to access the
+code. If you want a copy of the Atlantis main code (which you will need to start using the
+model) you will need to <a href="mailto:atlantis@csiro.au?subject=Atlantis%20InQuiry">email the developers</a> to get access to the code. If the link doesn't autoconnect to email for you please check if you have a pop-up blocker turned on in your browser. Alternatively, right click on the text "email to developers" and select the option "copy email". The manual is available from the links below and the old wiki will move here in coming months.
 
 <!-- [Download manuscript](https://besjournals.onlinelibrary.wiley.com/journal/2041210x) -->
  **Download manuscript** (link to the published manuscript introducing the model will be available here)
@@ -19,12 +22,6 @@ For more detailed explanation about the code, the parameters and how to run Atla
     <img alt="Atlantis" src="./img/logo.jpg" height="200" width="200">
 </p>
 <hr>
-
-
- **Attention!**
->Due to licensing requirements, new users must register to access the
-code. If you want a copy of the Atlantis main code (which you will need to start using the
-model) you will need to <a href="mailto:atlantis@csiro.au?subject=Atlantis%20InQuiry">email the developers</a> to get access to the code. If the link doesn't autoconnect to email for you please check if you have a pop-up blocker turned on in your browser. Alternatively, right click on the text "email to developers" and select the option "copy email". The manual is available from the links below and the old wiki will move here in coming months.
 
 When you send the email, please be sure that the email contains your name, affiliation and a quick line on why you are interested. This is important for us to provide you the best possible support - it will not affect access, which is free of charge regardless.
 
