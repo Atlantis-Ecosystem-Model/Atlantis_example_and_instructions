@@ -97,8 +97,8 @@ Initial distribution of one functional group
 
 ## Output files
 Here we provide a brief description of all the output files from an Atlantis model. For more details see the
-Atlantis manual
-([part 1](https://research.csiro.au/atlantis/?ddownload=111) and [part 2](https://research.csiro.au/atlantis/?ddownload=112)).
+[Atlantis manual](https://research.csiro.au/atlantis/home/links/).
+
 ### NetCDF output Files
 Atlantis generates a number of NetCDF output files that contain spatial information
 such as the biomass of functional groups in boxes and layers.  The NetCDF files do
@@ -201,7 +201,7 @@ Until the wiki is relocated please <a href="mailto:atlantis@csiro.au?subject=Atl
 
 # Model Installation and Running
 
-For detailed model installation and running instructions see chapter 2 in the [Atlantis manual Part I](https://research.csiro.au/atlantis/?ddownload=111).
+For detailed model installation and running instructions see chapter 2 in the [Atlantis manual](https://research.csiro.au/atlantis/home/links/).
 Here we briefly describe the main steps involved.
 
 ## Why to check out the code using version control tools
@@ -220,7 +220,7 @@ entire code but just update the libraries.
 
 Atlantis is a complex modelling package that is based on a large number of processes,
 assumptions and equations. Appropriate and responsible use of such a package therefore
-requires users to have reasonable computational and basic coding skills. The Atlantis manual
+requires users to have reasonable computational and basic coding skills. The [Atlantis manual](https://research.csiro.au/atlantis/home/links/)
 provides details on code libraries and routines for the processes included in Atlantis.
 This means that users can track down specific aspects of the code and make sure they are
 comfortable with the assumptions of the model. Developing and calibrating specific model
